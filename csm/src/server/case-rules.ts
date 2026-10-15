@@ -1,4 +1,7 @@
-import { gs, GlideRecord } from '@servicenow/glide'
+import { gs, GlideRecord, GlideDateTime } from '@servicenow/glide'
+
+// scoped script includes are resolved at runtime through the application namespace
+declare const x_1863667_csm: any
 
 const STATE_RESOLVED = '6'
 
@@ -91,4 +94,138 @@ export function defaultOnHoldReason(current: any) {
     if (!current.getValue('x_1863667_csm_on_hold_reason')) {
         current.setValue('x_1863667_csm_on_hold_reason', 'awaiting_customer')
     }
+}
+
+// ---------------------------------------------------------------- Sprint 4
+
+/** SP-72: before query - restrict lists / reports to the authorised accounts of the user. */
+export function restrictQueryToAccounts(current: any) {
+    const access = new x_1863667_csm.CsmAccess()
+    const q = access.accountQuery('account')
+    if (q) current.addEncodedQuery(q)
+}
+
+/** SP-75: before insert/update - derive Priority from the Impact x Urgency matrix; a manual change is flagged. */
+export function applyPriorityMatrix(current: any, previous: any) {
+    const inputsChanged = current.isNewRecord() || current.impact.changes() || current.urgency.changes()
+    if (!inputsChanged) {
+        if (current.priority.changes()) current.setValue('x_1863667_csm_priority_override', true)
+        return
+    }
+    const m = new GlideRecord('x_1863667_csm_priority_matrix')
+    m.addQuery('impact', current.getValue('impact'))
+    m.addQuery('urgency', current.getValue('urgency'))
+    m.setLimit(1)
+    m.query()
+    if (m.next()) {
+        // an explicit priority on insert is kept and marked as an override
+        if (current.isNewRecord() && current.priority.changes() && current.getValue('priority') !== m.getValue('priority')) {
+            current.setValue('x_1863667_csm_priority_override', true)
+            return
+        }
+        current.setValue('priority', m.getValue('priority'))
+        current.setValue('x_1863667_csm_priority_override', false)
+    }
+}
+
+/** Tier of a support group: explicit x_1863667_csm_tier, otherwise taken from the naming standard ("... L3.2 - ..."). */
+function tierOf(group: any): string {
+    const explicit = group.getValue('x_1863667_csm_tier')
+    if (explicit) return explicit
+    const name = group.getValue('name') || ''
+    if (/\bL3\.2\b/.test(name)) return 'l3_2'
+    if (/\bL3\.1\b/.test(name)) return 'l3_1'
+    if (/\bL2\b/.test(name)) return 'l2'
+    return ''
+}
+
+const TIER_ORDER: { [tier: string]: number } = { l2: 1, l3_1: 2, l3_2: 3 }
+
+/** SP-76: before update - validate and log L2 <-> L3.1 <-> L3.2 escalation / de-escalation. */
+export function handleEscalation(current: any, previous: any) {
+    const from = new GlideRecord('sys_user_group')
+    const to = new GlideRecord('sys_user_group')
+    if (!from.get(previous.getValue('assignment_group')) || !to.get(current.getValue('assignment_group'))) return
+    const fromTier = tierOf(from)
+    const toTier = tierOf(to)
+    if (!fromTier || !toTier || fromTier === toTier) return
+    if (Math.abs(TIER_ORDER[fromTier] - TIER_ORDER[toTier]) !== 1) {
+        gs.addErrorMessage('Escalation must move one tier at a time (L2 <-> L3.1 <-> L3.2).')
+        current.setAbortAction(true)
+        return
+    }
+    const reason = current.getValue('x_1863667_csm_escalation_reason')
+    const ref = current.getValue('x_1863667_csm_supplier_reference')
+    if (!reason) {
+        gs.addErrorMessage('A reason is required for every escalation / de-escalation.')
+        current.setAbortAction(true)
+        return
+    }
+    if (toTier === 'l3_2' && !ref) {
+        gs.addErrorMessage('A supplier / specialist reference number is required when escalating to L3.2.')
+        current.setAbortAction(true)
+        return
+    }
+    const log = new GlideRecord('x_1863667_csm_escalation_log')
+    log.initialize()
+    log.setValue('case', current.getUniqueValue())
+    log.setValue('direction', TIER_ORDER[toTier] > TIER_ORDER[fromTier] ? 'escalation' : 'deescalation')
+    log.setValue('from_group', previous.getValue('assignment_group'))
+    log.setValue('to_group', current.getValue('assignment_group'))
+    log.setValue('reason', reason)
+    log.setValue('reference_number', ref || '')
+    log.setValue('performed_by', gs.getUserID())
+    log.insert()
+    current.work_notes = 'Case ' + (TIER_ORDER[toTier] > TIER_ORDER[fromTier] ? 'escalated' : 'de-escalated') +
+        ' from ' + from.getValue('name') + ' to ' + to.getValue('name') + '. Reason: ' + reason + (ref ? ' (ref ' + ref + ')' : '')
+    current.setValue('x_1863667_csm_escalation_reason', '')
+    current.setValue('x_1863667_csm_supplier_reference', '')
+}
+
+/** SP-74: before update - cancelling requires a reason, which is journaled and triggers the customer notification. */
+export function handleCancellation(current: any) {
+    const reason = current.getValue('x_1863667_csm_cancel_reason')
+    if (!reason) {
+        gs.addErrorMessage('A cancellation reason is required.')
+        current.setAbortAction(true)
+        return
+    }
+    current.work_notes = 'Case cancelled (out of scope) by ' + gs.getUserDisplayName() + ' on ' + new GlideDateTime().getDisplayValue() + '. Reason: ' + reason
+    gs.eventQueue('x_1863667_csm.case.cancelled', current, reason, gs.getUserID())
+}
+
+/** SP-79: before insert - derive Source / channel from the creation path when it was not set explicitly. */
+export function captureChannel(current: any) {
+    if (current.getValue('x_1863667_csm_channel')) return
+    const type = (current.getValue('contact_type') || '').toLowerCase()
+    let channel = 'internal'
+    if (type === 'email') channel = 'email'
+    else if (type === 'phone') channel = 'phone'
+    else if (type === 'web' || type === 'self-service' || type === 'portal') channel = 'portal'
+    else if (gs.getSession().getClientIP() && gs.getSession().isInteractive() === false && type === '') channel = 'portal'
+    current.setValue('x_1863667_csm_channel', channel)
+}
+
+/** SP-77: before insert - route to the L2 group by Account + Location + Contract (most specific wins, then default). */
+export function routeToL2Group(current: any) {
+    if (current.getValue('assignment_group') || !current.getValue('account')) return
+    const rules = new GlideRecord('x_1863667_csm_routing_rule')
+    rules.addQuery('active', true)
+    rules.addQuery('account', current.getValue('account'))
+    rules.query()
+    let best = ''
+    let bestScore = -1
+    while (rules.next()) {
+        const loc = rules.getValue('location')
+        const con = rules.getValue('contract')
+        if (loc && loc !== current.getValue('location')) continue
+        if (con && con !== current.getValue('contract')) continue
+        const score = (loc ? 2 : 0) + (con ? 1 : 0)
+        if (score > bestScore) {
+            best = rules.getValue('l2_group')
+            bestScore = score
+        }
+    }
+    if (!best) best = gs.getProperty('x_1863667_csm.default_l2_group', '')
+    if (best) current.setValue('assignment_group', best)
 }

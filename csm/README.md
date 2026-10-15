@@ -74,3 +74,33 @@ Built successfully; not deployed or tested on an instance.
 | SP-65 | `x_1863667_csm_on_hold_reason` (Awaiting Customer default / Supplier / Spare part), UI policy (visible + mandatory on Awaiting Info) and a business rule that defaults the value |
 
 Cancelled in Jira and not built: SP-53, 55, 57, 58, 59, 63, 64, 66, 67. Reassignment now also counts resolution time from case creation (retroactive start).
+
+## Sprint 4
+
+| Story | Artifact |
+|---|---|
+| SP-68 | `imports/02-contact`: extra `onBefore` script sets `password_needs_reset` and the default password from system property `x_1863667_csm.default_contact_password` (password2; set it on the instance, never in the repo) |
+| SP-69 | `email/inbound-email`: inbound email action handling only mail addressed to `x_1863667_csm.support_mailbox` |
+| SP-70 | `data/support-groups`: `Veridos L2 - LVA/GEO`, `L3.1 - Global Service & Maintenance`, `L3.2 - Supplier/OEM/SID/R&D`, `Global Support` with the CSM agent role. Tier is read from `x_1863667_csm_tier` or the group name |
+| SP-71 | `security/roles`: admin, L2 agent, L3.1 agent, L3.2 specialist, case viewer, customer contact + marker role `account_scoped` |
+| SP-72 | `security/access` (`CsmAccess` + Deny-Unless ACLs on Case, Case Task, `task_sla`, `sys_attachment`, `sys_email`) and `rules/query-rules` (list/report level) |
+| SP-73 | field ACLs: `work_notes` (case, task) and `ast_contract.discount / payment_amount / total_cost` internal roles only |
+| SP-74 | `x_1863667_csm_cancel_reason`, UI policy, `handleCancellation` (journal entry + event) and customer notification |
+| SP-75 | `x_1863667_csm_priority_matrix` (9 rows) + `applyPriorityMatrix`; manual change sets `x_1863667_csm_priority_override` |
+| SP-76 | `handleEscalation`: adjacent tiers only, reason mandatory, supplier reference mandatory for L3.2, `x_1863667_csm_escalation_log` |
+| SP-77 | `x_1863667_csm_routing_rule` (Account / Location / Contract, most specific wins) + `routeToL2Group`, fallback property `x_1863667_csm.default_l2_group` |
+| SP-78 | threading + duplicate prevention in the inbound email action (case number in subject, In-Reply-To / References, same sender + subject within 10 minutes) |
+| SP-79 | `x_1863667_csm_channel` (Portal / Email / Phone / Internal), set by `captureChannel` and the email action |
+
+Role -> licence mapping (SP-71): admin, L2 agent, L3.1 agent, L3.2 specialist -> CSM fulfiller (`sn_customerservice_agent`);
+case viewer -> read-only (`sn_customerservice.case_viewer`); customer contact -> customer light user (`sn_customerservice.customer`).
+Review consumption against the subscription before go-live.
+
+### Mailbox cutover (SP-69)
+1. Set `x_1863667_csm.support_mailbox` and enable the instance inbound email account; 2. keep the old mailbox forwarding to
+the new address in parallel for a week; 3. switch MX / forwarding rule for the Veridos mailbox to ServiceNow outside business
+hours; 4. send test mails (new, reply, duplicate) and check the cases; 5. retire the old forwarding once no mail arrives.
+
+Assumptions: customer/partner scoping uses the marker role, so users without it are unrestricted; contract field ACL list
+(discount, payment amount, total cost) is a guess for the "financial fields" in the requirement register; the matrix maps
+Impact 3 x Urgency 3 to P4 because SLAs only exist for P1-P4.

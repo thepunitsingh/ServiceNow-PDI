@@ -5,13 +5,77 @@ declare global {
         namespace Internal {
             interface Keys extends KeysRegistry {
                 explicit: {
+                    'acl-attachment-account-read': {
+                        table: 'sys_security_acl'
+                        id: '900c5a66226b4401b9a8a243e084a565'
+                    }
+                    'acl-case-account-read': {
+                        table: 'sys_security_acl'
+                        id: '5f83ba0736404476b1f813105291da5b'
+                    }
+                    'acl-case-account-write': {
+                        table: 'sys_security_acl'
+                        id: '21bf5cf9435843899ba1b77c5d02872c'
+                    }
+                    'acl-case-worknotes-read': {
+                        table: 'sys_security_acl'
+                        id: 'a2a85500feb6493fb493d8d307c3979e'
+                    }
+                    'acl-case-worknotes-write': {
+                        table: 'sys_security_acl'
+                        id: 'b06215bad746404a9015a597efaca3c8'
+                    }
+                    'acl-contract-discount-read': {
+                        table: 'sys_security_acl'
+                        id: '1beaa76351ce49628ec451268fe9adb0'
+                    }
+                    'acl-contract-payment-read': {
+                        table: 'sys_security_acl'
+                        id: 'f247a2bbc13144d19333c98fead371f2'
+                    }
+                    'acl-contract-totalcost-read': {
+                        table: 'sys_security_acl'
+                        id: '72220e7c88d5402fb175d4482bc365fd'
+                    }
+                    'acl-email-account-read': {
+                        table: 'sys_security_acl'
+                        id: 'ebcd7887a2c14db9b1363d0ed1009600'
+                    }
+                    'acl-task-account-read': {
+                        table: 'sys_security_acl'
+                        id: 'efd9dbbf84034787b46477a7320be5d8'
+                    }
+                    'acl-task-account-write': {
+                        table: 'sys_security_acl'
+                        id: '7ecd6cf94838401a85a320561f06da95'
+                    }
+                    'acl-task-sla-account-read': {
+                        table: 'sys_security_acl'
+                        id: '414a3136de66475292b0009f328e08eb'
+                    }
+                    'acl-task-worknotes-read': {
+                        table: 'sys_security_acl'
+                        id: 'e37ed776f4c145899c14b8619ab59fd7'
+                    }
                     bom_json: {
                         table: 'sys_module'
                         id: '1ce1e643115644b5aa4bbd355448c908'
                     }
+                    'br-case-cancellation': {
+                        table: 'sys_script'
+                        id: 'd83970abc8c941cc8727e42272a7d964'
+                    }
+                    'br-case-channel': {
+                        table: 'sys_script'
+                        id: '32df201d8394436a92c3fd5bf1aaace2'
+                    }
                     'br-case-closed-by': {
                         table: 'sys_script'
                         id: 'b655659caba04ab3adca5e7f06e1d2d3'
+                    }
+                    'br-case-escalation': {
+                        table: 'sys_script'
+                        id: '07772caba5f8471a88ff802ae0a40406'
                     }
                     'br-case-hw-tasks': {
                         table: 'sys_script'
@@ -24,6 +88,14 @@ declare global {
                     'br-case-on-hold-reason': {
                         table: 'sys_script'
                         id: '7be7ec9cd7b74362ace708d9704ebe52'
+                    }
+                    'br-case-priority-matrix': {
+                        table: 'sys_script'
+                        id: 'd59400f519144b3a850483d6312fc5cc'
+                    }
+                    'br-case-routing': {
+                        table: 'sys_script'
+                        id: '1633d785fcd5491da3c76dade503d269'
                     }
                     'br-task-resolve-case': {
                         table: 'sys_script'
@@ -97,13 +169,129 @@ declare global {
                         table: 'sys_data_source'
                         id: 'aa493c83a6e648c48ab9b62464272fd1'
                     }
+                    'evt-case-cancelled': {
+                        table: 'sysevent_register'
+                        id: '53c6cf088e794ca388fa5b6d30dd8027'
+                    }
+                    'grp-global-support': {
+                        table: 'sys_user_group'
+                        id: '693c17001dc9482790488331850430f9'
+                    }
+                    'grp-l2-geo': {
+                        table: 'sys_user_group'
+                        id: 'eba1c17a36a44426aa59473e95d535d9'
+                    }
+                    'grp-l2-geo-role': {
+                        table: 'sys_group_has_role'
+                        id: 'df16725b3b6946f495c4b09e095c2809'
+                    }
+                    'grp-l2-lva': {
+                        table: 'sys_user_group'
+                        id: '0aa517d67ec6443cbe30394edb86da04'
+                    }
+                    'grp-l2-lva-role': {
+                        table: 'sys_group_has_role'
+                        id: '096eb8fc9b4247faa25e07486cada2ea'
+                    }
+                    'grp-l31-global': {
+                        table: 'sys_user_group'
+                        id: 'bbad0bc062a749e7be9b5dae0e847eb5'
+                    }
+                    'grp-l31-global-role': {
+                        table: 'sys_group_has_role'
+                        id: '0281d1c623b049c59c41a60103fe930c'
+                    }
+                    'grp-l32-oem': {
+                        table: 'sys_user_group'
+                        id: '649ea6c77f6c42f3b6de5e60abc70778'
+                    }
+                    'grp-l32-oem-role': {
+                        table: 'sys_group_has_role'
+                        id: '6f222e748a7448298a0d8ba913047608'
+                    }
+                    'grp-l32-rd': {
+                        table: 'sys_user_group'
+                        id: 'aabc43e713844ba6aaa5ddb842d4aa56'
+                    }
+                    'grp-l32-rd-role': {
+                        table: 'sys_group_has_role'
+                        id: '9c5159f7192f4daea4532fc5f01d7581'
+                    }
+                    'grp-l32-sid': {
+                        table: 'sys_user_group'
+                        id: 'f7807ca2d6e1415196fc946b8a9635a2'
+                    }
+                    'grp-l32-sid-role': {
+                        table: 'sys_group_has_role'
+                        id: '17b48aff8afb43a494e762055cd7243e'
+                    }
+                    'grp-l32-supplier': {
+                        table: 'sys_user_group'
+                        id: '0ed1b22a48fc4feea4a6c47d3be5f8d2'
+                    }
+                    'grp-l32-supplier-role': {
+                        table: 'sys_group_has_role'
+                        id: '05dd16fb785c4df69f6876908481f375'
+                    }
+                    'iea-create-case': {
+                        table: 'sysevent_in_email_action'
+                        id: '3269d15eea3f4b3b920d027622a39d87'
+                    }
+                    'notif-case-cancelled': {
+                        table: 'sysevent_email_action'
+                        id: 'a1f94795474e4b0384e2423cdffafaee'
+                    }
                     package_json: {
                         table: 'sys_module'
                         id: '9f289914e6f242f6acdae9583e16e774'
                     }
+                    'pm-1-1': {
+                        table: 'x_1863667_csm_priority_matrix'
+                        id: '33741d55bc7446cb9a90008b50483393'
+                    }
+                    'pm-1-2': {
+                        table: 'x_1863667_csm_priority_matrix'
+                        id: '48e978185295437084655192c493948c'
+                    }
+                    'pm-1-3': {
+                        table: 'x_1863667_csm_priority_matrix'
+                        id: '170b0f17d4d04808824c6988fde1dffc'
+                    }
+                    'pm-2-1': {
+                        table: 'x_1863667_csm_priority_matrix'
+                        id: '48bfc763466e4c689dd51b473588bed8'
+                    }
+                    'pm-2-2': {
+                        table: 'x_1863667_csm_priority_matrix'
+                        id: 'e624e7e6bd494564997249d2b50cd104'
+                    }
+                    'pm-2-3': {
+                        table: 'x_1863667_csm_priority_matrix'
+                        id: '954f5b1811d54f678fff68193a7ec76c'
+                    }
+                    'pm-3-1': {
+                        table: 'x_1863667_csm_priority_matrix'
+                        id: 'f1f9bce03cbd48ce9b8a344b706ec3a7'
+                    }
+                    'pm-3-2': {
+                        table: 'x_1863667_csm_priority_matrix'
+                        id: 'f2ae59e659f84af08f057298392d6fda'
+                    }
+                    'pm-3-3': {
+                        table: 'x_1863667_csm_priority_matrix'
+                        id: '11e2f2bae0f744fdb070c1196ba38d66'
+                    }
                     'portal-csmgnd': {
                         table: 'sp_portal'
                         id: 'a6ef65a1dd934e43ad39ebb50260e435'
+                    }
+                    'qr-case-account': {
+                        table: 'sys_script'
+                        id: 'aecf2da80e054b7bb74137fc67deb808'
+                    }
+                    'qr-task-account': {
+                        table: 'sys_script'
+                        id: 'e708725789bc4fa9b96934f6984d5cff'
                     }
                     'sched-geo': {
                         table: 'cmn_schedule'
@@ -124,6 +312,10 @@ declare global {
                     'si-case-filters': {
                         table: 'sys_script_include'
                         id: '51a5b2c8213a46949928f964df64b2e9'
+                    }
+                    'si-csm-access': {
+                        table: 'sys_script_include'
+                        id: '5bfe1b3cc03f4ff6ab7ecd225ab657cb'
                     }
                     'sla-geo-escalation-p1-def': {
                         table: 'contract_sla'
@@ -429,6 +621,10 @@ declare global {
                         table: 'sys_transform_map'
                         id: '4828a5ec86824caeade5c015a3a5a02b'
                     }
+                    'tm-contact-default-password': {
+                        table: 'sys_transform_script'
+                        id: '8716c858c7cf4916a1370c24585176e7'
+                    }
                     'tm-contact-validate': {
                         table: 'sys_transform_script'
                         id: 'ce631dbf93484acfbdbe6fc8bfcd8b64'
@@ -528,12 +724,32 @@ declare global {
                 }
                 composite: [
                     {
+                        table: 'sys_security_acl_role'
+                        id: '00033b59fe8b4865aa3d19c00441507d'
+                        key: {
+                            sys_security_acl: 'e37ed776f4c145899c14b8619ab59fd7'
+                            sys_user_role: {
+                                id: 'd49954f036df4a96a27b4a8caacb3bcb'
+                                key: {
+                                    name: 'x_1863667_csm.l3_1_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '000f43a1d4284d76bba75852da7d6e7b'
                         key: {
                             name: 'cmn_location'
                             element: 'x_1863667_csm_sla_schedule'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_user_role'
+                        id: '0033caf641ff461a9dfc71df96b93ede'
+                        key: {
+                            name: 'x_1863667_csm.account_scoped'
                         }
                     },
                     {
@@ -648,6 +864,19 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '07aaa4c9bef943c0a212308689fc2419'
+                        key: {
+                            sys_security_acl: '1beaa76351ce49628ec451268fe9adb0'
+                            sys_user_role: {
+                                id: 'e813f5e7b5124caa98b3eb88d30c934a'
+                                key: {
+                                    name: 'sn_customerservice_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '086f4780f0a5430599c9cb5df25a07d3'
                         key: {
@@ -712,6 +941,24 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_user_role_contains'
+                        id: '0b7e5e6d4729444a95e468165d6b665d'
+                        key: {
+                            role: {
+                                id: '9f21882b1ee9465fb1da28d86090da18'
+                                key: {
+                                    name: 'x_1863667_csm.l3_2_specialist'
+                                }
+                            }
+                            contains: {
+                                id: '0033caf641ff461a9dfc71df96b93ede'
+                                key: {
+                                    name: 'x_1863667_csm.account_scoped'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '0bdce4967b5344a0b1df824e3a1b1936'
                         key: {
@@ -768,6 +1015,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '0daa07e0d2514e5ab5673781a78bdde9'
+                        key: {
+                            name: 'x_1863667_csm_priority_matrix'
+                            element: 'impact'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '0e2a8405f48141fe951de1d9447c57c9'
                         key: {
@@ -814,6 +1070,14 @@ declare global {
                         key: {
                             map: '574a68fc07a5486598c60f480d7f584d'
                             target_field: 'location'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '114257ff6c694d0184f6b84fbed501f1'
+                        key: {
+                            name: 'x_1863667_csm_priority_matrix'
+                            element: 'impact'
                         }
                     },
                     {
@@ -924,6 +1188,39 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '1741487803cb42ab8aad8ee03dc585fe'
+                        key: {
+                            sys_security_acl: '72220e7c88d5402fb175d4482bc365fd'
+                            sys_user_role: {
+                                id: 'e813f5e7b5124caa98b3eb88d30c934a'
+                                key: {
+                                    name: 'sn_customerservice_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: '17754398dbdd4dd5ac6ffda379decdb6'
+                        key: {
+                            name: 'x_1863667_csm_routing_rule'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '186983b847294ae19632d24629dcf248'
+                        key: {
+                            sys_security_acl: '1beaa76351ce49628ec451268fe9adb0'
+                            sys_user_role: {
+                                id: 'd49954f036df4a96a27b4a8caacb3bcb'
+                                key: {
+                                    name: 'x_1863667_csm.l3_1_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '1a7e435b7ce846c4b766ccd898818b2f'
                         key: {
@@ -964,6 +1261,24 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_user_role_contains'
+                        id: '1e25e282f7c248d38e84bf373bbe70ef'
+                        key: {
+                            role: {
+                                id: '9f21882b1ee9465fb1da28d86090da18'
+                                key: {
+                                    name: 'x_1863667_csm.l3_2_specialist'
+                                }
+                            }
+                            contains: {
+                                id: 'facde90da6bd4ab28aa166184fbbe568'
+                                key: {
+                                    name: 'sn_customerservice_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '1e58ca58bf82444fbcdfe2ce2d4aca2a'
                         key: {
@@ -1000,6 +1315,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '2115b8740b9e493692653da7eb9da5fa'
+                        key: {
+                            name: 'x_1863667_csm_routing_rule'
+                            element: 'account'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '21bc63bf75204dd39846a1d64a849619'
                         key: {
@@ -1009,10 +1332,24 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_user_role'
+                        id: '22068212a8834066b8d2010114e510cd'
+                        key: {
+                            name: 'x_1863667_csm.case_viewer'
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: '222e6093f43e4683a052aa7cbe5ab4bb'
                         key: {
                             name: 'sys_user_group'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '2246174a9f5340ed9903d038bb177a48'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
                         }
                     },
                     {
@@ -1060,6 +1397,19 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '246986dc05bb477eb657744c927c7af4'
+                        key: {
+                            sys_security_acl: 'e37ed776f4c145899c14b8619ab59fd7'
+                            sys_user_role: {
+                                id: 'deeb20e79e2a4956aafbb5e9b0b60fb1'
+                                key: {
+                                    name: 'sn_customerservice_manager'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '24aa0e44d97f4a5dafeb73f32f9027ae'
                         key: {
@@ -1086,6 +1436,19 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '264723e420bd485cb97b65de33a6ea32'
+                        key: {
+                            sys_security_acl: '1beaa76351ce49628ec451268fe9adb0'
+                            sys_user_role: {
+                                id: '9f21882b1ee9465fb1da28d86090da18'
+                                key: {
+                                    name: 'x_1863667_csm.l3_2_specialist'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '26e9c957bcd34535a750f0c743c66149'
                         key: {
@@ -1104,11 +1467,66 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '2723af56c9aa4568b29ed480f48fcc83'
+                        key: {
+                            sys_security_acl: 'b06215bad746404a9015a597efaca3c8'
+                            sys_user_role: {
+                                id: '64a16f40852f495f83d3cb14c6565d19'
+                                key: {
+                                    name: 'x_1863667_csm.admin'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '2743567678514135bacf6c778d78a6a2'
+                        key: {
+                            sys_security_acl: 'e37ed776f4c145899c14b8619ab59fd7'
+                            sys_user_role: {
+                                id: '9f21882b1ee9465fb1da28d86090da18'
+                                key: {
+                                    name: 'x_1863667_csm.l3_2_specialist'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '27923dd6ddf2470b9793a201e09bffc6'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_channel'
+                            value: 'internal'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '27f01b3f30c1404d878aa634851fd898'
                         key: {
                             name: 'x_1863667_csm_stg_stockroom'
                             element: 'stockroom_type'
+                        }
+                    },
+                    {
+                        table: 'sys_user_role_contains'
+                        id: '28e3d449e59d428ab650c0760a3e2403'
+                        key: {
+                            role: {
+                                id: '64a16f40852f495f83d3cb14c6565d19'
+                                key: {
+                                    name: 'x_1863667_csm.admin'
+                                }
+                            }
+                            contains: {
+                                id: '884db86d4b4747cc96bed6fe63d997db'
+                                key: {
+                                    name: 'sn_customerservice_manager'
+                                }
+                            }
                         }
                     },
                     {
@@ -1118,6 +1536,14 @@ declare global {
                             name: 'x_1863667_csm_stg_account'
                             element: 'zip'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '298576a50aa7481db47b91ce77839d5f'
+                        key: {
+                            name: 'x_1863667_csm_routing_rule'
+                            element: 'contract'
                         }
                     },
                     {
@@ -1147,6 +1573,14 @@ declare global {
                     },
                     {
                         table: 'sys_dictionary'
+                        id: '2ad34a50b080492a826b26e7475a9271'
+                        key: {
+                            name: 'x_1863667_csm_routing_rule'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
                         id: '2ad720db91544c6e8c93599113764591'
                         key: {
                             name: 'x_1863667_csm_stg_entitlement'
@@ -1163,6 +1597,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '2b3928886fc744afb19f51d58a2f7119'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_supplier_reference'
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: '2c13d2e58af0480fa13f154725c86bc3'
                         key: {
@@ -1171,10 +1613,26 @@ declare global {
                         }
                     },
                     {
+                        table: 'ua_table_licensing_config'
+                        id: '2c2492bfc238425fbdee4fd211ae2859'
+                        key: {
+                            name: 'x_1863667_csm_priority_matrix'
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: '2c76153f9fdf41ae9344e07cc4358687'
                         key: {
                             name: 'sn_customerservice_case'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '2cc22ee763e542e38b46470e2302341f'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_priority_override'
+                            language: 'en'
                         }
                     },
                     {
@@ -1224,6 +1682,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '2e559c2859fb43f6b237c0e86641c069'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'direction'
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: '2e672eb725fb4c8ba908c2792916fce8'
                         key: {
@@ -1264,11 +1730,33 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '2ec674bfd3664058bb1901862117fb1e'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'to_group'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '2eeaec4058644d0387bb8e2c455b6a43'
                         key: {
                             name: 'x_1863667_csm_stg_contract'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '2f1068c5cb764176b7161f6ac991056b'
+                        key: {
+                            sys_security_acl: 'a2a85500feb6493fb493d8d307c3979e'
+                            sys_user_role: {
+                                id: 'e813f5e7b5124caa98b3eb88d30c934a'
+                                key: {
+                                    name: 'sn_customerservice_agent'
+                                }
+                            }
                         }
                     },
                     {
@@ -1330,6 +1818,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '312413b589ae40ec8c3f581747d70367'
+                        key: {
+                            name: 'x_1863667_csm_routing_rule'
+                            element: 'contract'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: '322a951f346245ae987e17951eebf384'
                         key: {
@@ -1371,11 +1868,55 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_user_role_contains'
+                        id: '34660f26999342f29240fbb03cdf9cc8'
+                        key: {
+                            role: {
+                                id: '3882a594b35d44aea662319e05b0b501'
+                                key: {
+                                    name: 'x_1863667_csm.l2_agent'
+                                }
+                            }
+                            contains: {
+                                id: 'd72f90e1581640cbaca01ee6afcd459a'
+                                key: {
+                                    name: 'sn_customerservice_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '3511e56aa068418189a5f2dd0457a3c6'
+                        key: {
+                            sys_security_acl: 'a2a85500feb6493fb493d8d307c3979e'
+                            sys_user_role: {
+                                id: '64a16f40852f495f83d3cb14c6565d19'
+                                key: {
+                                    name: 'x_1863667_csm.admin'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '3543513fb9b2479db64ad9d3ae4f4482'
                         key: {
                             name: 'customer_account'
                             element: 'x_1863667_csm_classification'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '35f16322d4474a4e9973325b11ca39cf'
+                        key: {
+                            sys_security_acl: 'a2a85500feb6493fb493d8d307c3979e'
+                            sys_user_role: {
+                                id: 'd49954f036df4a96a27b4a8caacb3bcb'
+                                key: {
+                                    name: 'x_1863667_csm.l3_1_agent'
+                                }
+                            }
                         }
                     },
                     {
@@ -1385,6 +1926,14 @@ declare global {
                             name: 'x_1863667_csm_stg_account'
                             element: 'street'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: '3636edf6086c4d44bda89b41989bea55'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_channel'
                         }
                     },
                     {
@@ -1454,6 +2003,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_user_role'
+                        id: '3882a594b35d44aea662319e05b0b501'
+                        key: {
+                            name: 'x_1863667_csm.l2_agent'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '38ac477909814c3784af0e1f4069d2a5'
                         key: {
@@ -1479,6 +2035,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_policy'
+                        id: '39367855599f48379c90bdf18bb85d54'
+                        key: {
+                            table: 'sn_customerservice_case'
+                            short_description: 'Cancellation reason mandatory when cancelling'
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: '39493d35ec9a4239958aea2a9548407a'
                         key: {
@@ -1492,6 +2056,17 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_location'
                             element: 'longitude'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '39dc376bc2074c2ca92f7d5862496fb3'
+                        key: {
+                            name: 'sys_user_group'
+                            element: 'x_1863667_csm_tier'
+                            value: 'l3_2'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -1527,6 +2102,33 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_user_role_contains'
+                        id: '3afa0c24fb36474e8a1f1e3d6d4094f8'
+                        key: {
+                            role: {
+                                id: 'd49954f036df4a96a27b4a8caacb3bcb'
+                                key: {
+                                    name: 'x_1863667_csm.l3_1_agent'
+                                }
+                            }
+                            contains: {
+                                id: '7a12ae90ef884910a0feff49ee9f7632'
+                                key: {
+                                    name: 'sn_customerservice_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '3b25c98417dd44b48ac46b2856d3ce5a'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_cancel_reason'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: '3b9aa13d93b2489a808d8e9fba5a8c0c'
                         key: {
@@ -1548,6 +2150,15 @@ declare global {
                         key: {
                             map: '4828a5ec86824caeade5c015a3a5a02b'
                             target_field: 'email'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '3c23a4631584401aa1acff5569217c30'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'reason'
+                            language: 'en'
                         }
                     },
                     {
@@ -1578,6 +2189,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '3cc5281b75a548188a0912af8160aa9d'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'reference_number'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '3cdcdd70f47349aca96a1acd8120eff8'
                         key: {
@@ -1604,11 +2223,45 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '3d93e463579e43d5aa804443be19b566'
+                        key: {
+                            sys_security_acl: 'b06215bad746404a9015a597efaca3c8'
+                            sys_user_role: {
+                                id: '9f21882b1ee9465fb1da28d86090da18'
+                                key: {
+                                    name: 'x_1863667_csm.l3_2_specialist'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '3f2f7ad7057846b0a564dfa6d8f97ac2'
                         key: {
                             name: 'x_1863667_csm_stg_asset'
                             element: 'model_number'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '3f74e6ac57874cc6a82f2d9998114c3b'
+                        key: {
+                            sys_security_acl: 'f247a2bbc13144d19333c98fead371f2'
+                            sys_user_role: {
+                                id: '9f21882b1ee9465fb1da28d86090da18'
+                                key: {
+                                    name: 'x_1863667_csm.l3_2_specialist'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: '4068676765db451f88bda4afac6bece1'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'direction'
                         }
                     },
                     {
@@ -1636,11 +2289,36 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '42536556e22e42649137f7168312b70c'
+                        key: {
+                            name: 'x_1863667_csm_priority_matrix'
+                            element: 'priority'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '428cb8abc525458b858091b0676b047a'
                         key: {
                             name: 'x_1863667_csm_stg_install_base_item'
                             element: 'item_id'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: '42dc5b4266054cb9ae357dd18c0307dd'
+                        key: {
+                            name: 'sys_user_group'
+                            element: 'x_1863667_csm_tier'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '4310f8aeb55a41af8763b8942dcaa456'
+                        key: {
+                            name: 'x_1863667_csm_routing_rule'
+                            element: 'account'
                             language: 'en'
                         }
                     },
@@ -1659,6 +2337,14 @@ declare global {
                             name: 'x_1863667_csm_stg_install_base_item'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '44086e29e163477db032363deae37bf3'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'performed_by'
                         }
                     },
                     {
@@ -1751,6 +2437,24 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_user_role_contains'
+                        id: '4809482748c1404087c75f6479e8e50e'
+                        key: {
+                            role: {
+                                id: 'd3d0ad3db4da46d8961b56c12cac2f62'
+                                key: {
+                                    name: 'x_1863667_csm.customer_contact'
+                                }
+                            }
+                            contains: {
+                                id: '0033caf641ff461a9dfc71df96b93ede'
+                                key: {
+                                    name: 'x_1863667_csm.account_scoped'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: '4838f9c52dc2490a8ac287a3ba49dc82'
                         key: {
@@ -1773,6 +2477,19 @@ declare global {
                             name: 'x_1863667_csm_stg_location'
                             element: 'longitude'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '499f821c9cb94388b83f02f5eab119fd'
+                        key: {
+                            sys_security_acl: '72220e7c88d5402fb175d4482bc365fd'
+                            sys_user_role: {
+                                id: '9f21882b1ee9465fb1da28d86090da18'
+                                key: {
+                                    name: 'x_1863667_csm.l3_2_specialist'
+                                }
+                            }
                         }
                     },
                     {
@@ -1799,6 +2516,17 @@ declare global {
                         key: {
                             map: '05ce3e52d153431ba9d57b5b08479178'
                             target_field: 'country'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '4aab92a6355d4d29bbcf475634b8e686'
+                        key: {
+                            name: 'sys_user_group'
+                            element: 'x_1863667_csm_tier'
+                            value: 'l2'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -1964,6 +2692,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '564d4c27d9414377afca29bfd2bf630e'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'from_group'
+                        }
+                    },
+                    {
                         table: 'sys_choice_set'
                         id: '5667d1a38fda4ea1b2ca566d043e5779'
                         key: {
@@ -2038,11 +2774,27 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '5a43ca7296de4d06944332a3d3c6a54e'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: '5a803f09f0444b268b656f650b9e5b9c'
                         key: {
                             map: '4828a5ec86824caeade5c015a3a5a02b'
                             target_field: 'phone'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '5ab9ffd8c2b448a09710634d8767ff62'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_channel'
                         }
                     },
                     {
@@ -2070,6 +2822,23 @@ declare global {
                         key: {
                             map: '98bf09acf66449478eb75a7b3b95d966'
                             target_field: 'end_date'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '5c31377c7cef414fbb831f9039e85e47'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'reference_number'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '5c326f64a3e44441a87ccfa78ce7e7dc'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_priority_override'
                         }
                     },
                     {
@@ -2127,6 +2896,24 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_user_role_contains'
+                        id: '5f781d89493c49a1b91e516d0f62eda6'
+                        key: {
+                            role: {
+                                id: '22068212a8834066b8d2010114e510cd'
+                                key: {
+                                    name: 'x_1863667_csm.case_viewer'
+                                }
+                            }
+                            contains: {
+                                id: 'c69b53412be6420ea2e0998731a759a8'
+                                key: {
+                                    name: 'sn_customerservice.case_viewer'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '5fe5707d1faf49bca76bce4242fa2815'
                         key: {
@@ -2159,6 +2946,31 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_user_role_contains'
+                        id: '634cc1d3fbcd4b8a8360fd684489e593'
+                        key: {
+                            role: {
+                                id: 'd49954f036df4a96a27b4a8caacb3bcb'
+                                key: {
+                                    name: 'x_1863667_csm.l3_1_agent'
+                                }
+                            }
+                            contains: {
+                                id: '0033caf641ff461a9dfc71df96b93ede'
+                                key: {
+                                    name: 'x_1863667_csm.account_scoped'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_user_role'
+                        id: '64a16f40852f495f83d3cb14c6565d19'
+                        key: {
+                            name: 'x_1863667_csm.admin'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '65288dc78a4149a8a3afcf00cc81507c'
                         key: {
@@ -2174,6 +2986,45 @@ declare global {
                             name: 'x_1863667_csm_stg_asset'
                             element: 'asset_tag'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '65960fbd8d654eecb4a06326538f4f98'
+                        key: {
+                            sys_security_acl: '72220e7c88d5402fb175d4482bc365fd'
+                            sys_user_role: {
+                                id: '64a16f40852f495f83d3cb14c6565d19'
+                                key: {
+                                    name: 'x_1863667_csm.admin'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '659ed9626b644fd09416fc1e602ee87b'
+                        key: {
+                            sys_security_acl: '1beaa76351ce49628ec451268fe9adb0'
+                            sys_user_role: {
+                                id: '64a16f40852f495f83d3cb14c6565d19'
+                                key: {
+                                    name: 'x_1863667_csm.admin'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '65df7c57b0ca4e9c80e70db49bc2f1f3'
+                        key: {
+                            sys_security_acl: 'e37ed776f4c145899c14b8619ab59fd7'
+                            sys_user_role: {
+                                id: '64a16f40852f495f83d3cb14c6565d19'
+                                key: {
+                                    name: 'x_1863667_csm.admin'
+                                }
+                            }
                         }
                     },
                     {
@@ -2211,6 +3062,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '680e5cf00d344e339e02aba1a281cf5c'
+                        key: {
+                            sys_security_acl: 'a2a85500feb6493fb493d8d307c3979e'
+                            sys_user_role: {
+                                id: '9f21882b1ee9465fb1da28d86090da18'
+                                key: {
+                                    name: 'x_1863667_csm.l3_2_specialist'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '6891d6e90c604f71b11613e2bd532cda'
+                        key: {
+                            name: 'x_1863667_csm_routing_rule'
+                            element: 'l2_group'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'ua_table_licensing_config'
                         id: '68b318d4b232485e98f3bc3026fd6a63'
                         key: {
@@ -2236,6 +3109,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '6a119da686af40b1872e81659e69947a'
+                        key: {
+                            name: 'x_1863667_csm_priority_matrix'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: '6a8193d1a6464eeeb34e5dc74adcb926'
                         key: {
@@ -2253,6 +3135,14 @@ declare global {
                     },
                     {
                         table: 'sys_dictionary'
+                        id: '6b5c9623980749ee9211dd0b8208ba4f'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'to_group'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
                         id: '6b5c9ddd19fe4cc58ec8136b791f710d'
                         key: {
                             name: 'x_1863667_csm_stg_entitlement'
@@ -2265,6 +3155,33 @@ declare global {
                         key: {
                             map: 'ef932af79c774e35bbd20bf59319d2d8'
                             target_field: 'sold_product'
+                        }
+                    },
+                    {
+                        table: 'sys_user_role_contains'
+                        id: '6d196727de414c0da92cdcbf354e4f28'
+                        key: {
+                            role: {
+                                id: '22068212a8834066b8d2010114e510cd'
+                                key: {
+                                    name: 'x_1863667_csm.case_viewer'
+                                }
+                            }
+                            contains: {
+                                id: '0033caf641ff461a9dfc71df96b93ede'
+                                key: {
+                                    name: 'x_1863667_csm.account_scoped'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '6e54ca706f63433bb6d8dbcb9782d272'
+                        key: {
+                            name: 'x_1863667_csm_routing_rule'
+                            element: 'NULL'
+                            language: 'en'
                         }
                     },
                     {
@@ -2317,6 +3234,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '7127a3456fa34f89b7cd255d8a03de66'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_channel'
+                            value: 'phone'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '714a6c1c46bd4efda1ae731187c82a6d'
                         key: {
@@ -2337,6 +3265,23 @@ declare global {
                         id: '725beca9c6e64b26ae5bb7a169d4c973'
                         key: {
                             name: 'x_1863667_csm_stg_contract'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '734eee3ac70c400a88ce85f9e292f898'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_escalation_reason'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '73ac7cf0e5db415ca0c7d3a5f45dbcaa'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'case'
+                            language: 'en'
                         }
                     },
                     {
@@ -2434,6 +3379,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '7c073e5d9ae945b2b2a052e1fe982838'
+                        key: {
+                            name: 'sys_user_group'
+                            element: 'x_1863667_csm_tier'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: '7c6aded951d44c13b79e8233f0a51170'
+                        key: {
+                            sys_security_acl: '1beaa76351ce49628ec451268fe9adb0'
+                            sys_user_role: {
+                                id: 'deeb20e79e2a4956aafbb5e9b0b60fb1'
+                                key: {
+                                    name: 'sn_customerservice_manager'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: '7d0823a6bd4e4bf18c7a6c01989e41d3'
                         key: {
@@ -2498,6 +3465,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '8320e7da3e494007b1144ba3f489fa75'
+                        key: {
+                            name: 'x_1863667_csm_priority_matrix'
+                            element: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: '83f06f467b094d23992fae05bf408371'
                         key: {
@@ -2522,6 +3497,14 @@ declare global {
                             value: 'geo'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '85bc9a2a1e7d4f4291f3d3a7b398ab05'
+                        key: {
+                            name: 'x_1863667_csm_routing_rule'
+                            element: 'location'
                         }
                     },
                     {
@@ -2629,6 +3612,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '8efb00b2b66e45fea1f69c9c3e04be55'
+                        key: {
+                            name: 'sys_user_group'
+                            element: 'x_1863667_csm_tier'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '8f7828ca6eab49ffb84fab877864741c'
                         key: {
@@ -2721,11 +3712,33 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: '974009c26a8d4c269405d4e1ecfa1c7c'
+                        key: {
+                            sys_security_acl: 'b06215bad746404a9015a597efaca3c8'
+                            sys_user_role: {
+                                id: 'e813f5e7b5124caa98b3eb88d30c934a'
+                                key: {
+                                    name: 'sn_customerservice_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '976715b677d54b14a49c4d434299d2b5'
                         key: {
                             name: 'cmn_location'
                             element: 'x_1863667_csm_location_type'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '97b6f40115b441eab2be7b496faa41f0'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'NULL'
+                            language: 'en'
                         }
                     },
                     {
@@ -2742,6 +3755,24 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_entitlement'
                             element: 'entitlement_name'
+                        }
+                    },
+                    {
+                        table: 'sys_user_role_contains'
+                        id: '9929d164bcb344b29cded294da5b1106'
+                        key: {
+                            role: {
+                                id: '64a16f40852f495f83d3cb14c6565d19'
+                                key: {
+                                    name: 'x_1863667_csm.admin'
+                                }
+                            }
+                            contains: {
+                                id: 'd7625815ac234afaa832f7c8b4316444'
+                                key: {
+                                    name: 'sn_customerservice.case_admin'
+                                }
+                            }
                         }
                     },
                     {
@@ -2819,6 +3850,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_user_role'
+                        id: '9f21882b1ee9465fb1da28d86090da18'
+                        key: {
+                            name: 'x_1863667_csm.l3_2_specialist'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '9f6a05aed9dd40d889a47b953f5da456'
                         key: {
@@ -2892,6 +3930,19 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'a5cac8690d9646879bbc465eb04658ce'
+                        key: {
+                            sys_security_acl: '72220e7c88d5402fb175d4482bc365fd'
+                            sys_user_role: {
+                                id: 'deeb20e79e2a4956aafbb5e9b0b60fb1'
+                                key: {
+                                    name: 'sn_customerservice_manager'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'a8c2eb4387d4496eb61101aadd27e427'
                         key: {
@@ -2945,6 +3996,19 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'aaaf2eeba3dd47f590694cd25b54edd9'
+                        key: {
+                            sys_security_acl: '1beaa76351ce49628ec451268fe9adb0'
+                            sys_user_role: {
+                                id: '3882a594b35d44aea662319e05b0b501'
+                                key: {
+                                    name: 'x_1863667_csm.l2_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: 'ab2d540cb104400180fcad9c2550a066'
                         key: {
@@ -2961,6 +4025,24 @@ declare global {
                         key: {
                             map: '4828a5ec86824caeade5c015a3a5a02b'
                             target_field: 'title'
+                        }
+                    },
+                    {
+                        table: 'sys_user_role_contains'
+                        id: 'ab98f2fb783f4e4982bf24f61a3c1040'
+                        key: {
+                            role: {
+                                id: 'd3d0ad3db4da46d8961b56c12cac2f62'
+                                key: {
+                                    name: 'x_1863667_csm.customer_contact'
+                                }
+                            }
+                            contains: {
+                                id: 'be0fd43348b74cedb8a929e9b886c5c1'
+                                key: {
+                                    name: 'sn_customerservice.customer'
+                                }
+                            }
                         }
                     },
                     {
@@ -2991,6 +4073,41 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: 'ad09a875db8241b098976407326cd3a6'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'direction'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'ad2f992d658843ea8044cb19643e86ab'
+                        key: {
+                            sys_security_acl: 'e37ed776f4c145899c14b8619ab59fd7'
+                            sys_user_role: {
+                                id: 'e813f5e7b5124caa98b3eb88d30c934a'
+                                key: {
+                                    name: 'sn_customerservice_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'ad3533fb71704972a1b5c0e89a962e66'
+                        key: {
+                            sys_security_acl: 'e37ed776f4c145899c14b8619ab59fd7'
+                            sys_user_role: {
+                                id: '3882a594b35d44aea662319e05b0b501'
+                                key: {
+                                    name: 'x_1863667_csm.l2_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: 'ad68fcc25ad140eda6d50535151a4d1a'
                         key: {
@@ -3015,6 +4132,19 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'ae4484f47533434bb27d2c6da33853c6'
+                        key: {
+                            sys_security_acl: 'a2a85500feb6493fb493d8d307c3979e'
+                            sys_user_role: {
+                                id: 'deeb20e79e2a4956aafbb5e9b0b60fb1'
+                                key: {
+                                    name: 'sn_customerservice_manager'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: 'aeb3a3aea62a452da54e6a763c825138'
                         key: {
@@ -3031,6 +4161,35 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: 'b2188c3fe2db496dbc9360c91f641ae6'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'direction'
+                            value: 'deescalation'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'b2202ac8bf894fc3b626a16f205e3877'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_channel'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'b233b7e68ae341a1b4dd2d273b537826'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'performed_by'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'b3154bb103994458b73009899e7997a0'
                         key: {
@@ -3040,10 +4199,42 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: 'b424f3faae244cd4b4ffe2a853f3171f'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_channel'
+                            value: 'email'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'b491e5b4339e4935b7b880f13c57b6ff'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'case'
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: 'b4a08b3bbe0c4b5cb31318c7824a969c'
                         key: {
                             name: 'x_1863667_csm_stg_product_model'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'b4ed5ed2fb5446478161e72caf3992c8'
+                        key: {
+                            sys_security_acl: 'f247a2bbc13144d19333c98fead371f2'
+                            sys_user_role: {
+                                id: 'e813f5e7b5124caa98b3eb88d30c934a'
+                                key: {
+                                    name: 'sn_customerservice_agent'
+                                }
+                            }
                         }
                     },
                     {
@@ -3157,11 +4348,31 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: 'bd74bf677b4243f1925e9d67c8aa14c6'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'direction'
+                            value: 'escalation'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'be267c5c978a46379d74fb87f39ef92b'
                         key: {
                             name: 'x_1863667_csm_stg_stockroom'
                             element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'be3015b2bede46f6a1f90a48ce0973c9'
+                        key: {
+                            name: 'x_1863667_csm_priority_matrix'
+                            element: 'urgency'
                             language: 'en'
                         }
                     },
@@ -3325,6 +4536,26 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'c71abef412ee4d0695a2d8ecbcf761e5'
+                        key: {
+                            sys_security_acl: 'f247a2bbc13144d19333c98fead371f2'
+                            sys_user_role: {
+                                id: 'd49954f036df4a96a27b4a8caacb3bcb'
+                                key: {
+                                    name: 'x_1863667_csm.l3_1_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'c7454fc852bc467bb28d124c4cf06b5a'
+                        key: {
+                            name: 'x_1863667_csm_priority_matrix'
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: 'c78423f64a7648dcb6b43bfc16234832'
                         key: {
@@ -3333,11 +4564,48 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'c7977f55df3a4a3aa41a5d98a64e6887'
+                        key: {
+                            sys_security_acl: 'f247a2bbc13144d19333c98fead371f2'
+                            sys_user_role: {
+                                id: 'deeb20e79e2a4956aafbb5e9b0b60fb1'
+                                key: {
+                                    name: 'sn_customerservice_manager'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: 'c92830cf98af44caa850fcb4030db2ce'
                         key: {
                             map: '05ce3e52d153431ba9d57b5b08479178'
                             target_field: 'phone'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'ca98c18421e4451b93b66353b5ce805c'
+                        key: {
+                            sys_security_acl: 'b06215bad746404a9015a597efaca3c8'
+                            sys_user_role: {
+                                id: 'd49954f036df4a96a27b4a8caacb3bcb'
+                                key: {
+                                    name: 'x_1863667_csm.l3_1_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'cafd13f4ae45429bb411ba65a4a66d56'
+                        key: {
+                            name: 'sys_user_group'
+                            element: 'x_1863667_csm_tier'
+                            value: 'l3_1'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -3392,6 +4660,21 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_db_object'
+                        id: 'cc954777ca364d5285fb61e3e9775ef5'
+                        key: {
+                            name: 'x_1863667_csm_routing_rule'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'cd21254878b141fa8ba4760479361166'
+                        key: {
+                            name: 'x_1863667_csm_priority_matrix'
+                            element: 'urgency'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'cd376a71898b47609bfbde699f41570a'
                         key: {
@@ -3437,6 +4720,24 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_user_role_contains'
+                        id: 'd0b57212230844418c202bbaac91c521'
+                        key: {
+                            role: {
+                                id: '3882a594b35d44aea662319e05b0b501'
+                                key: {
+                                    name: 'x_1863667_csm.l2_agent'
+                                }
+                            }
+                            contains: {
+                                id: '0033caf641ff461a9dfc71df96b93ede'
+                                key: {
+                                    name: 'x_1863667_csm.account_scoped'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'd11233adfd64455abcfc872112f9ae85'
                         key: {
@@ -3450,6 +4751,15 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_contact'
                             element: 'email'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'd18dc06b4e264a38883db9d84788d04c'
+                        key: {
+                            name: 'x_1863667_csm_routing_rule'
+                            element: 'location'
+                            language: 'en'
                         }
                     },
                     {
@@ -3470,11 +4780,37 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'd1ef2c83af134d58b797fe36b5253936'
+                        key: {
+                            sys_security_acl: 'b06215bad746404a9015a597efaca3c8'
+                            sys_user_role: {
+                                id: 'deeb20e79e2a4956aafbb5e9b0b60fb1'
+                                key: {
+                                    name: 'sn_customerservice_manager'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: 'd21eea08c89f41a5836554fa31e5692b'
                         key: {
                             map: '34d61b2fb5b443aeb45c2bcb4b7ca3b6'
                             target_field: 'active'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'd2d1b775e12a4cf583da197258ad57c7'
+                        key: {
+                            sys_security_acl: '72220e7c88d5402fb175d4482bc365fd'
+                            sys_user_role: {
+                                id: 'd49954f036df4a96a27b4a8caacb3bcb'
+                                key: {
+                                    name: 'x_1863667_csm.l3_1_agent'
+                                }
+                            }
                         }
                     },
                     {
@@ -3509,6 +4845,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_user_role'
+                        id: 'd3d0ad3db4da46d8961b56c12cac2f62'
+                        key: {
+                            name: 'x_1863667_csm.customer_contact'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'd42748e5e3e34896871675be4ecfbe54'
                         key: {
@@ -3518,12 +4861,32 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_user_role'
+                        id: 'd49954f036df4a96a27b4a8caacb3bcb'
+                        key: {
+                            name: 'x_1863667_csm.l3_1_agent'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'd4bf8f421f074edfa1623c10514fd28f'
                         key: {
                             name: 'customer_account'
                             element: 'x_1863667_csm_banner_color'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'd548832be0f947109dcd0954f1ccb6f8'
+                        key: {
+                            sys_security_acl: 'a2a85500feb6493fb493d8d307c3979e'
+                            sys_user_role: {
+                                id: '3882a594b35d44aea662319e05b0b501'
+                                key: {
+                                    name: 'x_1863667_csm.l2_agent'
+                                }
+                            }
                         }
                     },
                     {
@@ -3541,6 +4904,15 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_install_base_item'
                             element: 'serial_number'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'd6184ba34e20416298e56bf167ffbde7'
+                        key: {
+                            name: 'x_1863667_csm_routing_rule'
+                            element: 'active'
+                            language: 'en'
                         }
                     },
                     {
@@ -3583,6 +4955,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: 'd852c6ad853d461bb0fdc6ee1e1f5687'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_cancel_reason'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'd8f07a2b35644629ae1c34d67907431d'
                         key: {
@@ -3596,6 +4976,14 @@ declare global {
                         id: 'd90f14a00f16406ab1dd9f3bd11a7891'
                         key: {
                             name: 'x_1863667_csm_stg_stockroom'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'da67a168644940199f9a92660e761df4'
+                        key: {
+                            name: 'x_1863667_csm_routing_rule'
+                            element: 'l2_group'
                         }
                     },
                     {
@@ -3674,6 +5062,55 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: 'df33185e9df84f848d6b963f31ae0d2e'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_supplier_reference'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'dfbeeafae1604466b8df137146bcb8d6'
+                        key: {
+                            sys_security_acl: 'f247a2bbc13144d19333c98fead371f2'
+                            sys_user_role: {
+                                id: '3882a594b35d44aea662319e05b0b501'
+                                key: {
+                                    name: 'x_1863667_csm.l2_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
+                        table: 'sys_ui_policy_action'
+                        id: 'e00666e480404078825d9ea40ba9df5b'
+                        key: {
+                            ui_policy: {
+                                id: '39367855599f48379c90bdf18bb85d54'
+                                key: {
+                                    table: 'sn_customerservice_case'
+                                    short_description: 'Cancellation reason mandatory when cancelling'
+                                }
+                            }
+                            field: 'x_1863667_csm_cancel_reason'
+                        }
+                    },
+                    {
+                        table: 'sys_security_acl_role'
+                        id: 'e0131d21f5bf444eb024224959afba76'
+                        key: {
+                            sys_security_acl: '72220e7c88d5402fb175d4482bc365fd'
+                            sys_user_role: {
+                                id: '3882a594b35d44aea662319e05b0b501'
+                                key: {
+                                    name: 'x_1863667_csm.l2_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'e106897e862a43d98e939b81c592fbd7'
                         key: {
@@ -3724,6 +5161,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: 'e46e74c7050f40d0b65031133a5ee458'
+                        key: {
+                            name: 'x_1863667_csm_routing_rule'
+                            element: 'active'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'e4a4a9851b3a478d85a98116844fa0e3'
                         key: {
@@ -3746,6 +5191,15 @@ declare global {
                         key: {
                             name: 'sn_customerservice_case'
                             element: 'x_1863667_csm_hw_tasks_created'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'e72a7d9e573b4d7eb525762fa42e0c62'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'from_group'
+                            language: 'en'
                         }
                     },
                     {
@@ -3780,6 +5234,15 @@ declare global {
                         key: {
                             map: '2fd3eb097b5c40518782cbfee9fde23e'
                             target_field: 'description'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'e8a0b53c592f4f4eb98646c03cb73c09'
+                        key: {
+                            name: 'x_1863667_csm_priority_matrix'
+                            element: 'priority'
+                            language: 'en'
                         }
                     },
                     {
@@ -3898,6 +5361,19 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'f22edd4812664a95934713388a6a99a9'
+                        key: {
+                            sys_security_acl: 'f247a2bbc13144d19333c98fead371f2'
+                            sys_user_role: {
+                                id: '64a16f40852f495f83d3cb14c6565d19'
+                                key: {
+                                    name: 'x_1863667_csm.admin'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'f231bb3cfe2541f8999ba7447caef4f4'
                         key: {
@@ -3939,6 +5415,19 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_security_acl_role'
+                        id: 'f436000ca25f464fb12f4f2e86105a9e'
+                        key: {
+                            sys_security_acl: 'b06215bad746404a9015a597efaca3c8'
+                            sys_user_role: {
+                                id: '3882a594b35d44aea662319e05b0b501'
+                                key: {
+                                    name: 'x_1863667_csm.l2_agent'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'f45012b2a67f47d2a7cecf231fd6dff0'
                         key: {
@@ -3962,6 +5451,13 @@ declare global {
                             name: 'customer_account'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: 'f4ffff1ec0da44a3bdd67357c9c4c25d'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
                         }
                     },
                     {
@@ -3991,6 +5487,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: 'f59bef4fcca74cfc8f85181584252cf2'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_escalation_reason'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'f5efe3e8811b49d385827b0e89cb2a13'
                         key: {
@@ -4010,6 +5515,14 @@ declare global {
                                 }
                             }
                             field: 'asset'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'f78c0dabfae84e829717c3113def16a3'
+                        key: {
+                            name: 'x_1863667_csm_escalation_log'
+                            element: 'reason'
                         }
                     },
                     {
@@ -4044,6 +5557,17 @@ declare global {
                             name: 'x_1863667_csm_stg_install_base_item'
                             element: 'asset_tag'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'fd05e748bb1c4ba09963a83eebcef008'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_channel'
+                            value: 'portal'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {

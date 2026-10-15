@@ -1,9 +1,13 @@
-import { Table, ReferenceColumn, ChoiceColumn, DateTimeColumn } from '@servicenow/sdk/core'
+import { Table, ReferenceColumn, ChoiceColumn, DateTimeColumn, StringColumn, BooleanColumn } from '@servicenow/sdk/core'
 
 // SP-34: groups are tied to an account so the Case form can filter Assignment Group by Account.
 export const sys_user_group = Table({
     augments: 'sys_user_group',
     schema: {
+        x_1863667_csm_tier: ChoiceColumn({
+            label: 'Support tier',
+            choices: { l2: 'L2', l3_1: 'L3.1', l3_2: 'L3.2' },
+        }),
         x_1863667_csm_account: ReferenceColumn({
             label: 'Support account',
             referenceTable: 'customer_account',
@@ -43,6 +47,18 @@ export const sn_customerservice_case = Table({
         }),
         // SP-60: stops the Workaround SLA clock.
         x_1863667_csm_workaround_provided: DateTimeColumn({ label: 'Workaround provided' }),
+        // SP-74: mandatory reason for out-of-scope cancellation.
+        x_1863667_csm_cancel_reason: StringColumn({ label: 'Cancellation reason', maxLength: 1000 }),
+        // SP-75: set when an agent changes Priority away from the Impact x Urgency matrix value (audit trail).
+        x_1863667_csm_priority_override: BooleanColumn({ label: 'Priority manually overridden', default: false }),
+        // SP-76: reason and supplier/specialist reference captured on (de-)escalation.
+        x_1863667_csm_escalation_reason: StringColumn({ label: 'Escalation / de-escalation reason', maxLength: 1000 }),
+        x_1863667_csm_supplier_reference: StringColumn({ label: 'Supplier / specialist reference number', maxLength: 100 }),
+        // SP-79: how the case was created.
+        x_1863667_csm_channel: ChoiceColumn({
+            label: 'Source / channel',
+            choices: { portal: 'Portal', email: 'Email', phone: 'Phone', internal: 'Internal' },
+        }),
         x_1863667_csm_hw_tasks_created: ChoiceColumn({
             label: 'Hardware tasks created',
             choices: { no: 'No', yes: 'Yes' },

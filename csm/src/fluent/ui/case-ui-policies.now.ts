@@ -113,3 +113,31 @@ export const uipOnHoldAction = Record({
         cleared: false,
     },
 })
+
+// SP-74: cancellation reason is visible and mandatory when cancelling (business rule enforces server side).
+export const uipCancel = Record({
+    $id: Now.ID['uip-case-cancel'],
+    table: 'sys_ui_policy',
+    data: {
+        table: 'sn_customerservice_case',
+        short_description: 'Cancellation reason mandatory when cancelling',
+        conditions: 'state=7',
+        on_load: true,
+        reverse_if_false: true,
+        global: true,
+        active: true,
+    },
+})
+
+export const uipCancelAction = Record({
+    $id: Now.ID['uipa-case-cancel'],
+    table: 'sys_ui_policy_action',
+    data: {
+        ui_policy: uipCancel,
+        field: 'x_1863667_csm_cancel_reason',
+        visible: 'true',
+        mandatory: 'true',
+        disabled: 'ignore',
+        cleared: false,
+    },
+})

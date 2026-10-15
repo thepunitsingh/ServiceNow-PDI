@@ -84,5 +84,28 @@ export const contactTransform = ImportSet({
     }
 })(source, map, log, target);`,
         },
+        {
+            // SP-68: new contacts get the default password (system property x_1863667_csm.default_contact_password,
+            // type password2 - never stored in the repo) and must reset it on first login.
+            $id: Now.ID['tm-contact-default-password'],
+            when: 'onBefore',
+            order: 200,
+            active: true,
+            script: `(function runTransformScript(source, map, log, target) {
+    if (action !== 'insert') return;
+    target.password_needs_reset = true;
+    var pw = gs.getProperty('x_1863667_csm.default_contact_password', '');
+    if (!pw) {
+        log.warn('SP-68 Contacts: row ' + source.sys_import_row + ' - no default password configured, user must use "forgot password"');
+        return;
+    }
+    var decrypted = new GlideEncrypter().decrypt(pw);
+    if (!decrypted) {
+        log.warn('SP-68 Contacts: row ' + source.sys_import_row + ' - default password could not be decrypted, not set');
+        return;
+    }
+    target.user_password.setDisplayValue(decrypted);
+})(source, map, log, target);`,
+        },
     ],
 })
