@@ -1,0 +1,6143 @@
+{
+"classes": [
+{
+"name": "cmdb_ci_endpoint_aq_queue",
+"label": "AQ Queue",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_exchange_backend",
+"label": "ExchangeBackEndServer",
+"parent": "cmdb_ci_exchange_service_component"
+},
+{
+"name": "cmdb_ci_appl_ibm_cics",
+"label": "IBM CICS",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_wbem_service",
+"label": "WBEM Service",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_dc_plant_eq_power_eq",
+"label": "Direct Current Plant Equipment",
+"parent": "cmdb_ci_power_eq"
+},
+{
+"name": "cmdb_ci_appl_generic",
+"label": "Generic Application",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_ups_alarm",
+"label": "UPS Alarm",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_appl_websphere_portal",
+"label": "Websphere Portal",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_disk",
+"label": "Disk",
+"parent": "cmdb_ci_storage_device"
+},
+{
+"name": "cmdb_ci_vm_template",
+"label": "Virtual Machine Template",
+"parent": "cmdb_ci_os_template"
+},
+{
+"name": "cmdb_ci_crac",
+"label": "Computer Room AC",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_fc_port",
+"label": "Fibre Channel Port",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_ids_network",
+"label": "Intrusion Detection System",
+"parent": "cmdb_ci_netgear"
+},
+{
+"name": "cmdb_ci_vcenter_datastore",
+"label": "VMware vCenter Datastore",
+"parent": "cmdb_ci_datastore"
+},
+{
+"name": "cmdb_ci_mainframe",
+"label": "IBM Mainframe",
+"parent": "cmdb_ci_server"
+},
+{
+"name": "cmdb_ci_endpoint_fastsearch",
+"label": "Fast Search Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_app_server_hp_ucmdb",
+"label": "HP uCMDB",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_db_mssql_reporting",
+"label": "SQL Server Reporting Services",
+"parent": "cmdb_ci_db_instance"
+},
+{
+"name": "cmdb_ci_db_ora_listener",
+"label": "Oracle Database Listener",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_docker_container",
+"label": "Docker Container",
+"parent": "cmdb_ci_oslv_container"
+},
+{
+"name": "cmdb_ci_endpoint_db2sql",
+"label": "DB2 UDB Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_oslv_image",
+"label": "Operating-system-level Virtualization Image",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_appl_ibm_wmq",
+"label": "IBM WebSphere MQ",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_fc_export",
+"label": "Fibre Channel Export",
+"parent": "cmdb_ci_san_export"
+},
+{
+"name": "cmdb_ci_endpoint_ajp",
+"label": "AJP Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_endpoint_weblogic_module",
+"label": "Weblogic Module",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_business_process",
+"label": "Business Process",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_power_eq",
+"label": "Power Equipment",
+"parent": "cmdb_ci_facility_hardware"
+},
+{
+"name": "cmdb_ci_endpoint_oracle_tns",
+"label": "Oracle App TNS Service EP",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_hyper_v_network",
+"label": "Hyper-V Virtual Network",
+"parent": "cmdb_ci_hyper_v_object"
+},
+{
+"name": "cmdb_ci_appl_rabbitmq_queue",
+"label": "RabbitMQ Queue",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_ats_power_eq",
+"label": "Automatic Transfer Switch",
+"parent": "cmdb_ci_power_eq"
+},
+{
+"name": "cmdb_ci_plotter",
+"label": "Plotter",
+"parent": "cmdb_ci_printing_hardware"
+},
+{
+"name": "cmdb_ci_ip_device",
+"label": "IP Device",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint",
+"label": "Endpoint",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_win_server",
+"label": "Windows Server",
+"parent": "cmdb_ci_server"
+},
+{
+"name": "cmdb_ci_lb_netscaler",
+"label": "Citrix Netscaler",
+"parent": "cmdb_ci_lb"
+},
+{
+"name": "cmdb_ci_lb_bigip",
+"label": "F5 BIG-IP",
+"parent": "cmdb_ci_lb"
+},
+{
+"name": "cmdb_ci_epicd_app_server",
+"label": "epicd app server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_appl_biztalk_orch",
+"label": "BizTalk Orchestration",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_ups_input",
+"label": "UPS Input",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_lb_f5_gtm",
+"label": "F5 BigIP GTM",
+"parent": "cmdb_ci_lb"
+},
+{
+"name": "cmdb_ci_email_server_jes",
+"label": "JES",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_websphere_cell",
+"label": "Websphere Cell",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_network_template",
+"label": "Network Template",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_cluster_vip",
+"label": "Cluster Virtual IP",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_ebs",
+"label": "EBS Inc Modules",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_appl_sap_di",
+"label": "SAP DI Application",
+"parent": "cmdb_ci_appl_sap"
+},
+{
+"name": "cmdb_ci_appl_ora_pm",
+"label": "Oracle Process Manager",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_appl_sap_scs",
+"label": "SAP SCS Application",
+"parent": "cmdb_ci_appl_sap"
+},
+{
+"name": "cmdb_ci_qualifier_external_connection",
+"label": "External Connection Qualifier",
+"parent": "cmdb_ci_qualifier"
+},
+{
+"name": "cmdb_ci_appl_tuxedo",
+"label": "Tuxedo",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_appl_ora_oafm",
+"label": "Oracle OAFM Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_ec2_instance",
+"label": "EC2 Virtual Machine Instance",
+"parent": "cmdb_ci_vm_instance"
+},
+{
+"name": "cmdb_ci_endpoint_mysql_slave",
+"label": "MySQL Slave Server Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_bridge_domain",
+"label": "Bridge Domain",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_qtree",
+"label": "Qtree",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_service_discovered",
+"label": "Mapped Application Service",
+"parent": "cmdb_ci_service_auto"
+},
+{
+"name": "cmdb_ci_cloud_topic",
+"label": "Cloud Topic",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_endpoint_ldap",
+"label": "LDAP Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_tomcat_connector",
+"label": "Tomcat Connector",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_imaging_hardware",
+"label": "Imaging Hardware",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_oracle_esb",
+"label": "Oracle ESB Connection Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_db_mssql_int_job",
+"label": "SQL Server Integration Services Job",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_compute_security_group",
+"label": "Compute Security Group",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_endpoint_mapi_hub",
+"label": "MAPI-HUB Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_app_server",
+"label": "Application Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_netapp_svm",
+"label": "Netapp SVM",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_installed_bundles",
+"label": "Installed Bundles",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_router",
+"label": "Router",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_endpoint_ms_sql_server",
+"label": "MS SQL Server Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_tower_eq",
+"label": "Tower Equipment",
+"parent": "cmdb_ci_facility_hardware"
+},
+{
+"name": "cmdb_ci_endpoint_sap_db",
+"label": "SAP HANA DB Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_endpoint_ems_jndi",
+"label": "EMS JNDI Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_port_group",
+"label": "Port Group",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_lb_network",
+"label": "Network Load Balancer",
+"parent": "cmdb_ci_lb"
+},
+{
+"name": "cmdb_ci_cluster_vm_dependency_rule",
+"label": "Cluster VM Dependency Rule Info",
+"parent": "cmdb_ci_vcenter_cluster_drs_rule"
+},
+{
+"name": "cmdb_ci_drs_vm_config",
+"label": "DRS VM Config",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_ssis_mssql",
+"label": "SSIS for MSSQL Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_lb_pool_member",
+"label": "Load Balancer Pool Member",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_network_host",
+"label": "Network Hostname",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_unix_daemon",
+"label": "UNIX Daemon",
+"parent": "cmdb_ci_ip_service"
+},
+{
+"name": "cmdb_ci_endpoint_route_table",
+"label": "Route Table Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_storage_disk",
+"label": "Storage Disk",
+"parent": "cmdb_ci_disk"
+},
+{
+"name": "cmdb_ci_endpoint_dctm_broker",
+"label": "DCTM Connection to broker Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_qualifier_entrypoint",
+"label": "Entrypoint Marker",
+"parent": "cmdb_ci_qualifier"
+},
+{
+"name": "cmdb_ci_acc",
+"label": "Accessory",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_docker_local_image",
+"label": "Docker Local Image",
+"parent": "cmdb_ci_oslv_local_image"
+},
+{
+"name": "cmdb_ci_appl_rabbitmq_cluster",
+"label": "RabbitMQ Cluster",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_nas_storage",
+"label": "NAS Storage",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_sa_server_array",
+"label": "Virtual Server Array",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_business_app",
+"label": "Business Application",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_snapshot_template",
+"label": "Snapshot Template",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_cloud_public_ipaddress",
+"label": "Cloud Public IP Address",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_storage_vol_snapshot",
+"label": "Storage Volume Snapshot",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_app_server_tomcat",
+"label": "Tomcat",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_appl_weblogicmodule",
+"label": "Weblogic Module Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_cloud_load_balancer",
+"label": "Cloud Load Balancer",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_storage_volume",
+"label": "Storage Volume",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_ip_address",
+"label": "IP Address",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_agility",
+"label": "Agility Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_port",
+"label": "Port",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_nfs",
+"label": "NFS Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_building_facility",
+"label": "Buildings",
+"parent": "cmdb_ci_facility_hardware"
+},
+{
+"name": "cmdb_ci_service",
+"label": "Service",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_hvac",
+"label": "HVAC Equipment",
+"parent": "cmdb_ci_facility_hardware"
+},
+{
+"name": "cmdb_ci_pdu_outlet",
+"label": "Outlet",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_app_server_ws_ear",
+"label": "Websphere EAR",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_network_acl_rule",
+"label": "Network ACL Rule",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_ups_bypass",
+"label": "UPS Bypass",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_lb_template",
+"label": "Load Balancer Template",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_ucs_blade",
+"label": "Cisco UCS Blade",
+"parent": "cmdb_ci_computer"
+},
+{
+"name": "cmdb_ci_bundled_resources",
+"label": "Bundled Resources",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_fuel_tank",
+"label": "Fuel Tank",
+"parent": "cmdb_ci_facility_hardware"
+},
+{
+"name": "cmdb_ci_host_cluster",
+"label": "Host Cluster",
+"parent": "cmdb_ci_vcenter_object"
+},
+{
+"name": "cmdb_ci_appl_sap_bo",
+"label": "SAP Business Objects CMS server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_business_capability",
+"label": "Business Capability",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_scanner",
+"label": "Scanner",
+"parent": "cmdb_ci_imaging_hardware"
+},
+{
+"name": "cmdb_ci_endpoint_oracle_ias",
+"label": "Oracle iAS Module INC",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_endpoint_mq_mem",
+"label": "MQ Cross-memory Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_storage_pool",
+"label": "Storage Pool",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_vcenter_server_obj",
+"label": "VMware vCenter Server Object",
+"parent": "cmdb_ci_virtualization_server"
+},
+{
+"name": "cmdb_ci_personal_printer",
+"label": "Personal Printer",
+"parent": "cmdb_ci_printer"
+},
+{
+"name": "cmdb_ci_network",
+"label": "Cloud Network",
+"parent": "cmdb_ci_vcenter_object"
+},
+{
+"name": "cmdb_ci_computer",
+"label": "Computer",
+"parent": "cmdb_ci_hardware"
+},
+{
+"name": "cmdb_ci_interconnect_instance",
+"label": "Interconnect Instance",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_db_mssql_catalog",
+"label": "MSFT SQL Catalog",
+"parent": "cmdb_ci_db_catalog"
+},
+{
+"name": "cmdb_ci_san_zone_set",
+"label": "SAN Zone Set",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_ssis_file",
+"label": "SSIS file Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_qualifier_manual_ci_endpoint",
+"label": "Manual CI Endpoint Qualifier",
+"parent": "cmdb_ci_qualifier"
+},
+{
+"name": "cmdb_ci_epic_agent",
+"label": "epic agent",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_app_server_tomcat_war",
+"label": "Tomcat WAR",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_virtual_pvt_gateway",
+"label": "Virtual Private Gateway",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_surge_power_eq",
+"label": "Surger Protection Equipment",
+"parent": "cmdb_ci_power_eq"
+},
+{
+"name": "cmdb_ci_unix_server",
+"label": "UNIX Server",
+"parent": "cmdb_ci_server"
+},
+{
+"name": "cmdb_ci_azure_subscription",
+"label": "Azure Subscription",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_appl_ibm_wmb_listener",
+"label": "IBM WMB Http Listener",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_san_disk",
+"label": "SAN Disk",
+"parent": "cmdb_ci_storage_device"
+},
+{
+"name": "cmdb_ci_unix_cluster_node",
+"label": "UNIX Cluster Node",
+"parent": "cmdb_ci_cluster_node"
+},
+{
+"name": "cmdb_ci_appl_doc_brava_proc",
+"label": "Documentum Brava Job Processor",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_puppet_master",
+"label": "Puppet Primary",
+"parent": "cmdb_ci_config_automation_server"
+},
+{
+"name": "cmdb_ci_lpar",
+"label": "Logical Partition",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_appl_tibco_matrix_proc",
+"label": "ActiveMatrix Business Works Process",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_cim_profile",
+"label": "CIM Profiles",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_dc_inverter",
+"label": "DC Inverter",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_appl_ibm_wmq_queue",
+"label": "IBM WebSphere MQ Queue",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_ucs_rack_unit",
+"label": "Cisco UCS Rack Mount Unit",
+"parent": "cmdb_ci_computer"
+},
+{
+"name": "cmdb_ci_appl_peoplesoft",
+"label": "Peoplesoft Application Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_endpoint_sharepoint_service",
+"label": "SharePoint Service EP",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_endpoint_mysql_cl_dn",
+"label": "MySQL Cluster Data Node Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_appl_citrix_collector",
+"label": "Citrix Collector",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_dir_policy_server",
+"label": "Policy Server",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_app_server_weblogic",
+"label": "Oracle WebLogic",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_vmware_template",
+"label": "VMware Virtual Machine Template",
+"parent": "cmdb_ci_vm_template"
+},
+{
+"name": "cmdb_ci_lb_alteon",
+"label": "Alteon",
+"parent": "cmdb_ci_lb"
+},
+{
+"name": "cmdb_ci_appl_active_directory",
+"label": "Active Directory Service",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_inf_software",
+"label": "Infrastructure Software",
+"parent": "cmdb_ci_spkg"
+},
+{
+"name": "cmdb_ci_hyper_v_resource_pool",
+"label": "Hyper-V Resource Pool",
+"parent": "cmdb_ci_hyper_v_object"
+},
+{
+"name": "cmdb_ci_esx_server",
+"label": "ESX Server",
+"parent": "cmdb_ci_vcenter_server_obj"
+},
+{
+"name": "cmdb_ci_oslv_container",
+"label": "Operating-system-level Virtualization Container",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_netapp_volume",
+"label": "Netapp Volume",
+"parent": "cmdb_ci_storage_volume"
+},
+{
+"name": "cmdb_ci_service_calculated",
+"label": "Calculated Application Service",
+"parent": "cmdb_ci_service_discovered"
+},
+{
+"name": "cmdb_ci_qualifier_manual_connection",
+"label": "Manual Connection Qualifier",
+"parent": "cmdb_ci_qualifier"
+},
+{
+"name": "cmdb_ci_db_mongodb_instance",
+"label": "MongoDB Instance",
+"parent": "cmdb_ci_db_instance"
+},
+{
+"name": "cmdb_ci_apic_host",
+"label": "Apic Host",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_storage_server",
+"label": "Storage Server",
+"parent": "cmdb_ci_server"
+},
+{
+"name": "cmdb_ci_aws_account",
+"label": "AWS Account",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_lb_datacenter",
+"label": "LB Datacenter",
+"parent": "cmdb_ci_logical_datacenter"
+},
+{
+"name": "cmdb_ci_lb_interface",
+"label": "Load Balancer Interface",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_cloud_db_instance",
+"label": "Cloud DB Instance Inclusion",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_lvm_pool",
+"label": "LVM Pool",
+"parent": "cmdb_ci_storage_pool"
+},
+{
+"name": "cmdb_ci_storage_mapping",
+"label": "Storage Mapping",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_app_server_jrun_war",
+"label": "Jrun WAR",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_san_connection",
+"label": "SAN Connection",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_appl_tibco_adapter",
+"label": "Tibco Adapter",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_cloud_key_pair",
+"label": "Cloud Key Pair",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_appl_mongos",
+"label": "Mongos Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_appl_hp_sm_kb",
+"label": "HP SM KnowledgeBase",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_endpoint_inter_connect",
+"label": "Inter connect Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_vm_object",
+"label": "Virtual Machine Object",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_storage_controller",
+"label": "Storage Controller",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_storefront_comp",
+"label": "StoreFront Components",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_directory_server",
+"label": "Directory Server",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_vcenter_cluster_drs_rule",
+"label": "VMWare vCenter Cluster DRS Rule",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_sa_dynamic_policy",
+"label": "Dynamic Scaling Policy",
+"parent": "cmdb_ci_sa_scaling_pol_base"
+},
+{
+"name": "cmdb_ci_endpoint_vnic",
+"label": "VNIC Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_config_automation_server",
+"label": "Management Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_vcenter_datacenter",
+"label": "VMware vCenter Datacenter",
+"parent": "cmdb_ci_logical_datacenter"
+},
+{
+"name": "cmdb_ci_cluster_vm_affinity_rule",
+"label": "Cluster VM Affinity Rule Info",
+"parent": "cmdb_ci_vcenter_cluster_drs_rule"
+},
+{
+"name": "cmdb_ci_linux_server",
+"label": "Linux Server",
+"parent": "cmdb_ci_server"
+},
+{
+"name": "cmdb_ci_endpoint_ctg",
+"label": "CTG Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_veritas_subdisk",
+"label": "Veritas Subdisk",
+"parent": "cmdb_ci_storage_pool_member"
+},
+{
+"name": "cmdb_ci_cloud_directory",
+"label": "Cloud Directory",
+"parent": "cmdb_ci_directory_server"
+},
+{
+"name": "cmdb_ci_db_instance",
+"label": "Database Instance",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_ibm_zos_server",
+"label": "IBM zOS server",
+"parent": "cmdb_ci_server"
+},
+{
+"name": "cmdb_ci_endpoint_intgateway",
+"label": "Internet Gateway Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_db_db2_instance",
+"label": "DB2 Instance",
+"parent": "cmdb_ci_db_instance"
+},
+{
+"name": "cmdb_ci_lb_service",
+"label": "Load Balancer Service",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_ad_domain",
+"label": "AD Domain",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_web_site",
+"label": "Web Site",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_appl_hp_operations",
+"label": "HP Operations Manager",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_kvm",
+"label": "KVM",
+"parent": "cmdb_ci_vm"
+},
+{
+"name": "cmdb_ci_endpoint_ms_sql",
+"label": "MS SQL db inclusion",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_hyper_v_rpool_comp",
+"label": "Hyper-V Resource Pool Component",
+"parent": "cmdb_ci_hyper_v_object"
+},
+{
+"name": "cmdb_ci_service_auto",
+"label": "Service Instance",
+"parent": "cmdb_ci_service"
+},
+{
+"name": "cmdb_ci_endpoint_sybase",
+"label": "Sybase Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_disk_partition",
+"label": "Disk Partition",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_tomcat_war",
+"label": "Tomcat WAR Inclusion",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_endpoint_ssas_mssql",
+"label": "SSAS for MSSQL Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_san_zone_member",
+"label": "SAN Zone Member",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_ct_scanner",
+"label": "CT Scanner",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_esx_resource_pool",
+"label": "ESX Resource Pool",
+"parent": "cmdb_ci_vcenter_object"
+},
+{
+"name": "cmdb_ci_app_server_jrun",
+"label": "Jrun",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_docker_image",
+"label": "Docker Image",
+"parent": "cmdb_ci_oslv_image"
+},
+{
+"name": "cmdb_ci_db_mysql_clusternode",
+"label": "MySQLClusterDataNode",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_desktop_software",
+"label": "Desktop Software",
+"parent": "cmdb_ci_spkg"
+},
+{
+"name": "cmdb_ci_endpoint_itam",
+"label": "ITAM Asset Center Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_app_server_remedy",
+"label": "Remedy HSServer",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_appl_ca_ent_man",
+"label": "CA Introscope Enterprise Manager",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_database",
+"label": "Database",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_lb_cisco_csm",
+"label": "Cisco CSM",
+"parent": "cmdb_ci_lb"
+},
+{
+"name": "cmdb_ci_docker_engine",
+"label": "Docker Engine",
+"parent": "cmdb_ci_oslv_engine"
+},
+{
+"name": "cmdb_ci_ip_server",
+"label": "IP Server",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_exchange_edge_transport_server",
+"label": "Exchange Edge Transport Server",
+"parent": "cmdb_ci_exchange_service_component"
+},
+{
+"name": "cmdb_ci_veritas_disk_group",
+"label": "Veritas Disk Group",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_appl_weblogic_jms",
+"label": "Weblogic JMS Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_lb_appl",
+"label": "Load Balancer Application",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_kvm_network",
+"label": "Network",
+"parent": "cmdb_ci_kvm_object"
+},
+{
+"name": "cmdb_ci_cluster",
+"label": "Cluster",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_oracle_db_schema",
+"label": "Oracle DB schema inclusion",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_route_table",
+"label": "Route Table",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_lb_modjk",
+"label": "Modjk Load Balancer",
+"parent": "cmdb_ci_lb_appl"
+},
+{
+"name": "cmdb_ci_storage_switch",
+"label": "Storage Switch",
+"parent": "cmdb_ci_computer"
+},
+{
+"name": "cmdb_ci_solaris_instance",
+"label": "Solaris Virtual Machine Instance",
+"parent": "cmdb_ci_vm_instance"
+},
+{
+"name": "cmdb_ci_comm",
+"label": "Communication Device",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_ups",
+"label": "UPS",
+"parent": "cmdb_ci_hardware"
+},
+{
+"name": "cmdb_ci_veritas_disk",
+"label": "Veritas Disk",
+"parent": "cmdb_ci_storage_pool"
+},
+{
+"name": "cmdb_ci_appl_ibm_ctg",
+"label": "IBM CTG",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_netapp_datacenter",
+"label": "Netapp Datacenter",
+"parent": "cmdb_ci_logical_datacenter"
+},
+{
+"name": "cmdb_ci_mri_scanner",
+"label": "MRI Scanner",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_sap_app",
+"label": "SAP APP Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_vpn",
+"label": "Virtual Private Network",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_pdu",
+"label": "PDU",
+"parent": "cmdb_ci_hardware"
+},
+{
+"name": "cmdb_ci_kvm_object",
+"label": "KVM Object",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_appl_rabbitmq",
+"label": "RabbitMQ",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_endpoint_oracle_rac",
+"label": "Oracle RAC DB Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_os_template",
+"label": "Image",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_endpoint_tibco_bw",
+"label": "Tibco BW Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_routing_policy",
+"label": "Routing Policy",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_db_mssql_server",
+"label": "MS SQL Server",
+"parent": "cmdb_ci_db_instance"
+},
+{
+"name": "cmdb_ci_netware_server",
+"label": "Netware Server",
+"parent": "cmdb_ci_server"
+},
+{
+"name": "cmdb_ci_endpoint_dctm_job",
+"label": "DCTM Job Processor Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_email_server_ent_vault",
+"label": "Enterprise Vault",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_query_based_service",
+"label": "Dynamic CI Group",
+"parent": "cmdb_ci_service_auto"
+},
+{
+"name": "cmdb_ci_appl_ora_tns",
+"label": "Oracle App TNS Service",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_appl_sap",
+"label": "SAP Application",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_cloud_appserver",
+"label": "Cloud App Server",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_app_server_ws_odr",
+"label": "Websphere ODR LB",
+"parent": "cmdb_ci_app_server_websphere"
+},
+{
+"name": "cmdb_ci_appl_hp_service",
+"label": "HP Service Manager",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_endpoint_mq",
+"label": "MQ Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_network_policy_group",
+"label": "Network Policy Group",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_endpoint_pop3",
+"label": "POP3 Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_db_db2_catalog",
+"label": "DB2 Catalog",
+"parent": "cmdb_ci_db_catalog"
+},
+{
+"name": "cmdb_ci_endpoint_ad_domain",
+"label": "Active Directory Domain to Domain Controllers Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_lb_backend_server",
+"label": "LB Backend Server",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_endpoint_http",
+"label": "HTTP(S) Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_app_server_domino",
+"label": "Domino",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_appl_ora_disc_ui",
+"label": "Oracle Discoverer UI",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_logical_datacenter",
+"label": "Logical Datacenter",
+"parent": "cmdb_ci_vcenter_object"
+},
+{
+"name": "cmdb_ci_endpoint_manual",
+"label": "Manual Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_cim_server",
+"label": "CIM Server",
+"parent": "cmdb_ci_server"
+},
+{
+"name": "cmdb_ci_nat_gateway",
+"label": "NAT Gateway",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_storage_def_template",
+"label": "Storage Default Template",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_azure_datacenter",
+"label": "Azure Datacenter",
+"parent": "cmdb_ci_logical_datacenter"
+},
+{
+"name": "cmdb_ci_dns_name",
+"label": "DNS Name",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_computer_room",
+"label": "Computer Room",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_sun_dir_proxy_server",
+"label": "Sun Directory Proxy Server",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_endpoint_storf",
+"label": "XenApp or Presentation Server",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_fc_disk",
+"label": "Fibre Channel Disk",
+"parent": "cmdb_ci_san_disk"
+},
+{
+"name": "cmdb_ci_internet_gateway",
+"label": "Internet Gateway",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_hpux_server",
+"label": "HPUX Server",
+"parent": "cmdb_ci_unix_server"
+},
+{
+"name": "cmdb_ci_infra_service_ldap",
+"label": "LDAP Service",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_service_group",
+"label": "Application Service Group",
+"parent": "cmdb_ci_service"
+},
+{
+"name": "cmdb_ci_iscsi_disk",
+"label": "iSCSI Disk",
+"parent": "cmdb_ci_san_disk"
+},
+{
+"name": "cmdb_ci_kvm_vm_instance",
+"label": "KVM Virtual Machine Instance",
+"parent": "cmdb_ci_vm_instance"
+},
+{
+"name": "cmdb_ci_iscsi_export",
+"label": "iSCSI Export",
+"parent": "cmdb_ci_san_export"
+},
+{
+"name": "cmdb_ci_appl_msmq",
+"label": "MSMQ",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_qualifier_boundary_connection",
+"label": "Boundary Connection Qualifier",
+"parent": "cmdb_ci_qualifier"
+},
+{
+"name": "cmdb_ci_exchange_mailbox_server",
+"label": "Exchange Mailbox Server",
+"parent": "cmdb_ci_exchange_service_component"
+},
+{
+"name": "cmdb_ci_hardware",
+"label": "Hardware",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_extnetwork",
+"label": "External Network Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_monitoring_hardware",
+"label": "Monitoring Equipment",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_mpio_pool_path",
+"label": "Multipath IO Pool Path",
+"parent": "cmdb_ci_storage_pool_member"
+},
+{
+"name": "cmdb_ci_ftp_server",
+"label": "FTP Server",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_appl_tuxedo_portal",
+"label": "Tuxedo Portal",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_subnet",
+"label": "Cloud Mgmt Subnet",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_appl_sap_bus_obj",
+"label": "SAP Business Objects",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_appl_vignette_server",
+"label": "Vignette Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_endpoint_xenapp_comp",
+"label": "XenApp or Presentation Server Components Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_appl_itam",
+"label": "ITAM Asset Center",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_cluster_resource",
+"label": "Cluster Resource",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_information_object",
+"label": "Information Object",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_cloud_subnet",
+"label": "Cloud Subnet",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_net_app_host",
+"label": "Network Appliance Hostname",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_mainframe_lpar",
+"label": "IBM Mainframe LPAR",
+"parent": "cmdb_ci_server"
+},
+{
+"name": "cmdb_ci_appl_dot_net",
+"label": ".NET Application",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_exchange_hub",
+"label": "ExchangeHub",
+"parent": "cmdb_ci_exchange_service_component"
+},
+{
+"name": "cmdb_ci_appl_cisco_fibre",
+"label": "Cisco Fibre InterConnect",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_inetinfo",
+"label": "Inetinfo service",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_endpoint_listener_wmb",
+"label": "HTTP Listener to WMB Dependency Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_route",
+"label": "Route",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_endpoint_ftp",
+"label": "FTP Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_vm_user_credentials",
+"label": "VM User Credentials",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_endpoint_smtp",
+"label": "SMTP Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_end_of_life_ledger",
+"label": "CMDB CI End Of Life Ledger",
+"parent": ""
+},
+{
+"name": "cmdb_ci_lb_a10",
+"label": "A10 Load Balancer",
+"parent": "cmdb_ci_lb"
+},
+{
+"name": "cmdb_ci_endpoint_tbco_confile",
+"label": "Tibco Conf File Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_appl_doc_docbroker",
+"label": "Documentum Broker",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_endpoint_tcp",
+"label": "TCP Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_zone",
+"label": "Data Center Zone",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_openstack_datacenter",
+"label": "Openstack Datacenter",
+"parent": "cmdb_ci_logical_datacenter"
+},
+{
+"name": "cmdb_ci_lb_f5_ltm",
+"label": "F5 BigIP LTM",
+"parent": "cmdb_ci_lb"
+},
+{
+"name": "cmdb_ci_vcenter_dv_port_group",
+"label": "VMware Distributed Virtual Port Group",
+"parent": "cmdb_ci_port_group"
+},
+{
+"name": "cmdb_ci_endpoint_mq_flow",
+"label": "MQ Flow Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_storage_cluster",
+"label": "Storage Cluster",
+"parent": "cmdb_ci_cluster"
+},
+{
+"name": "cmdb_ci_appl_ora_jms_queue",
+"label": "Weblogic JMS Queue",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_appl_tibco_queue",
+"label": "EMS Queue",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_ip_switch",
+"label": "IP Switch",
+"parent": "cmdb_ci_netgear"
+},
+{
+"name": "cmdb_ci_vcenter_cluster",
+"label": "VMware vCenter Cluster",
+"parent": "cmdb_ci_host_cluster"
+},
+{
+"name": "cmdb_ci_sa_simple_policy",
+"label": "Simple Scaling Policy",
+"parent": "cmdb_ci_sa_scaling_pol_base"
+},
+{
+"name": "cmdb_ci_appl_groundwork",
+"label": "Groundwork",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_service_business",
+"label": "Business Service",
+"parent": "cmdb_ci_service"
+},
+{
+"name": "cmdb_ci_endpoint_glassfish_war",
+"label": "GlassFish WAR Inc",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_db_mysql_clustermgnode",
+"label": "MySQLClusterMGMNode",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_raid",
+"label": "RAID",
+"parent": "cmdb_ci_storage_pool"
+},
+{
+"name": "cmdb_ci_mpio_pool",
+"label": "Multipath IO Pool",
+"parent": "cmdb_ci_storage_pool"
+},
+{
+"name": "cmdb_ci_cloud_lb_ipaddress",
+"label": "Cloud LB IPAddress",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_oslv_engine",
+"label": "Operating-system-level Virtualization Engine",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_vm_zones",
+"label": "Zones",
+"parent": "cmdb_ci_vm"
+},
+{
+"name": "cmdb_ci_db_mysql_catalog",
+"label": "MySQL Catalog",
+"parent": "cmdb_ci_db_catalog"
+},
+{
+"name": "cmdb_ci_endpoint_iifp",
+"label": "IIFP Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_web_service",
+"label": "Web Service",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_appl_citrix_xenapp",
+"label": "Citrix XenAPP or Presentation Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_lb_nginx",
+"label": "Nginx Load Balancer",
+"parent": "cmdb_ci_lb_appl"
+},
+{
+"name": "cmdb_ci_endpoint_router",
+"label": "Router Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_lvm_pool_member",
+"label": "LVM Pool Member",
+"parent": "cmdb_ci_storage_pool_member"
+},
+{
+"name": "cmdb_ci_cluster_node",
+"label": "Cluster Node",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_ssis_job",
+"label": "SSIS job",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_netgear",
+"label": "Network Gear",
+"parent": "cmdb_ci_hardware"
+},
+{
+"name": "cmdb_ci_endpoint_msmq",
+"label": "MSMQ Flow Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_lb_modproxy",
+"label": "ModProxy Load Balancer",
+"parent": "cmdb_ci_lb_appl"
+},
+{
+"name": "cmdb_ci_directory_ldap",
+"label": "LDAP DB",
+"parent": "cmdb_ci_infra_service_ldap"
+},
+{
+"name": "cmdb_ci_db_catalog",
+"label": "Database Catalog",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_hyper_v_cluster",
+"label": "Hyper-V Cluster",
+"parent": "cmdb_ci_hyper_v_object"
+},
+{
+"name": "cmdb_ci_sun_ldap_dir_server",
+"label": "Sun LDAP Server",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_lb_listener",
+"label": "Load Balancer Listener",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_endpoint_obj_cms_srv",
+"label": "Business Objects CMS Server Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_endpoint_ejb",
+"label": "EJB Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_exchange_hub_transport_server",
+"label": "Exchange Hub Transport Server",
+"parent": "cmdb_ci_exchange_service_component"
+},
+{
+"name": "cmdb_ci_mainframe_hardware",
+"label": "Mainframe Hardware",
+"parent": "cmdb_ci_computer"
+},
+{
+"name": "cmdb_ci_med_vent",
+"label": "Medical Ventilator",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_lb_ckstickinesspolicy",
+"label": "LB Cookie Stickiness Policy",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_veritas_volume",
+"label": "Veritas Volume",
+"parent": "cmdb_ci_storage_pool"
+},
+{
+"name": "cmdb_ci_nginx_web_server",
+"label": "Nginx Web Server",
+"parent": "cmdb_ci_web_server"
+},
+{
+"name": "cmdb_ci_endpoint_sim_flow",
+"label": "Simulation Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_appl_controlm",
+"label": "Control-M",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_cluster_vm_host_rule",
+"label": "Cluster VM Host Rule Info",
+"parent": "cmdb_ci_vcenter_cluster_drs_rule"
+},
+{
+"name": "cmdb_ci_web_application",
+"label": "Web Application",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_docker_image_tag",
+"label": "Docker Image Tag",
+"parent": "cmdb_ci_oslv_image_tag"
+},
+{
+"name": "cmdb_ci_san_export",
+"label": "SAN Export",
+"parent": "cmdb_ci_storage_export"
+},
+{
+"name": "cmdb_ci_file_system_smb",
+"label": "SMB File system",
+"parent": "cmdb_ci_file_system"
+},
+{
+"name": "cmdb_ci_appl_ora_ebs",
+"label": "Oracle ESB",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_appl_fastsearch",
+"label": "Fast Search",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_lb_cisco_css",
+"label": "Cisco CSS",
+"parent": "cmdb_ci_lb"
+},
+{
+"name": "cmdb_ci_appl_doc_brava_server",
+"label": "Documentum Brava License Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_aix_server",
+"label": "AIX Server",
+"parent": "cmdb_ci_unix_server"
+},
+{
+"name": "cmdb_ci_availability_zone",
+"label": "Availability Zone",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_endpoint_sim_inc",
+"label": "Simulation Inclusion Endpoint",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_win_cluster_node",
+"label": "Windows Cluster Node",
+"parent": "cmdb_ci_cluster_node"
+},
+{
+"name": "cmdb_ci_appl_now_app_comp",
+"label": "ServiceNow Application Component",
+"parent": "cmdb_ci_appl_now_app"
+},
+{
+"name": "cmdb_ci_endpoint_sap",
+"label": "SAP Application Server Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_ups_output",
+"label": "UPS Output",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_exchange_frontend",
+"label": "ExchangeFrontEndServer",
+"parent": "cmdb_ci_exchange_service_component"
+},
+{
+"name": "cmdb_ci_qualifier",
+"label": "Qualifier",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_datapower_server",
+"label": "Data Power Hosting Server",
+"parent": "cmdb_ci_server"
+},
+{
+"name": "cmdb_ci_appl_ora_notif_svr",
+"label": "Oracle Notification Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_lb_haproxy",
+"label": "HAProxy Load Balancer",
+"parent": "cmdb_ci_lb_appl"
+},
+{
+"name": "cmdb_ci_endpoint_biztalk",
+"label": "BizTalk Connection Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_customer_gateway",
+"label": "Customer Gateway",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_vpc",
+"label": "Virtual Private Cloud",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_storage_cluster_node",
+"label": "Storage Cluster Node",
+"parent": "cmdb_ci_cluster_node"
+},
+{
+"name": "cmdb_ci_isam_server",
+"label": "ISAM Server",
+"parent": "cmdb_ci_server"
+},
+{
+"name": "cmdb_ci_endpoint_xenapp",
+"label": "XenApp or Presentation Server Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_vcenter_dvs",
+"label": "VMware Distributed Virtual Switch",
+"parent": "cmdb_ci_network"
+},
+{
+"name": "cmdb_ci_appl_connectit",
+"label": "Connect-It Service",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_appl_tibco_message",
+"label": "Tibco Enterprise Message Service",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_vcenter_object",
+"label": "VMware vCenter Object",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_endpoint_imap",
+"label": "IMAP Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_vcenter_vm_group",
+"label": "VMware vCenter VM Group",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_modem_network",
+"label": "Modem Hardware",
+"parent": "cmdb_ci_netgear"
+},
+{
+"name": "cmdb_ci_appl_sap_ci",
+"label": "SAP CI Application",
+"parent": "cmdb_ci_appl_sap"
+},
+{
+"name": "cmdb_ci_endpoint_peoplesoft",
+"label": "Peoplesoft Application Server Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_win_cluster",
+"label": "Windows Cluster",
+"parent": "cmdb_ci_cluster"
+},
+{
+"name": "cmdb_ci_resource_group",
+"label": "Resource Group",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_aws_datacenter",
+"label": "AWS Datacenter",
+"parent": "cmdb_ci_logical_datacenter"
+},
+{
+"name": "cmdb_ci_ups_power_eq",
+"label": "Uninterruptible Power Supply",
+"parent": "cmdb_ci_power_eq"
+},
+{
+"name": "cmdb_ci_file_system_nfs",
+"label": "NFS File system",
+"parent": "cmdb_ci_file_system"
+},
+{
+"name": "cmdb_ci_appl_vignette_search",
+"label": "Vignette Search Starter",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_endpoint_biztalk_orch",
+"label": "BizTalk Inclusion",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_cloud_webserver",
+"label": "Cloud WebServer",
+"parent": "cmdb_ci_web_server"
+},
+{
+"name": "cmdb_ci_generator_power_eq",
+"label": "Power Generator",
+"parent": "cmdb_ci_power_eq"
+},
+{
+"name": "cmdb_ci_endpoint_ob_cluster",
+"label": "Outbound Cluster Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_wap_network",
+"label": "Wireless Access Point",
+"parent": "cmdb_ci_netgear"
+},
+{
+"name": "cmdb_ci_endpoint_ssas",
+"label": "SSAS Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_endpoint_vm_esx",
+"label": "VirtualMachine to ESX Storage Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_network_acl",
+"label": "Network ACL",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_application_cluster",
+"label": "Application Cluster",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_mri_cold_head",
+"label": "MRI Cold Head",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_cust_gateway",
+"label": "Customer Gateway Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_endpoint_sp_connection",
+"label": "Sharepoint connection Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_bipap_machine",
+"label": "BiPAP Machine",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_xenapp_citrx",
+"label": "Citrix StoreFront App Icon Inc",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_oslv_local_image",
+"label": "Operating-system-level Virtualization Local Image",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_compute_template",
+"label": "Hardware Type",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_app_server_datapower",
+"label": "Data Power",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_agility_process",
+"label": "Agility Process",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_cloud_database",
+"label": "Cloud DataBase",
+"parent": "cmdb_ci_db_instance"
+},
+{
+"name": "cmdb_ci_net_app_server",
+"label": "Network Appliance Hardware",
+"parent": "cmdb_ci_server_hardware"
+},
+{
+"name": "cmdb_ci_customization_spec",
+"label": "Customization Spec",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_app_server_wl_module",
+"label": "WeblogicModule",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_appl_sp_service",
+"label": "SharePoint Service",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_dc_plant_battery_pwr",
+"label": "Direct Current Plant Battery Bank",
+"parent": "cmdb_ci_power_eq"
+},
+{
+"name": "cmdb_ci_appl_ca",
+"label": "CA Enterprise Communicator",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_appl_ca_dir_server",
+"label": "CA eTrust Directory Server",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_rack",
+"label": "Rack",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_appl_hp_index",
+"label": "HP SM Index Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_endpoint_jms_flow",
+"label": "JMS Flow Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_outofband_device",
+"label": "Out-of-Band Device",
+"parent": "cmdb_ci_hardware"
+},
+{
+"name": "cmdb_ci_endpoint_nat",
+"label": "NAT Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_epic_cache",
+"label": "epic cache",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_storage_port",
+"label": "Storage Port",
+"parent": "cmdb_ci_fc_port"
+},
+{
+"name": "cmdb_ci_endpoint_remote_tcp",
+"label": "Remote TCP Cross-memory Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_virtual_desktop",
+"label": "Virtual Desktop",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_translation_rule",
+"label": "Translation Rule",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_network_adapter",
+"label": "Network Adapter",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_vm_parallels",
+"label": "Parallels",
+"parent": "cmdb_ci_vm"
+},
+{
+"name": "cmdb_ci_app_server_java",
+"label": "JavaServer",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_appl",
+"label": "Application",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_appl_sap_system",
+"label": "SAP System",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_perf_template",
+"label": "Performance Template",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_db_mssql_integration",
+"label": "SQL Server Integration Services",
+"parent": "cmdb_ci_db_instance"
+},
+{
+"name": "cmdb_ci_vpn_connection",
+"label": "VPN Connection",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_beacon_tower_eq",
+"label": "Tower Beacon",
+"parent": "cmdb_ci_tower_eq"
+},
+{
+"name": "cmdb_ci_appl_tibco_hawk",
+"label": "Tibco Hawk",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_endpoint_wmb_depend",
+"label": "WMB Dependency Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_endpoint_mapi",
+"label": "MAPI Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_peripheral",
+"label": "Computer Peripheral",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_appl_sap_ers",
+"label": "SAP ERS Application",
+"parent": "cmdb_ci_appl_sap"
+},
+{
+"name": "cmdb_ci_appl_sap_bo_scheduler",
+"label": "SAP BO BOXIScheduleRouter",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_unix_cluster",
+"label": "UNIX Cluster",
+"parent": "cmdb_ci_cluster"
+},
+{
+"name": "cmdb_ci_endpoint_dctm_index",
+"label": "DCTM Index Agent Connection Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_availability_set",
+"label": "Availability Set",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_endpoint_tibco_file",
+"label": "Tibco File Listener Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_lb",
+"label": "Load Balancer",
+"parent": "cmdb_ci_server"
+},
+{
+"name": "cmdb_ci_group",
+"label": "Group",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_cloud_resource_base",
+"label": "Cloud Resource Base",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_vmware_nic",
+"label": "VMware Network Adapter",
+"parent": "cmdb_ci_nic"
+},
+{
+"name": "cmdb_ci_veritas_plex",
+"label": "Veritas Plex",
+"parent": "cmdb_ci_storage_pool"
+},
+{
+"name": "cmdb_ci_netapp_cdot",
+"label": "Netapp CDOT",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_firewall_network",
+"label": "Firewall Hardware",
+"parent": "cmdb_ci_netgear"
+},
+{
+"name": "cmdb_ci_app_server_jboss",
+"label": "JBoss",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_appl_glassfish_war",
+"label": "GlassFish WAR",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_appl_citrix_app",
+"label": "Citrix Application Icon",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_endpoint_jboss",
+"label": "Jboss Module Inclusion",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_db_mssql_database",
+"label": "MS SQL DataBase",
+"parent": "cmdb_ci_db_instance"
+},
+{
+"name": "cmdb_ci_appl_sharepoint",
+"label": "SharePoint",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_nic",
+"label": "Cloud Mgmt Network Interface",
+"parent": "cmdb_ci_network_adapter"
+},
+{
+"name": "cmdb_ci_endpoint_rabbitmq",
+"label": "RabbitMQ Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_twr_light_cnt_tower_eq",
+"label": "Tower Light Controller",
+"parent": "cmdb_ci_tower_eq"
+},
+{
+"name": "cmdb_ci_san_endpoint",
+"label": "SAN Endpoint",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_storage_access_policy",
+"label": "Storage Access Policy",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_mfp_printer",
+"label": "Multi-function Printer",
+"parent": "cmdb_ci_printer"
+},
+{
+"name": "cmdb_ci_ip_router",
+"label": "IP Router",
+"parent": "cmdb_ci_netgear"
+},
+{
+"name": "cmdb_ci_endpoint_app_storage",
+"label": "Application To Storage Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_inter_connect",
+"label": "Inter connect",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_outage",
+"label": "Outage",
+"parent": ""
+},
+{
+"name": "cmdb_ci_san",
+"label": "Storage Area Network",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_config_file",
+"label": "Configuration file",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_printing_hardware",
+"label": "Printing Hardware",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_cluster_node_resource",
+"label": "Cluster Node Resource",
+"parent": ""
+},
+{
+"name": "cmdb_ci_oslv_image_tag",
+"label": "Operating-system-level Virtualization Image Tag",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_windows_service",
+"label": "Windows Service",
+"parent": "cmdb_ci_ip_service"
+},
+{
+"name": "cmdb_ci_vcenter",
+"label": "VMware vCenter Instance",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_storage_eff_template",
+"label": "Storage Efficiency Template",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_appl_ora_queue",
+"label": "Advanced Queue Queue",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_patches",
+"label": "Patch",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_appl_ibm_wmb",
+"label": "IBM WebSphere Message Broker",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_fddi_network",
+"label": "FDDI Cards",
+"parent": "cmdb_ci_netgear"
+},
+{
+"name": "cmdb_ci_unix_cluster_resource",
+"label": "UNIX Cluster Resource",
+"parent": "cmdb_ci_cluster_resource"
+},
+{
+"name": "cmdb_ci_spkg",
+"label": "Software",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_ent_vault",
+"label": "Enterprise Vault Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_email_server",
+"label": "Email Server",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_app_simulation",
+"label": "Simulation",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_app_server_ora_ias",
+"label": "Oracle iAS",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_tower_light_tower_eq",
+"label": "Tower Lights",
+"parent": "cmdb_ci_tower_eq"
+},
+{
+"name": "cmdb_ci_schedule_policy_template",
+"label": "Schedule Policy Template",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_ucs_chassis",
+"label": "Cisco UCS Chassis",
+"parent": "cmdb_ci_hardware"
+},
+{
+"name": "cmdb_ci_endpoint_docbase",
+"label": "DocBase Connection Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_tower_tower_eq",
+"label": "Tower",
+"parent": "cmdb_ci_tower_eq"
+},
+{
+"name": "cmdb_ci_cloud_storage_account",
+"label": "Cloud Storage Account",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_web_domino",
+"label": "Lotus Domino HTTP Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_solaris_server",
+"label": "Solaris Server",
+"parent": "cmdb_ci_unix_server"
+},
+{
+"name": "cmdb_ci_display_hardware",
+"label": "Display Hardware",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_cmp_resource",
+"label": "Cloud Resource",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_endpoint_sap_bo_servers",
+"label": "SAP BO Servers",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_iplanet_web_server",
+"label": "Iplanet Web Server",
+"parent": "cmdb_ci_web_server"
+},
+{
+"name": "cmdb_ci_endpoint_mysql_server",
+"label": "MySQL Server Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_appl_ora_forms",
+"label": "Oracle Forms Engine",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_app_network_profile",
+"label": "Application Network Profile",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_endpoint_tibco_bw_proc",
+"label": "Tibco BW process",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_endpoint_iscsi",
+"label": "ISCSI Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_endpoint_ssis",
+"label": "SSIS Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_san_zone_alias_member",
+"label": "SAN Zone Alias Member",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_datastore",
+"label": "Datastore",
+"parent": "cmdb_ci_vcenter_object"
+},
+{
+"name": "cmdb_ci_appl_ora_forms_ui",
+"label": "Oracle Forms UI",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_san_fabric",
+"label": "SAN Fabric",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_hyper_v_instance",
+"label": "Hyper-V Virtual Machine Instance",
+"parent": "cmdb_ci_vm_instance"
+},
+{
+"name": "cmdb_ci_enterprise_software",
+"label": "Enterprise Software",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_appl_ora_metric_client",
+"label": "Oracle Metric Client",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_hub_network",
+"label": "Hub Hardware",
+"parent": "cmdb_ci_netgear"
+},
+{
+"name": "cmdb_ci_win_domain_controller",
+"label": "Windows Domain Controller",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_endpoint_mq_queue",
+"label": "MQ Queue",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_virtualization_server",
+"label": "Virtualization Server",
+"parent": "cmdb_ci_server"
+},
+{
+"name": "cmdb_ci_tape_server",
+"label": "Server Tape Unit",
+"parent": "cmdb_ci_server_hardware"
+},
+{
+"name": "cmdb_ci_cloud_monitor_alarm",
+"label": "Cloud Monitor Alarm",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_config_file_tracked",
+"label": "Tracked Configuration file",
+"parent": "cmdb_ci_config_file"
+},
+{
+"name": "cmdb_ci_endpoint_exchange",
+"label": "Exchange 2013 Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_lb_radware",
+"label": "Radware Load Balancer",
+"parent": "cmdb_ci_lb"
+},
+{
+"name": "cmdb_ci_infra_service",
+"label": "Infrastructure Service",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_printer",
+"label": "Printer",
+"parent": "cmdb_ci_hardware"
+},
+{
+"name": "cmdb_ci_lif",
+"label": "LIF",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_storage_container",
+"label": "Storage Container",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_endpoint_mysql_cl_mg",
+"label": "MySQL Cluster MGM Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_lb_pool",
+"label": "Load Balancer Pool",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_cisco_apic",
+"label": "Cisco Apic",
+"parent": "cmdb_ci_logical_datacenter"
+},
+{
+"name": "cmdb_ci_switch",
+"label": "Switch",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_nas_file_system",
+"label": "NAS File System",
+"parent": "cmdb_ci_file_system"
+},
+{
+"name": "cmdb_ci_state_management_task_to_ci",
+"label": "CMDB CI State Management Task To CIs",
+"parent": ""
+},
+{
+"name": "cmdb_ci_exchange_cas",
+"label": "Exchange Client Access Server",
+"parent": "cmdb_ci_exchange_service_component"
+},
+{
+"name": "cmdb_ci_qualifier_hidden_conn",
+"label": "Hidden Connection Qualifier",
+"parent": "cmdb_ci_qualifier"
+},
+{
+"name": "cmdb_ci_endpoint_vpg",
+"label": "Virtual Private Gateway Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_db_mssql_analysis",
+"label": "SQL Server Analysis Services",
+"parent": "cmdb_ci_db_instance"
+},
+{
+"name": "cmdb_ci_app_server_composer",
+"label": "Composer",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_vcenter_folder",
+"label": "VMware vCenter Folder",
+"parent": "cmdb_ci_vcenter_object"
+},
+{
+"name": "cmdb_ci_endpoint_comp_security",
+"label": "Compute Security Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_cloud_ip_address",
+"label": "Cloud IP Address",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_directory_iifp",
+"label": "IIFP",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_endpoint_iis",
+"label": "IIS Website",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_endpoint_crm",
+"label": "CRM Component Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_mirror_template",
+"label": "Mirror Template",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_apic_tenant",
+"label": "Apic Tenant",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_vm_instance",
+"label": "Virtual Machine Instance",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_vserver_peer",
+"label": "VServer Peer",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_appl_ora_disc",
+"label": "Oracle Discoverer Engine",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_circuit",
+"label": "Circuit",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_app_server_vendavo",
+"label": "Vendavo Application Server",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_server_snapshot",
+"label": "Server Snapshot",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_ip_phone",
+"label": "IP Phone",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_apache_web_server",
+"label": "Apache Web Server",
+"parent": "cmdb_ci_web_server"
+},
+{
+"name": "cmdb_ci_vcenter_host_group",
+"label": "VMware vCenter Host Group",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_hyper_v_object",
+"label": "Hyper-V Object",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_storage_pool_member",
+"label": "Storage Pool Member",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_facility_hardware",
+"label": "Facility Hardware",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_memory_module",
+"label": "Memory Module",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_san_zone_alias",
+"label": "SAN Zone Alias",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_appl_ora_report",
+"label": "Oracle Report Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_endpoint_dliver_cnrl",
+"label": "Citrix Delivery Controller Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_cloud_host",
+"label": "Cloud Host",
+"parent": "cmdb_ci_virtualization_server"
+},
+{
+"name": "cmdb_ci_snat_ip_pool",
+"label": "SNAT IP Pool",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_lb_ace",
+"label": "ACE",
+"parent": "cmdb_ci_lb"
+},
+{
+"name": "cmdb_ci_db_postgresql_instance",
+"label": "PostgreSQL Instance",
+"parent": "cmdb_ci_db_instance"
+},
+{
+"name": "cmdb_ci_appl_mongo_config_serv",
+"label": "Mongo Config Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_san_zone",
+"label": "SAN Zone",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_msd",
+"label": "Mass Storage Device",
+"parent": "cmdb_ci_hardware"
+},
+{
+"name": "cmdb_ci_ad_controller",
+"label": "Active Directory Domain Controller",
+"parent": "cmdb_ci_directory_server"
+},
+{
+"name": "cmdb_ci_endpoint_nntp",
+"label": "NNTP Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_endpoint_subnet",
+"label": "Subnet Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_cloud_monitor_notification",
+"label": "Cloud Monitor Notification",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_app_server_ora_ias_m",
+"label": "Oracle iAS Web module",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_appl_tibco_matrix",
+"label": "ActiveMatrix Business Works",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_endpoint_inclusion",
+"label": "Inclusion Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_appl_sendmail",
+"label": "Sendmail",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_model_entry",
+"label": "Model Entry",
+"parent": ""
+},
+{
+"name": "cmdb_ci_appl_license_server",
+"label": "Citrix License server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_print_queue",
+"label": "Print Queue",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_db_syb_catalog",
+"label": "Sybase Catalog",
+"parent": "cmdb_ci_db_catalog"
+},
+{
+"name": "cmdb_ci_security_grp_template",
+"label": "Compute Security Group Template",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_endpoint_jrun",
+"label": "Jrun WAR Inc",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_appl_ora_fs",
+"label": "Oracle Fulfillment Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_microsoft_iis_web_server",
+"label": "Microsoft iis Web Server",
+"parent": "cmdb_ci_web_server"
+},
+{
+"name": "cmdb_ci_storage_device",
+"label": "Storage Device",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_ad_service_in",
+"label": "AD Service inc",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_kvm_storage_volume",
+"label": "KVM Storage Volume",
+"parent": "cmdb_ci_kvm_object"
+},
+{
+"name": "cmdb_ci_win_cluster_resource",
+"label": "Windows Cluster Resource",
+"parent": "cmdb_ci_cluster_resource"
+},
+{
+"name": "cmdb_ci_appl_cisco_call_man",
+"label": "Cisco CallManager",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_appl_sap_ascs",
+"label": "SAP ASCS Application",
+"parent": "cmdb_ci_appl_sap"
+},
+{
+"name": "cmdb_ci_protection_template",
+"label": "Protection Template",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_wan_accel_network",
+"label": "WAN Accelerator",
+"parent": "cmdb_ci_netgear"
+},
+{
+"name": "cmdb_ci_cloud_messaging_service",
+"label": "Cloud Messaging Service",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_pc_hardware",
+"label": "Personal Computer",
+"parent": "cmdb_ci_computer"
+},
+{
+"name": "cmdb_ci_appl_biztalk",
+"label": "BizTalk",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_directory_ha",
+"label": "HA Proxy",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_environment",
+"label": "Environment",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_storage_node_element",
+"label": "Storage Node Element",
+"parent": "cmdb_ci_server"
+},
+{
+"name": "cmdb_ci_sa_scaling_pol_base",
+"label": "Scaling Policy",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_mpio_pool_group",
+"label": "Multipath IO Pool Group",
+"parent": "cmdb_ci_storage_pool"
+},
+{
+"name": "cmdb_ci_sa_launch_config",
+"label": "Server Array Launch Configuration",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_appl_ora_oacore",
+"label": "Oracle OACORE Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_xray_tube",
+"label": "X-Ray Tube",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_epicd",
+"label": "Epicd Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_alias",
+"label": "Alias",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_appl_ora_tnslsnr",
+"label": "Oracle TNS Listener Engine",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_vcenter_network",
+"label": "VMware vCenter Network",
+"parent": "cmdb_ci_network"
+},
+{
+"name": "cmdb_ci_appl_ca_id_man",
+"label": "CA Identity Manager Provisioning Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_endpoint_j2ee_ear",
+"label": "J2EE EAR",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_volume_template",
+"label": "Volume Template",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_lb_cisco_gss",
+"label": "Cisco GSS",
+"parent": "cmdb_ci_lb"
+},
+{
+"name": "cmdb_ci_appl_now_app",
+"label": "ServiceNow Application",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_app_server_ora_ess",
+"label": "Oracle Essbase Server",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_app_server_websphere",
+"label": "IBM WebSphere AS",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_appl_glassfish",
+"label": "GlassFish",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_storage_hba",
+"label": "Storage HBA",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_network",
+"label": "Network Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_db_mysql_instance",
+"label": "MySQL Instance",
+"parent": "cmdb_ci_db_instance"
+},
+{
+"name": "cmdb_ci_endpoint_hpom",
+"label": "HPOM Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_endpoint_storefront_components",
+"label": "StoreFront Components Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_datacenter",
+"label": "Data Center",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_ip_firewall",
+"label": "IP Firewall",
+"parent": "cmdb_ci_netgear"
+},
+{
+"name": "cmdb_ci_exchange_mailbox",
+"label": "Exchange MailBox",
+"parent": "cmdb_ci_exchange_service_component"
+},
+{
+"name": "cmdb_ci_endpoint_rfc",
+"label": "RFC Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_dns_alias",
+"label": "DNS Alias",
+"parent": "cmdb_ci_alias"
+},
+{
+"name": "cmdb_ci_ucs_equipment",
+"label": "Cisco UCS Equipment",
+"parent": "cmdb_ci_hardware"
+},
+{
+"name": "cmdb_ci_endpoint_acl",
+"label": "ACL Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_remote_backup_template",
+"label": "Remote Backup Template",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_storage_fileshare",
+"label": "Storage File Share",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_inclusion_rabbitmq_queue",
+"label": "RabbitMQ Queue Endpoint",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_endpoint_ldap_db",
+"label": "LDAP DB EP",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_endpoint_oracle_db",
+"label": "Oracle DB Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_db_syb_instance",
+"label": "Sybase Instance",
+"parent": "cmdb_ci_db_instance"
+},
+{
+"name": "cmdb_ci_appl_sap_server",
+"label": "SAP Application Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_lb_vlan",
+"label": "Load Balancer VLAN",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_chassis_server",
+"label": "Server Chassis",
+"parent": "cmdb_ci_server_hardware"
+},
+{
+"name": "cmdb_ci_ip_network",
+"label": "IP Network",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_jms_queue",
+"label": "JMS Queue",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_endpoint_aq",
+"label": "Advanced Queue Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_pt_mon_sys",
+"label": "Patient Monitoring System",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_ad_forest",
+"label": "Active Directory Forest Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_appl_ora_conc",
+"label": "Oracle Concurrent Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci",
+"label": "Configuration Item",
+"parent": "cmdb"
+},
+{
+"name": "cmdb_ci_app_simulation_inc",
+"label": "Simulation Inclusion",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_endpoint_ems_queue",
+"label": "EMS Queue EP",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_exchange_service_component",
+"label": "Exchange Service Component",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_endpoint_wmb_flow",
+"label": "WMB Flow EP",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_appl_vign_content_svr",
+"label": "Vignette Content Management Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_endpoint_f5",
+"label": "F5 Mirror Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_endpoint_storage_fc",
+"label": "Storage FC Connectivity Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_appl_wmb",
+"label": "WMB Flow",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_appl_ms_dynamic_crm",
+"label": "Dynamic CRM Component",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_web_server",
+"label": "Web Server",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_db_mssql_instance",
+"label": "MSFT SQL Instance",
+"parent": "cmdb_ci_db_instance"
+},
+{
+"name": "cmdb_ci_endpoint_sap_bo_srv",
+"label": "SAP BO Servers Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_dir_site_minder_server",
+"label": "Site Minder",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_endpoint_postgresql",
+"label": "PostgreSQL DB Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_db_ora_catalog",
+"label": "Oracle Catalog",
+"parent": "cmdb_ci_db_catalog"
+},
+{
+"name": "cmdb_ci_app_server_dp_domain",
+"label": "Data Power Domain",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_server",
+"label": "Server",
+"parent": "cmdb_ci_computer"
+},
+{
+"name": "cmdb_ci_iisdirectory",
+"label": "IIS Virtual Directory",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_db_hbase_instance",
+"label": "HBase Instance",
+"parent": "cmdb_ci_db_instance"
+},
+{
+"name": "cmdb_ci_appl_sap_jc",
+"label": "SAP JC Application",
+"parent": "cmdb_ci_appl_sap"
+},
+{
+"name": "cmdb_ci_net_traffic",
+"label": "Network Traffic",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_server_hardware",
+"label": "Server Hardware",
+"parent": "cmdb_ci_server"
+},
+{
+"name": "cmdb_ci_appl_ora_metric_svr",
+"label": "Oracle Metric Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_ip_service",
+"label": "IP Service Instance",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_app",
+"label": "App Icon Inc",
+"parent": "cmdb_ci_endpoint_inclusion"
+},
+{
+"name": "cmdb_ci_endpoint_ems",
+"label": "EMS Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_application_software",
+"label": "Application Software",
+"parent": "cmdb_ci_spkg"
+},
+{
+"name": "cmdb_ci_appl_ora_http",
+"label": "Oracle HTTP Server",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_file_system",
+"label": "File System",
+"parent": "cmdb_ci_storage_volume"
+},
+{
+"name": "cmdb_ci_hyper_v_server",
+"label": "Hyper-V Server",
+"parent": "cmdb_ci_virtualization_server"
+},
+{
+"name": "cmdb_ci_appl_weblogic_lb",
+"label": "Weblogic LB",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_directory_ad_forest",
+"label": "AD Forest",
+"parent": "cmdb_ci_infra_service"
+},
+{
+"name": "cmdb_ci_app_server_jb_module",
+"label": "Jboss module",
+"parent": "cmdb_ci_app_server"
+},
+{
+"name": "cmdb_ci_endpoint_tibco_hawk",
+"label": "Tibco Hawk Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_endpoint_block",
+"label": "Block Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_vm_vmware",
+"label": "VMware",
+"parent": "cmdb_ci_vm"
+},
+{
+"name": "cmdb_ci_db_ora_instance",
+"label": "Oracle Instance",
+"parent": "cmdb_ci_db_instance"
+},
+{
+"name": "cmdb_ci_endpoint_jms_server",
+"label": "JMS Server Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_raid_member",
+"label": "RAID Member",
+"parent": "cmdb_ci_storage_pool_member"
+},
+{
+"name": "cmdb_ci_batch_job",
+"label": "Batch Job",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_storage_node",
+"label": "Storage Node",
+"parent": "cmdb_ci_vm_object"
+},
+{
+"name": "cmdb_ci_appl_sap_hana_db",
+"label": "SAP Hana Db",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_os_packages",
+"label": "Package",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_endpoint_fromcluster_t",
+"label": "FromCluster_to_RabbitMQ Endpoint",
+"parent": "cmdb_ci_endpoint"
+},
+{
+"name": "cmdb_ci_storage_export",
+"label": "Storage Export",
+"parent": "cmdb_ci"
+},
+{
+"name": "cmdb_ci_service_technical",
+"label": "Technology Management Service",
+"parent": "cmdb_ci_service"
+},
+{
+"name": "cmdb_ci_appl_hp_qc",
+"label": "HP Quality Center",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_appl_delivery_controler",
+"label": "Delivery Controler",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_kvm_storage_pool",
+"label": "KVM Storage Pool",
+"parent": "cmdb_ci_kvm_object"
+},
+{
+"name": "cmdb_ci_vm",
+"label": "Virtual Machine HyperVisor",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_osx_server",
+"label": "OS/X Server",
+"parent": "cmdb_ci_server"
+},
+{
+"name": "cmdb_ci_lb_isa",
+"label": "ISA Server",
+"parent": "cmdb_ci_lb"
+},
+{
+"name": "cmdb_ci_app_server_webseal",
+"label": "Webseal",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_appl_doc_docbase",
+"label": "Documentum DocBase",
+"parent": "cmdb_ci_appl"
+},
+{
+"name": "cmdb_ci_vmware_instance",
+"label": "VMware Virtual Machine Instance",
+"parent": "cmdb_ci_vm_instance"
+},
+{
+"name": "cmdb_ci_csu_dsu_network",
+"label": "CSU/DSU",
+"parent": "cmdb_ci_netgear"
+},
+{
+"name": "cmdb_ci_vcenter_datastore_disk",
+"label": "Datastore Disk",
+"parent": "cmdb_ci"
+}
+],
+"rel": [
+{
+"name": "Cools::Cooled By",
+"p": "Cools",
+"c": "Cooled By"
+},
+{
+"name": "Feeds::Fed By",
+"p": "Feeds",
+"c": "Fed By"
+},
+{
+"name": "Distributed by::Distributes",
+"p": "Distributed by",
+"c": "Distributes"
+},
+{
+"name": "Depends on::Used by",
+"p": "Depends on",
+"c": "Used by"
+},
+{
+"name": "Instantiates::Instantiated by",
+"p": "Instantiates",
+"c": "Instantiated by"
+},
+{
+"name": "Owns::Owned by",
+"p": "Owns",
+"c": "Owned by"
+},
+{
+"name": "IP Connection::IP Connection",
+"p": "IP Connection",
+"c": "IP Connection"
+},
+{
+"name": "Connected by::Connects",
+"p": "Connected by",
+"c": "Connects"
+},
+{
+"name": "Consumes::Consumed by",
+"p": "Consumes",
+"c": "Consumed by"
+},
+{
+"name": "Implement End Point To::Implement End Point From",
+"p": "Implement End Point To",
+"c": "Implement End Point From"
+},
+{
+"name": "Provided By::Provides",
+"p": "Provided By",
+"c": "Provides"
+},
+{
+"name": "Connects to::Connected by",
+"p": "Connects to",
+"c": "Connected by"
+},
+{
+"name": "Powers::Powered by",
+"p": "Powers",
+"c": "Powered by"
+},
+{
+"name": "Members::Member of",
+"p": "Members",
+"c": "Member of"
+},
+{
+"name": "Contains::Contained by",
+"p": "Contains",
+"c": "Contained by"
+},
+{
+"name": "Hosted on::Hosts",
+"p": "Hosted on",
+"c": "Hosts"
+},
+{
+"name": "Exchanges data with::Exchanges data with",
+"p": "Exchanges data with",
+"c": "Exchanges data with"
+},
+{
+"name": "Receives data from::Sends data to",
+"p": "Receives data from",
+"c": "Sends data to"
+},
+{
+"name": "Runs on::Runs",
+"p": "Runs on",
+"c": "Runs"
+},
+{
+"name": "DR provided by::Provides DR for",
+"p": "DR provided by",
+"c": "Provides DR for"
+},
+{
+"name": "Used by::Uses",
+"p": "Used by",
+"c": "Uses"
+},
+{
+"name": "Provisioned From::Provisioned",
+"p": "Provisioned From",
+"c": "Provisioned"
+},
+{
+"name": "Instantiates::Instance of",
+"p": "Instantiates",
+"c": "Instance of"
+},
+{
+"name": "Applicative Flow To::Applicative Flow From",
+"p": "Applicative Flow To",
+"c": "Applicative Flow From"
+},
+{
+"name": "Cluster of::Cluster",
+"p": "Cluster of",
+"c": "Cluster"
+},
+{
+"name": "Registered on::Has registered",
+"p": "Registered on",
+"c": "Has registered"
+},
+{
+"name": "From template::Template for",
+"p": "From template",
+"c": "Template for"
+},
+{
+"name": "Managed by::Manages",
+"p": "Managed by",
+"c": "Manages"
+},
+{
+"name": "Consumed by::Consumes",
+"p": "Consumed by",
+"c": "Consumes"
+},
+{
+"name": "Provides storage for::Stored on",
+"p": "Provides storage for",
+"c": "Stored on"
+},
+{
+"name": "Master of::Stack Member of",
+"p": "Master of",
+"c": "Stack Member of"
+},
+{
+"name": "Uses::Used by",
+"p": "Uses",
+"c": "Used by"
+},
+{
+"name": "Virtualized by::Virtualizes",
+"p": "Virtualized by",
+"c": "Virtualizes"
+},
+{
+"name": "Defines resources for::Gets resources from",
+"p": "Defines resources for",
+"c": "Gets resources from"
+},
+{
+"name": "Use End Point To::Use End Point From",
+"p": "Use End Point To",
+"c": "Use End Point From"
+},
+{
+"name": "In Rack::Rack contains",
+"p": "In Rack",
+"c": "Rack contains"
+},
+{
+"name": "Located in Zone::Zone contains",
+"p": "Located in Zone",
+"c": "Zone contains"
+},
+{
+"name": "Located in::Houses",
+"p": "Located in",
+"c": "Houses"
+},
+{
+"name": "Located In::Contains Room",
+"p": "Located In",
+"c": "Contains Room"
+},
+{
+"name": "Provides::Provided by",
+"p": "Provides",
+"c": "Provided by"
+}
+],
+"ident": [
+{
+"table": "cmdb_ci_endpoint_oracle_rac",
+"attributes": "port,ip_address,host,service,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_jrun",
+"attributes": "directory,name,container",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ssis_job",
+"attributes": "job,type,container",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_fastsearch",
+"attributes": "port,ip_address,host,repository,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_hyper_v_resource_pool",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_cloud_lb_ipaddress",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_cloud_load_balancer",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_storefront_components",
+"attributes": "farm,host,application_name,params,ip_address,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_block",
+"attributes": "name,host",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_sap_bo_scheduler",
+"attributes": "sys_class_name,server_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_db_instance",
+"attributes": "name,tcp_port,edition",
+"priority": null
+},
+{
+"table": "cmdb_ci_cmp_resource",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_wbem_service",
+"attributes": "cim_object_path",
+"priority": null
+},
+{
+"table": "cmdb_ci_hyper_v_instance",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_vm_object",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_app_simulation",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_network",
+"attributes": "host,port,uncertain,target_port",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_sap_hana_db",
+"attributes": "sys_class_name,sid,instance,pid",
+"priority": null
+},
+{
+"table": "dscy_route_next_hop",
+"attributes": "dest_ip_network,next_hop_ip_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_logical_datacenter",
+"attributes": "region",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_imap",
+"attributes": "port,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_dctm_job",
+"attributes": "ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_application_cluster",
+"attributes": "name,cluster_identification",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_vpg",
+"attributes": "name,host",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_nat",
+"attributes": "name,host",
+"priority": null
+},
+{
+"table": "cmdb_ci_tomcat_connector",
+"attributes": "port",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_itam",
+"attributes": "sys_class_name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_route",
+"attributes": "object_id,destination,route_status",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_sap_scs",
+"attributes": "sys_class_name,sid,instance_name,instance_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_pool_member",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_iscsi",
+"attributes": "name,host",
+"priority": null
+},
+{
+"table": "cmdb_ci_virtualization_server",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_rabbitmq",
+"attributes": "sys_class_name,vhost,node_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_protection_template",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_delivery_controler",
+"attributes": "sys_class_name,name,type",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_tibco_adapter",
+"attributes": "version,project",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ca_ent_man",
+"attributes": "sys_class_name,install_directory",
+"priority": null
+},
+{
+"table": "cmdb_ci_resource_group",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_os_template",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_sap_db",
+"attributes": "ip_address,host,name,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_customer_gateway",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_lb_appl",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_inter_connect",
+"attributes": "name,ip_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_db_ora_catalog",
+"attributes": "sys_class_name,schema",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ftp",
+"attributes": "port,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_iifp",
+"attributes": "ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_server",
+"attributes": "cim_object_path",
+"priority": null
+},
+{
+"table": "cmdb_ci_disk_partition",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_intgateway",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_fc_port",
+"attributes": "wwpn",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ca_dir_server",
+"attributes": "sys_class_name,process_directory",
+"priority": null
+},
+{
+"table": "cmdb_ci_remote_backup_template",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_cloud_database",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_cloud_public_ipaddress",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_cloud_messaging_service",
+"attributes": "name,object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_hardware",
+"attributes": "product_instance_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_fastsearch",
+"attributes": "sys_class_name,index_name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_license_server",
+"attributes": "install_directory,tcp_port",
+"priority": null
+},
+{
+"table": "cmdb_serial_number",
+"attributes": "serial_number,serial_number_type",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_pool",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_oracle_esb",
+"attributes": "port,adapter_type,ip_address,host,adapter_data,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ejb",
+"attributes": "port,protocol,ip_address,host,jndi_name,host_name,url",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_tcp",
+"attributes": "port,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_itam",
+"attributes": "folder,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ctg",
+"attributes": "port,ip_address,host,name,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_vcenter_folder",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_config_file",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_ip_address",
+"attributes": "ip_address,netmask",
+"priority": null
+},
+{
+"table": "cmdb_ci_dns_name",
+"attributes": "name,ip_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_aq",
+"attributes": "port,queue,ip_address,host,scheme,instance,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_crm",
+"attributes": "ip_address,host,role,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_obj_cms_srv",
+"attributes": "port,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_esx_server",
+"attributes": "correlation_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_cluster_vip",
+"attributes": "name,ip_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_tcp",
+"attributes": "port,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_cluster_resource",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ibm_cics",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_notif_svr",
+"attributes": "sys_class_name,config_file",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_mongos",
+"attributes": "sys_class_name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_block",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_cluster",
+"attributes": "correlation_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_pool",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_epicd_app_server",
+"attributes": "name,install_directory,version,env",
+"priority": null
+},
+{
+"table": "cmdb_ci_ucs_rack_unit",
+"attributes": "serial_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_tuxedo_portal",
+"attributes": "sys_class_name,domain",
+"priority": null
+},
+{
+"table": "cmdb_ci_hardware",
+"attributes": "ip_address,mac_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_apic_tenant",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ssis_mssql",
+"attributes": "port,ip_address,host,client_type,instance,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_sp_connection",
+"attributes": "ip_address,orig_url,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_docbase",
+"attributes": "port,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_app",
+"attributes": "farm,container,args,name,path,type",
+"priority": null
+},
+{
+"table": "cmdb_ci_sa_launch_config",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_comp_security",
+"attributes": "name,host",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_device",
+"attributes": "device_id,serial_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_port_group",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_oracle_db_schema",
+"attributes": "schema,container",
+"priority": null
+},
+{
+"table": "cmdb_ci_network_adapter",
+"attributes": "name,mac_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_network",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_database",
+"attributes": "name,type",
+"priority": null
+},
+{
+"table": "cmdb_ci_microsoft_iis_web_server",
+"attributes": "sys_class_name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_weblogicmodule",
+"attributes": "sys_class_name,install_directory,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_cluster",
+"attributes": "serial_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_cisco_call_man",
+"attributes": "sys_class_name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_cluster_node",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_router",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_jms_queue",
+"attributes": "queue,jms_server,container",
+"priority": null
+},
+{
+"table": "cmdb_ci_switch",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "dscy_switchport",
+"attributes": "interface_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_fc_disk",
+"attributes": "device_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_hardware",
+"attributes": "ip_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_acl",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_cloud_monitor_notification",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_sim_flow",
+"attributes": "target_label,xml_url",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_glassfish_war",
+"attributes": "directory,container,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ad_service_in",
+"attributes": "container,name,domain",
+"priority": null
+},
+{
+"table": "cmdb_ci_lb_haproxy",
+"attributes": "sys_class_name,version,config_file",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_mapi_hub",
+"attributes": "port,protocol,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_db_syb_instance",
+"attributes": "sys_class_name,instance,config_file",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_rfc",
+"attributes": "port,protocol,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ldap_db",
+"attributes": "container,name,type",
+"priority": null
+},
+{
+"table": "cmdb_ci_vm_zones",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_conc",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_dir_site_minder_server",
+"attributes": "sys_class_name,name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_app_server_jrun",
+"attributes": "sys_class_name,application,name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_queue",
+"attributes": "sys_class_name,scheme,name,table,type",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_http",
+"attributes": "port,protocol,ip_address,host,host_name,url",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_tibco_matrix_proc",
+"attributes": "sys_class_name,project,process_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_cloud_directory",
+"attributes": "name,object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_weblogic_jms",
+"attributes": "sys_class_name,jms_server",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_router",
+"attributes": "name,host",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_sharepoint_service",
+"attributes": "container,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_cluster",
+"attributes": "name,cluster_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_vm_instance",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_docker_image",
+"attributes": "image_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_cloud_db_instance",
+"attributes": "cloud_parameter_1,cloud_parameter_2,container",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_mongo_config_serv",
+"attributes": "sys_class_name,port,config_file",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_rabbitmq_queue",
+"attributes": "sys_class_name,vhost,name",
+"priority": null
+},
+{
+"table": "service_offering",
+"attributes": "parent,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_cloud_storage_account",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ibm_ctg",
+"attributes": "sys_class_name,name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ssas_mssql",
+"attributes": "port,ip_address,host,client_type,host_name,instance",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_storefront_comp",
+"attributes": "farm,host,application_name,container,params,ip_address,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_hp_index",
+"attributes": "sys_class_name,alias",
+"priority": null
+},
+{
+"table": "cmdb_ci_cloud_key_pair",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_app_server_ora_ias",
+"attributes": "sys_class_name,install_directory,database_instance",
+"priority": null
+},
+{
+"table": "cmdb_ci_db_mysql_clusternode",
+"attributes": "sys_class_name,cluster_node_id,node_group",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_oafm",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_app_server_jrun_war",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_network_adapter",
+"attributes": "mac_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_forms_ui",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_nat_gateway",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_hardware",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_route_table",
+"attributes": "name,host",
+"priority": null
+},
+{
+"table": "cmdb_ci_lb_pool",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_oracle_tns",
+"attributes": "port,container,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_msmq",
+"attributes": "sys_class_name,msmq_mqseries_bridge,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_f5",
+"attributes": "host,port,url",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_citrix_xenapp",
+"attributes": "sys_class_name,name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_inclusion_rabbitmq_queue",
+"attributes": "container,host,host_name,port,protocol,type",
+"priority": null
+},
+{
+"table": "cmdb_ci_route_table",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_snapshot_template",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_tomcat_war",
+"attributes": "directory,container,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_virtualization_server",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_xenapp",
+"attributes": "ip_address,host,icon_path,host_name,url",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_mq",
+"attributes": "port,queue,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_hpom",
+"attributes": "ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_device",
+"attributes": "device_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ibm_wmb",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_active_directory",
+"attributes": "sys_class_name,name,domain",
+"priority": null
+},
+{
+"table": "cmdb_ci_cloud_monitor_alarm",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_lb_pool_member",
+"attributes": "name,service_port,ip_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_memory_module",
+"attributes": "name,serial_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_lb_pool_member",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_server",
+"attributes": "serial_number,cim_object_path",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_mysql_cl_mg",
+"attributes": "port,ip_address,host,host_name,node_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_lb",
+"attributes": "name,serial_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_epicd",
+"attributes": "host,port,env,label",
+"priority": null
+},
+{
+"table": "cmdb_ci_vm_object",
+"attributes": "correlation_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_forms",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_biztalk_orch",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_exchange_cas",
+"attributes": "sys_class_name,name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_translation_rule",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_cust_gateway",
+"attributes": "name,host",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_vpg",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_cluster_node",
+"attributes": "name,serial_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_hyper_v_network",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_print_queue",
+"attributes": "name,ip_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_internet_gateway",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_app_server_jb_module",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_tibco_hawk",
+"attributes": "config_directory,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ajp",
+"attributes": "port,ip_address,host,host_name,url",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_app_storage",
+"attributes": "file_in_use,files_system,connected_arr_ids",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_mysql_server",
+"attributes": "port,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_tibco_hawk",
+"attributes": "sys_class_name,domain",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_volume",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_db_mssql_analysis",
+"attributes": "sys_class_name,install_directory,instance,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_sa_scaling_pol_base",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_hardware",
+"attributes": "mac_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_vm_object",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_database",
+"attributes": "serial_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_app_server_tomcat",
+"attributes": "sys_class_name,install_directory,running_process_key_parameters",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_subnet",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_sap_bo_srv",
+"attributes": "server_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_mapping",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_citrix_collector",
+"attributes": "sys_class_name,name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_email_server_jes",
+"attributes": "sys_class_name,install_directory,storage",
+"priority": null
+},
+{
+"table": "cmdb_ci_db_mssql_integration",
+"attributes": "sys_class_name,install_directory,instance,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_app_server_weblogic",
+"attributes": "sys_class_name,server_name,weblogic_domain,domain_directory",
+"priority": null
+},
+{
+"table": "cmdb_ci_exchange_hub",
+"attributes": "sys_class_name,server_name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_hyper_v_rpool_comp",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_vnic",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_server",
+"attributes": "serial_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_app_server_hp_ucmdb",
+"attributes": "sys_class_name,install_directory",
+"priority": null
+},
+{
+"table": "cmdb_ci_web_application",
+"attributes": "document_base",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_router",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_db_ora_instance",
+"attributes": "tcp_port,sid",
+"priority": null
+},
+{
+"table": "cmdb_ci_epic_cache",
+"attributes": "name,version,tcp_port,install_directory",
+"priority": null
+},
+{
+"table": "cmdb_ci_app_server_datapower",
+"attributes": "sys_class_name,domain",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ent_vault",
+"attributes": "ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ms_sql",
+"attributes": "container,database",
+"priority": null
+},
+{
+"table": "cmdb_ci_lb_pool",
+"attributes": "server_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_glassfish_war",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_san_fabric",
+"attributes": "fabric_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_db_ora_listener",
+"attributes": "sys_class_name,scan_listener_name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_lb_pool",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_cisco_fibre",
+"attributes": "sys_class_name,distinguished_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_cloud_webserver",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ms_dynamic_crm",
+"attributes": "sys_class_name,role,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_host_cluster",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_doc_docbroker",
+"attributes": "sys_class_name,tcp_port",
+"priority": null
+},
+{
+"table": "cmdb_ci_sun_ldap_dir_server",
+"attributes": "sys_class_name,instance,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_weblogic_module",
+"attributes": "config_directory,port,application_name,container,server,domain_directory,app_directory",
+"priority": null
+},
+{
+"table": "cmdb_ci_directory_iifp",
+"attributes": "sys_class_name,forest_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_email_server_ent_vault",
+"attributes": "sys_class_name,site_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_sap_ci",
+"attributes": "sys_class_name,sid,instance_name,instance_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl",
+"attributes": "running_process_command,running_process_key_parameters,sys_class_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_apic_host",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_docker_image_tag",
+"attributes": "repository,tag",
+"priority": null
+},
+{
+"table": "cmdb_ci_app_server_ws_ear",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_network_acl",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_vm_zones",
+"attributes": "correlation_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_glassfish",
+"attributes": "sys_class_name,port,inst_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_db_mysql_instance",
+"attributes": "sys_class_name,install_directory,data_directory",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_doc_brava_server",
+"attributes": "sys_class_name,install_directory",
+"priority": null
+},
+{
+"table": "cmdb_ci_nginx_web_server",
+"attributes": "sys_class_name,version,config_file",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_mysql_cl_dn",
+"attributes": "ip_address,host,node_group,host_name,node_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_postgresql",
+"attributes": "port,ip_address,host,instance,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_nntp",
+"attributes": "port,protocol,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_network_adapter",
+"attributes": "mac_address,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_os_packages",
+"attributes": "version,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_comp_security",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_acl",
+"attributes": "name,host",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_dctm_index",
+"attributes": "ip_address,host,host_name,instance",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ems_queue",
+"attributes": "queue_name,ems_server,container",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_aq_queue",
+"attributes": "port,queue,ip_address,host,container,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_virtual_pvt_gateway",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_controller",
+"attributes": "device_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_ebs",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_inetinfo",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_sap_jc",
+"attributes": "sys_class_name,sid,instance_name,instance_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_dot_net",
+"attributes": "sys_class_name,pid",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_biztalk",
+"attributes": "ip_address,host,transport_type,address,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ebs",
+"attributes": "port,container,config_file",
+"priority": null
+},
+{
+"table": "cmdb_ci_fc_disk",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_sa_server_array",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_tuxedo",
+"attributes": "sys_class_name,port,domain",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_vnic",
+"attributes": "name,host",
+"priority": null
+},
+{
+"table": "cmdb_ci_db_mssql_instance",
+"attributes": "sys_class_name,instance_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_server",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_lb_interface",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_websphere_portal",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_dctm_broker",
+"attributes": "port,ip_address,host,repository,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_tbco_confile",
+"attributes": "port,ip_address,host,source_ip,process_name,host_name,config_file",
+"priority": null
+},
+{
+"table": "cmdb_ci_bridge_domain",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "dscy_swtch_fwd_rule",
+"attributes": "mac_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_epic_agent",
+"attributes": "name,install_directory",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_intgateway",
+"attributes": "name,host",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_route_table",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_cust_gateway",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_ad_controller",
+"attributes": "sys_class_name,domain_name,domain_controller_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_metric_svr",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_db_mssql_reporting",
+"attributes": "sys_class_name,instance",
+"priority": null
+},
+{
+"table": "cmdb_ci_db_ora_instance",
+"attributes": "sys_class_name,sid",
+"priority": null
+},
+{
+"table": "cmdb_ci_db_db2_instance",
+"attributes": "name,tcp_port,sys_class_name,installed_dir",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_volume",
+"attributes": "volume_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_disc_ui",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_lb_template",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_hp_qc",
+"attributes": "sys_class_name,name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_citrix_app",
+"attributes": "sys_class_name,install_directory,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_peoplesoft",
+"attributes": "sys_class_name,domain",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_doc_brava_proc",
+"attributes": "sys_class_name,install_directory",
+"priority": null
+},
+{
+"table": "cmdb_ci_iisdirectory",
+"attributes": "sys_class_name,install_directory,name,alias",
+"priority": null
+},
+{
+"table": "cmdb_ci_lb_vlan",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_file_system",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_spkg",
+"attributes": "key",
+"priority": null
+},
+{
+"table": "cmdb_ci_app_simulation_inc",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_msmq",
+"attributes": "queue,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_sybase",
+"attributes": "port,ip_address,host,instance,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_report",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_app_server_websphere",
+"attributes": "sys_class_name,node,name,cell",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_device",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_sap",
+"attributes": "sid,ip_address,host,host_name,instance",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_jms_queue",
+"attributes": "sys_class_name,queue_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_server",
+"attributes": "mac_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_tibco_file",
+"attributes": "ip_address,host,file,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ssas",
+"attributes": "project,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_virtualization_server",
+"attributes": "serial_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_azure_subscription",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_db_instance",
+"attributes": "serial_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_cloud_ip_address",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_oracle_ias",
+"attributes": "directory,name,instance_name,container",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_vm_esx",
+"attributes": "logical_device_name,file_system",
+"priority": null
+},
+{
+"table": "cmdb_ci_solaris_instance",
+"attributes": "correlation_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_extnetwork",
+"attributes": "name,host",
+"priority": null
+},
+{
+"table": "cmdb_ci_lb_service",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_nfs",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_network_adapter",
+"attributes": "mac_address,ip_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_security_grp_template",
+"attributes": "template_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_docker_container",
+"attributes": "container_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ca_id_man",
+"attributes": "sys_class_name,install_directory,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_lb_service",
+"attributes": "name,ip_address,port",
+"priority": null
+},
+{
+"table": "cmdb_ci_db_postgresql_instance",
+"attributes": "sys_class_name,tcp_port,instance",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_pm",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_wmb",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_fileshare",
+"attributes": "name,path",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_generic",
+"attributes": "sys_class_name,command_line",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ssis_file",
+"attributes": "ip_address,host,file,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_jms_server",
+"attributes": "port,queue,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_app_server_tomcat_war",
+"attributes": "sys_class_name,name,install_directory",
+"priority": null
+},
+{
+"table": "cmdb_ci_network_policy_group",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_hp_operations",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_interconnect_instance",
+"attributes": "name,instance",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_pop3",
+"attributes": "port,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_fromcluster_t",
+"attributes": "host,port,vhost",
+"priority": null
+},
+{
+"table": "cmdb_serial_number",
+"attributes": "serial_number,serial_number_type",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ssis",
+"attributes": "ip_address,host,job,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_directory_ha",
+"attributes": "sys_class_name,version,config_file",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_agility",
+"attributes": "host,port,install_dir",
+"priority": null
+},
+{
+"table": "cmdb_ci_mirror_template",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_compute_template",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_subnet",
+"attributes": "name,host",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ad_domain",
+"attributes": "port,protocol,ip_address,forest_name,host,domain_name,host_name,controller_distinguished_name,domain_controller_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_mapi",
+"attributes": "port,protocol,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_sap_app",
+"attributes": "sid,ip_address,host,host_name,instance",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_sap_ers",
+"attributes": "sys_class_name,sid,instance_name,instance_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_exchange_frontend",
+"attributes": "sys_class_name,administrative_group",
+"priority": null
+},
+{
+"table": "cmdb_ci_nic",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_web_service",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_aws_account",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_rabbitmq_cluster",
+"attributes": "sys_class_name,service_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_app_network_profile",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_compute_security_group",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_web_site",
+"attributes": "name,tcp_port",
+"priority": null
+},
+{
+"table": "cmdb_ci_fc_export",
+"attributes": "initiator_wwpn,export_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_hp_sm_kb",
+"attributes": "sys_class_name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_mq_mem",
+"attributes": "queue,ip_address,host,host_name,cmd_line",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_tibco_bw_proc",
+"attributes": "project,process_name,container",
+"priority": null
+},
+{
+"table": "cmdb_ci_logical_datacenter",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_service",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_http",
+"attributes": "name,port,protocol,host,host_name,url",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_tns",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_wmb_flow",
+"attributes": "container,directory,flow_name,broker_name,uuid",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_nfs",
+"attributes": "name,host",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_listener_wmb",
+"attributes": "ip_address,host,directory,name,host_name,url",
+"priority": null
+},
+{
+"table": "cmdb_ci_cloud_host",
+"attributes": "name,object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_jms_flow",
+"attributes": "project,queue,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_smtp",
+"attributes": "port,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_xenapp_citrx",
+"attributes": "farm,ip_address,host,args,container,name,path,exec,type,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_microsoft_iis_web_server",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_serial_number",
+"attributes": "serial_number,serial_number_type",
+"priority": null
+},
+{
+"table": "cmdb_ci_iscsi_export",
+"attributes": "initiator_iqn,export_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_db_mssql_int_job",
+"attributes": "sys_class_name,name,type",
+"priority": null
+},
+{
+"table": "cmdb_ci_volume_template",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_lb_pool_member",
+"attributes": "server_id",
+"priority": null
+},
+{
+"table": "dscy_router_interface",
+"attributes": "name,mac_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_dir_policy_server",
+"attributes": "sys_class_name,name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ibm_wmq",
+"attributes": "sys_class_name,queue_manager",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_oracle_db",
+"attributes": "schema,port,protocol,ip_address,host,instance,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_network_adapter",
+"attributes": "mac_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ad_forest",
+"attributes": "port,protocol,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_cloud_appserver",
+"attributes": "name,object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ob_cluster",
+"attributes": "cluster_name,endpoint_class",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_storf",
+"attributes": "container,farm,args,path,exec",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_dliver_cnrl",
+"attributes": "port,host,farm_type,name,controller_name,host_name,ip_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_xenapp_comp",
+"attributes": "farm,ip_address,host,icon_path,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_exchange",
+"attributes": "ip_address,host,str,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_remote_tcp",
+"attributes": "host,source_ip,source_port,host_name,ip_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_oacore",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_rabbitmq",
+"attributes": "port,queue_name,ip_address,vhost,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_availability_set",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl",
+"attributes": "sys_class_name,rp_command_hash,rp_key_parameters_hash",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_tibco_matrix",
+"attributes": "sys_class_name,project,domain,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_tibco_queue",
+"attributes": "sys_class_name,queue_server,queue_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_ucs_blade",
+"attributes": "serial_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_tibco_message",
+"attributes": "sys_class_name,tcp_port,host,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_storage_fc",
+"attributes": "source_wwn,target_wwn",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_mq_queue",
+"attributes": "queue,queue_manager_name,container",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_wmb_depend",
+"attributes": "ip_address,host,host_name,type,cmd_line",
+"priority": null
+},
+{
+"table": "cmdb_ci_app_server_webseal",
+"attributes": "sys_class_name,install_directory,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_computer",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ems",
+"attributes": "port,queue,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_jboss",
+"attributes": "directory,container,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_dns_alias",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_patches",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_server",
+"attributes": "ip_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_server",
+"attributes": "ip_address,mac_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_hp_service",
+"attributes": "sys_class_name,install_directory",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_sharepoint",
+"attributes": "sys_class_name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_sim_inc",
+"attributes": "container,target_label,xml_url",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ibm_wmq_queue",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_tibco_bw",
+"attributes": "port,ip_address,host,process_name,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ldap",
+"attributes": "port,protocol,ip_address,host,type,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_biztalk_orch",
+"attributes": "container,name,db_name,server",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_peoplesoft",
+"attributes": "port,ip_address,host,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_iis",
+"attributes": "application_pool,website,container,path,icon_path,vpath,friendly_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ms_sql_server",
+"attributes": "port,ip_address,host,type,instance,host_name,database",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_mysql_slave",
+"attributes": "host,source_ip,source_port,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_j2ee_ear",
+"attributes": "node,container,ear_directory_name,ear_name,server",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_fs",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_inter_connect",
+"attributes": "host,port",
+"priority": null
+},
+{
+"table": "cmdb_ci_db_mssql_database",
+"attributes": "sys_class_name,database",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_sap_bo",
+"attributes": "sys_class_name,server_name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_network_adapter",
+"attributes": "mac_address,ip_address",
+"priority": null
+},
+{
+"table": "cmdb_ci_lb_ckstickinesspolicy",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_disc",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_apache_web_server",
+"attributes": "sys_class_name,config_file,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_biztalk",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_app_server_ws_odr",
+"attributes": "sys_class_name,node,name,cell",
+"priority": null
+},
+{
+"table": "cmdb_ci_cloud_subnet",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_storage_hba",
+"attributes": "serial_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_sp_service",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ibm_wmb_listener",
+"attributes": "sys_class_name,broker_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_agility_process",
+"attributes": "install_dir",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_connectit",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_sun_dir_proxy_server",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_serial_number",
+"attributes": "serial_number,serial_number_type",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_sap_bo_servers",
+"attributes": "server_name,ip_address,host,container,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_sap_ascs",
+"attributes": "sys_class_name,sid,instance_name,instance_number",
+"priority": null
+},
+{
+"table": "dscy_route_interface",
+"attributes": "dest_ip_network",
+"priority": null
+},
+{
+"table": "cmdb_ci_lb_listener",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_tnslsnr",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_doc_docbase",
+"attributes": "sys_class_name,id",
+"priority": null
+},
+{
+"table": "cmdb_ci_perf_template",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_weblogic_lb",
+"attributes": "sys_class_name,cluster_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_nic",
+"attributes": "public_ip",
+"priority": null
+},
+{
+"table": "cmdb_ci_ucs_chassis",
+"attributes": "serial_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_db_mysql_clustermgnode",
+"attributes": "sys_class_name,cluster_node_id,version,config_file",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_db2sql",
+"attributes": "port,ip_address,host,instance,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_ems_jndi",
+"attributes": "port,ip_address,host,jndi_name,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_config_file_tracked",
+"attributes": "name",
+"priority": null
+},
+{
+"table": "dscy_swtch_partition",
+"attributes": "interface_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_http",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_directory_ldap",
+"attributes": "sys_class_name,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_cloud_topic",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_extnetwork",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_availability_zone",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_nat",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_hardware",
+"attributes": "serial_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_docker_local_image",
+"attributes": "image_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_iscsi",
+"attributes": "object_id",
+"priority": null
+},
+{
+"table": "cmdb_ci_exchange_backend",
+"attributes": "sys_class_name,administrative_group",
+"priority": null
+},
+{
+"table": "cmdb_ci_lb_service",
+"attributes": "port,fqdn",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_manual",
+"attributes": "endpoint_identifier",
+"priority": null
+},
+{
+"table": "cmdb_ci_iplanet_web_server",
+"attributes": "sys_class_name,config_directory,install_directory",
+"priority": null
+},
+{
+"table": "cmdb_ci_app_server_jboss",
+"attributes": "sys_class_name,install_directory",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_controlm",
+"attributes": "sys_class_name,tcp_port,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_sap_di",
+"attributes": "sys_class_name,sid,instance_name,instance_number",
+"priority": null
+},
+{
+"table": "cmdb_ci_endpoint_mq_flow",
+"attributes": "port,queue,ip_address,host,source_ip,host_name",
+"priority": null
+},
+{
+"table": "cmdb_ci_exchange_mailbox",
+"attributes": "sys_class_name,server_name,version",
+"priority": null
+},
+{
+"table": "cmdb_ci_app_server_ora_ias_m",
+"attributes": "sys_class_name,install_directory,name",
+"priority": null
+},
+{
+"table": "cmdb_ci_appl_ora_metric_client",
+"attributes": "sys_class_name,name",
+"priority": null
+}
+]
+}
