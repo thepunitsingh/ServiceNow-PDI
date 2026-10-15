@@ -39,3 +39,25 @@ npm install
 npx now-sdk auth --add <instance-url> --type basic
 npm run build && npm run deploy
 ```
+
+## Sprint 2 (Jira "Sprint: Sprint 2")
+
+| Story | Artifact |
+|---|---|
+| SP-33/34/46 | `scripts/case-filters` (`CsmCaseFilters` script include + `sys_dictionary_override` reference qualifiers on Case Product / Assignment group / Parent); `sys_user_group.x_1863667_csm_account` links groups to accounts |
+| SP-35/36 | `schedules/account-schedules` (LVA, GEO) |
+| SP-37 | `sla/account-slas` (LVA/GEO Response + Resolution by priority); generic SLAs now exclude LVA/GEO via `account.x_1863667_csm_customer_code` |
+| SP-38..43 | `tables/case-extensions` (hardware request type), `server/case-rules` + `rules/case-rules` (CI/location from asset, auto-create Ship & Install / Remove & Return / Repair Tracking / both tasks) |
+| SP-44 | `sla/task-olas` (OLA per hardware task action) |
+| SP-45 | `resolveCaseWhenTasksClosed` business rule (case -> Resolved when every hardware task is closed) |
+| SP-47 | `x_1863667_csm_closed_by`, UI policy + business rule |
+| SP-48 | UI policy hiding Service on Case Task |
+| SP-49 | related list of survey answers on Assessment Instance |
+| SP-50/51/52 | `portal/csmgnd-portal` (portal + "CSM Account Branding" widget) |
+| SP-32 | **Not built**: depends on the existing GEO transform maps, which are not in the repo |
+
+Assumptions: LVA/GEO schedule hours, SLA durations and task OLA durations are placeholders; accounts are tagged LVA/GEO
+through `x_1863667_csm_customer_code` (set on the account); the Install Base sold-product/item tables are only used by
+the Product filter when they exist; the widget must still be placed on the csmgnd header; "global support users" for
+Case closed by are members of the group named in system property `x_1863667_csm.global_support_group`.
+Built successfully; not deployed or tested on an instance.

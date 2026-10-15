@@ -9,6 +9,22 @@ declare global {
                         table: 'sys_module'
                         id: '1ce1e643115644b5aa4bbd355448c908'
                     }
+                    'br-case-closed-by': {
+                        table: 'sys_script'
+                        id: 'b655659caba04ab3adca5e7f06e1d2d3'
+                    }
+                    'br-case-hw-tasks': {
+                        table: 'sys_script'
+                        id: '0a36e0d528564e38a625368dc38cea39'
+                    }
+                    'br-case-install-base': {
+                        table: 'sys_script'
+                        id: '292da31cf3ff4bafbecff524ee3ceb7f'
+                    }
+                    'br-task-resolve-case': {
+                        table: 'sys_script'
+                        id: 'c201660ce5814e98893244d95007386e'
+                    }
                     'ds-account': {
                         table: 'sys_data_source'
                         id: '8f122e8d4e094f34b7c8095935512500'
@@ -61,6 +77,94 @@ declare global {
                         table: 'sys_module'
                         id: '9f289914e6f242f6acdae9583e16e774'
                     }
+                    'portal-csmgnd': {
+                        table: 'sp_portal'
+                        id: 'a6ef65a1dd934e43ad39ebb50260e435'
+                    }
+                    'sched-geo': {
+                        table: 'cmn_schedule'
+                        id: '1e9b3f5d41f14f839adfbd60c24e2d84'
+                    }
+                    'sched-geo-span': {
+                        table: 'cmn_schedule_span'
+                        id: '51bcf72130ef4e4d8255205def48a566'
+                    }
+                    'sched-lva': {
+                        table: 'cmn_schedule'
+                        id: 'd08cebb810684219a2c365dbfe60176b'
+                    }
+                    'sched-lva-span': {
+                        table: 'cmn_schedule_span'
+                        id: 'b49bfdebdf42458cb0dd92f914e5aeff'
+                    }
+                    'si-case-filters': {
+                        table: 'sys_script_include'
+                        id: '51a5b2c8213a46949928f964df64b2e9'
+                    }
+                    'sla-geo-resolution-p1': {
+                        table: 'contract_sla'
+                        id: '183394a09098425daee5c40d2edcc796'
+                    }
+                    'sla-geo-resolution-p2': {
+                        table: 'contract_sla'
+                        id: '88dea1b3ffb14209881c8ee0918e510a'
+                    }
+                    'sla-geo-resolution-p3': {
+                        table: 'contract_sla'
+                        id: 'f39dbaeb5e1a4e02bc61debf47c92407'
+                    }
+                    'sla-geo-resolution-p4': {
+                        table: 'contract_sla'
+                        id: '717538b8c00a43a197e9b448f0d131bf'
+                    }
+                    'sla-geo-response-p1': {
+                        table: 'contract_sla'
+                        id: 'd872725614e94f6589e31880ebca6da3'
+                    }
+                    'sla-geo-response-p2': {
+                        table: 'contract_sla'
+                        id: 'c3a18dfb18054cce83847d6eee5c5d48'
+                    }
+                    'sla-geo-response-p3': {
+                        table: 'contract_sla'
+                        id: 'f493325e406244d5a60223fed2222216'
+                    }
+                    'sla-geo-response-p4': {
+                        table: 'contract_sla'
+                        id: '192c15a609514ed18403e7e6ef21ba2a'
+                    }
+                    'sla-lva-resolution-p1': {
+                        table: 'contract_sla'
+                        id: '873328f031474402882a9bc9f2e1e0bc'
+                    }
+                    'sla-lva-resolution-p2': {
+                        table: 'contract_sla'
+                        id: 'e956ab311c2146b39e6194430e684372'
+                    }
+                    'sla-lva-resolution-p3': {
+                        table: 'contract_sla'
+                        id: '0167de0b72bc45388169e81c95bb38b3'
+                    }
+                    'sla-lva-resolution-p4': {
+                        table: 'contract_sla'
+                        id: '6a0590c530af478691c3109e3b0b1e8b'
+                    }
+                    'sla-lva-response-p1': {
+                        table: 'contract_sla'
+                        id: '155c64bf0d714538ab72ec291e3224e1'
+                    }
+                    'sla-lva-response-p2': {
+                        table: 'contract_sla'
+                        id: '68b691e96cc64d0a97d3887dfc827aea'
+                    }
+                    'sla-lva-response-p3': {
+                        table: 'contract_sla'
+                        id: '08ac0fe2636e4bd08f7c5e8ecbad4651'
+                    }
+                    'sla-lva-response-p4': {
+                        table: 'contract_sla'
+                        id: '5af5ffa82818443bad4b3050cf8bbae7'
+                    }
                     'sla-resolution-p1': {
                         table: 'contract_sla'
                         id: 'bb878b3b925a4a908552e73217dfcdd0'
@@ -92,6 +196,22 @@ declare global {
                     'sla-response-p4': {
                         table: 'contract_sla'
                         id: '466558fea4c545fc91f3ace19236ca47'
+                    }
+                    'sla-task-remove_return': {
+                        table: 'contract_sla'
+                        id: 'a99b316d68d94d5086373598a43681c6'
+                    }
+                    'sla-task-repair_tracking': {
+                        table: 'contract_sla'
+                        id: '4bc9fdd66845492ea49f4a0247eb325c'
+                    }
+                    'sla-task-ship_install': {
+                        table: 'contract_sla'
+                        id: '39d83c07b1404a889723f97cd5e13177'
+                    }
+                    'src_server_case-rules_ts': {
+                        table: 'sys_module'
+                        id: 'b32b37c09fdd4c52b44d56b18befb501'
                     }
                     'tm-account': {
                         table: 'sys_transform_map'
@@ -201,8 +321,23 @@ declare global {
                         table: 'sys_transform_script'
                         id: 'bdb239d60d7e4278b4932f8b3380a113'
                     }
+                    'widget-account-branding': {
+                        table: 'sp_widget'
+                        id: '8608760728184f218b59398864df028f'
+                    }
                 }
                 composite: [
+                    {
+                        table: 'sys_choice'
+                        id: '00ed7a52054c424197aa9bd38b96de85'
+                        key: {
+                            name: 'sn_customerservice_task'
+                            element: 'x_1863667_csm_hw_action'
+                            value: 'repair_tracking'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
                     {
                         table: 'sys_transform_entry'
                         id: '01fa0bb0a6004c9f84da94ca17a88aa4'
@@ -242,6 +377,17 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_asset'
                             element: 'account_code'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '03228075722e4b33a3c365a1e29be57b'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_hw_request_type'
+                            value: 'ship_install'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -326,11 +472,48 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: '093ac49e60864d5cb9bae5d9dffce79c'
+                        key: {
+                            list_id: {
+                                id: '5966e6dae70f4211993a3d68a5e516e8'
+                                key: {
+                                    name: 'asmt_assessment_instance_question'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'asmt_assessment_instance'
+                                }
+                            }
+                            element: 'string_value'
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: '09b514fdddc94c24891f3f3946ea2f7a'
                         key: {
                             map: '4828a5ec86824caeade5c015a3a5a02b'
                             target_field: 'last_name'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_policy_action'
+                        id: '0c57edc4a66c4d039c17f7cea009bfc8'
+                        key: {
+                            ui_policy: {
+                                id: '422fe0d0a72a466da3e067f479d8d487'
+                                key: {
+                                    table: 'sn_customerservice_case'
+                                    short_description: 'Case closed by is mandatory when resolving'
+                                }
+                            }
+                            field: 'x_1863667_csm_closed_by'
                         }
                     },
                     {
@@ -385,6 +568,22 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '0ee1d90bf02a42a88a0b4aba26a4f98e'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_closed_by'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_policy'
+                        id: '0f62e7c3603d436285fb2a0718cf16cc'
+                        key: {
+                            table: 'sn_customerservice_task'
+                            short_description: 'Hide Service on Case Task'
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: '0fd476083b894730988c7b6924fba4ac'
                         key: {
@@ -422,6 +621,23 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_account'
                             element: 'parent_account_code'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '1223a6f2579c4d00829b1f669c98d2b3'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_hw_request_type'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '127a773ecf2042e9b82b346321edb279'
+                        key: {
+                            name: 'sys_user_group'
+                            element: 'NULL'
                             language: 'en'
                         }
                     },
@@ -557,6 +773,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_db_object'
+                        id: '222e6093f43e4683a052aa7cbe5ab4bb'
+                        key: {
+                            name: 'sys_user_group'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '2321db92d6674305a5560ebc3659d151'
                         key: {
@@ -579,6 +802,17 @@ declare global {
                             name: 'x_1863667_csm_stg_entitlement'
                             element: 'end_date'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '23824c3b63bf4c2cae696dd7ffc36bdf'
+                        key: {
+                            name: 'sn_customerservice_task'
+                            element: 'x_1863667_csm_hw_action'
+                            value: 'remove_return'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -684,6 +918,35 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_db_object'
+                        id: '2c76153f9fdf41ae9344e07cc4358687'
+                        key: {
+                            name: 'sn_customerservice_case'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '2d0724413dfa4bdb8ac19da9106c077c'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_hw_tasks_created'
+                            value: 'yes'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '2dbc325d550241f4b5c1646de89a1324'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_hw_request_type'
+                            value: 'both'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '2dd5e11a4f3a4ab2804d51071f051900'
                         key: {
@@ -764,6 +1027,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '2f72bda9008148d7bd143337e5fa6a9a'
+                        key: {
+                            name: 'sn_customerservice_task'
+                            element: 'x_1863667_csm_hw_action'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '307941939b14458e937951c0082b94ec'
                         key: {
@@ -780,10 +1051,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice_set'
+                        id: '30dedabe5b9c4aa0b9e877e92c2f52a0'
+                        key: {
+                            name: 'sn_customerservice_task'
+                            element: 'x_1863667_csm_task_type'
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: '30eb69b0d2b942c0b632e01128cc9d64'
                         key: {
                             name: 'x_1863667_csm_stg_location'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '310055b6f1104b7298e04af8711d92ba'
+                        key: {
+                            name: 'customer_account'
+                            element: 'x_1863667_csm_customer_code'
+                            value: 'other'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -853,6 +1143,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '36dab29948b347c3816ddaa7516caa6e'
+                        key: {
+                            name: 'sn_customerservice_task'
+                            element: 'x_1863667_csm_task_type'
+                            value: 'service_request'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '3704feb51e864066b9e31122f8447345'
                         key: {
@@ -867,6 +1168,29 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_account'
                             element: 'street'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list_element'
+                        id: '37ca6feaf4bd4c04b265716c38d4e762'
+                        key: {
+                            list_id: {
+                                id: '5966e6dae70f4211993a3d68a5e516e8'
+                                key: {
+                                    name: 'asmt_assessment_instance_question'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'asmt_assessment_instance'
+                                }
+                            }
+                            element: 'value'
                         }
                     },
                     {
@@ -950,6 +1274,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_db_object'
+                        id: '3b9aa13d93b2489a808d8e9fba5a8c0c'
+                        key: {
+                            name: 'sn_customerservice_task'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '3bcbfb1302274c85bfccff70f14f9785'
                         key: {
@@ -986,10 +1317,28 @@ declare global {
                     },
                     {
                         table: 'sys_documentation'
+                        id: '3cb2e1d519ec490ba864812c67de5b8c'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_hw_tasks_created'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
                         id: '3cdcdd70f47349aca96a1acd8120eff8'
                         key: {
                             name: 'x_1863667_csm_stg_group'
                             element: 'description'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '3cf1cbf7840840e6ad90259e10ff5d93'
+                        key: {
+                            name: 'customer_account'
+                            element: 'x_1863667_csm_portal_logo'
                             language: 'en'
                         }
                     },
@@ -1015,6 +1364,14 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_contact'
                             element: 'account_code'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_policy'
+                        id: '422fe0d0a72a466da3e067f479d8d487'
+                        key: {
+                            table: 'sn_customerservice_case'
+                            short_description: 'Case closed by is mandatory when resolving'
                         }
                     },
                     {
@@ -1083,6 +1440,14 @@ declare global {
                         key: {
                             map: '574a68fc07a5486598c60f480d7f584d'
                             target_field: 'asset_tag'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary_override'
+                        id: '46838d2826f541179df5731b28d2c2a1'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'parent'
                         }
                     },
                     {
@@ -1292,11 +1657,30 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '54df81d643f94ac983dc9dd1fecb3498'
+                        key: {
+                            name: 'sn_customerservice_task'
+                            element: 'x_1863667_csm_task_type'
+                            value: 'general'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: '5546c4efeff1409e862ebeaf780b14a8'
                         key: {
                             map: '05ce3e52d153431ba9d57b5b08479178'
                             target_field: 'email'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: '5667d1a38fda4ea1b2ca566d043e5779'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_hw_request_type'
                         }
                     },
                     {
@@ -1325,6 +1709,31 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '595a1ac1bf264d7a970d3625818370f5'
+                        key: {
+                            name: 'customer_account'
+                            element: 'x_1863667_csm_portal_logo'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_list'
+                        id: '5966e6dae70f4211993a3d68a5e516e8'
+                        key: {
+                            name: 'asmt_assessment_instance_question'
+                            view: {
+                                id: 'Default view'
+                                key: {
+                                    name: 'NULL'
+                                }
+                            }
+                            sys_domain: 'global'
+                            element: 'NULL'
+                            relationship: 'NULL'
+                            parent: 'asmt_assessment_instance'
+                        }
+                    },
+                    {
                         table: 'ua_table_licensing_config'
                         id: '5a2bc78471ad45cdabfe43bab8cff4b5'
                         key: {
@@ -1337,6 +1746,17 @@ declare global {
                         key: {
                             map: '4828a5ec86824caeade5c015a3a5a02b'
                             target_field: 'phone'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '5b979dfe84be49bfa28362f4bbf3f5f3'
+                        key: {
+                            name: 'customer_account'
+                            element: 'x_1863667_csm_customer_code'
+                            value: 'lva'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -1365,6 +1785,25 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '5cfe0d3a7473491c994b055decd6c2b2'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_hw_tasks_created'
+                            value: 'no'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '5d6bd92ffb944b9e879b3daae8d87137'
+                        key: {
+                            name: 'customer_account'
+                            element: 'x_1863667_csm_customer_code'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '5d873c27e2824b0ea7fba55119fc2708'
                         key: {
@@ -1388,6 +1827,14 @@ declare global {
                         key: {
                             map: '574a68fc07a5486598c60f480d7f584d'
                             target_field: 'serial_number'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '5fe5707d1faf49bca76bce4242fa2815'
+                        key: {
+                            name: 'customer_account'
+                            element: 'x_1863667_csm_banner_color'
                         }
                     },
                     {
@@ -1421,6 +1868,25 @@ declare global {
                             name: 'x_1863667_csm_stg_asset'
                             element: 'asset_tag'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary_override'
+                        id: '669e27d118e24acfb817e08a2c99c948'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'product'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '676ad28e283341329fe9c33d8afb7f68'
+                        key: {
+                            name: 'sn_customerservice_task'
+                            element: 'x_1863667_csm_task_type'
+                            value: 'supplier'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -1496,6 +1962,22 @@ declare global {
                         }
                     },
                     {
+                        table: 'ua_table_licensing_config'
+                        id: '6f58fbc5958a436d87b5e93cac5c974b'
+                        key: {
+                            name: 'sys_user_group'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '6f59ad36545d40ae96a7a9186b157daa'
+                        key: {
+                            name: 'sys_user_group'
+                            element: 'x_1863667_csm_account'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '7087540760414274aef716f34cc42021'
                         key: {
@@ -1525,6 +2007,14 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_account'
                             element: 'zip'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '71739b93511a4aa58281e155a67f1764'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_hw_tasks_created'
                         }
                     },
                     {
@@ -1583,6 +2073,15 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_location'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '795cb3507fa845cf8ddc294267eff82b'
+                        key: {
+                            name: 'sn_customerservice_task'
+                            element: 'NULL'
+                            language: 'en'
                         }
                     },
                     {
@@ -1676,6 +2175,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '85ae3b1cf7bf4ddaa375ecc915e5b30e'
+                        key: {
+                            name: 'customer_account'
+                            element: 'x_1863667_csm_customer_code'
+                            value: 'geo'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'ua_table_licensing_config'
                         id: '85fdc2f368de4328b1e2a9d4d3c0e776'
                         key: {
@@ -1738,6 +2248,28 @@ declare global {
                             name: 'x_1863667_csm_stg_contact'
                             element: 'active'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '8b451950a2e54a948363cdcd5f2fed70'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_hw_request_type'
+                            value: 'repair'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: '8bef49e4459e4fac83a949ae43b3c372'
+                        key: {
+                            name: 'sn_customerservice_task'
+                            element: 'x_1863667_csm_hw_action'
+                            value: 'ship_install'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -1915,6 +2447,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice_set'
+                        id: '9e69f62e88104448942279e22c76cdc0'
+                        key: {
+                            name: 'customer_account'
+                            element: 'x_1863667_csm_customer_code'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '9f6a05aed9dd40d889a47b953f5da456'
                         key: {
@@ -1923,11 +2463,27 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '9f9f6936541a454399de8f5f8dbb1128'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_hw_request_type'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'a14f3eb551e2407a90cb8e495eb7942a'
                         key: {
                             name: 'x_1863667_csm_stg_product_model'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: 'a25b5bc34d0342d7adec826b031cdbdf'
+                        key: {
+                            name: 'sn_customerservice_task'
                         }
                     },
                     {
@@ -1989,12 +2545,42 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice_set'
+                        id: 'aa2740286d0144be861374f465e8ce82'
+                        key: {
+                            name: 'sn_customerservice_task'
+                            element: 'x_1863667_csm_hw_action'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'aa85c8270f3245a7b4f929b45c48e69d'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_hw_request_type'
+                            value: 'remove_return'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'aa8de27463b2432ebf1a022de9b96acf'
                         key: {
                             name: 'x_1863667_csm_stg_install_base_item'
                             element: 'sold_product_id'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice'
+                        id: 'ab2d540cb104400180fcad9c2550a066'
+                        key: {
+                            name: 'sn_customerservice_task'
+                            element: 'x_1863667_csm_task_type'
+                            value: 'change_request'
+                            language: 'en'
+                            dependent_value: 'NULL'
                         }
                     },
                     {
@@ -2068,6 +2654,15 @@ declare global {
                         id: 'b4a08b3bbe0c4b5cb31318c7824a969c'
                         key: {
                             name: 'x_1863667_csm_stg_product_model'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'b50cec6356594c14a90e7d67ae41af86'
+                        key: {
+                            name: 'customer_account'
+                            element: 'x_1863667_csm_customer_code'
+                            language: 'en'
                         }
                     },
                     {
@@ -2164,6 +2759,15 @@ declare global {
                     },
                     {
                         table: 'sys_documentation'
+                        id: 'be60c0963a714bd6bb3c84c497471678'
+                        key: {
+                            name: 'sn_customerservice_task'
+                            element: 'x_1863667_csm_hw_action'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
                         id: 'bf53a46eb7a540069d60082868fc95fc'
                         key: {
                             name: 'x_1863667_csm_stg_account'
@@ -2193,6 +2797,14 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_sold_product'
                             element: 'model_number'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'c0c92e09eb9346469d62205e7e9af70e'
+                        key: {
+                            name: 'sys_user_group'
+                            element: 'x_1863667_csm_account'
                         }
                     },
                     {
@@ -2242,6 +2854,13 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_product_model'
                             element: 'model_number'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: 'c5825860af46426e9fa40a241f10afed'
+                        key: {
+                            name: 'sn_customerservice_case'
                         }
                     },
                     {
@@ -2375,6 +2994,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: 'd1d8d333e31e475e9c7e33adb2079235'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_closed_by'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'd1ed3ef391fc43c38ee2180b2a35b143'
                         key: {
@@ -2408,11 +3036,34 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_policy_action'
+                        id: 'd3625657deb34d65acccbffc7b19628a'
+                        key: {
+                            ui_policy: {
+                                id: '0f62e7c3603d436285fb2a0718cf16cc'
+                                key: {
+                                    table: 'sn_customerservice_task'
+                                    short_description: 'Hide Service on Case Task'
+                                }
+                            }
+                            field: 'service'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'd42748e5e3e34896871675be4ecfbe54'
                         key: {
                             name: 'x_1863667_csm_stg_contract'
                             element: 'ends'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'd4bf8f421f074edfa1623c10514fd28f'
+                        key: {
+                            name: 'customer_account'
+                            element: 'x_1863667_csm_banner_color'
                             language: 'en'
                         }
                     },
@@ -2450,12 +3101,43 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_list_element'
+                        id: 'd7a55fc510b9443f84655e1ade6d724b'
+                        key: {
+                            list_id: {
+                                id: '5966e6dae70f4211993a3d68a5e516e8'
+                                key: {
+                                    name: 'asmt_assessment_instance_question'
+                                    view: {
+                                        id: 'Default view'
+                                        key: {
+                                            name: 'NULL'
+                                        }
+                                    }
+                                    sys_domain: 'global'
+                                    element: 'NULL'
+                                    relationship: 'NULL'
+                                    parent: 'asmt_assessment_instance'
+                                }
+                            }
+                            element: 'metric'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'd8f07a2b35644629ae1c34d67907431d'
                         key: {
                             name: 'x_1863667_csm_stg_entitlement'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary_override'
+                        id: 'da8d1795716d430d9cd512452a776763'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'assignment_group'
                         }
                     },
                     {
@@ -2534,6 +3216,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: 'e21b84e4176d462ea46dda7846bf6d4f'
+                        key: {
+                            name: 'sn_customerservice_task'
+                            element: 'x_1863667_csm_task_type'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: 'e465e64b501b485397dbd3af749b17c8'
                         key: {
@@ -2548,6 +3239,14 @@ declare global {
                             name: 'x_1863667_csm_stg_entitlement'
                             element: 'model_number'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: 'e667e88bb4b64df19c61af80ea76a978'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_hw_tasks_created'
                         }
                     },
                     {
@@ -2630,6 +3329,14 @@ declare global {
                         key: {
                             map: '4828a5ec86824caeade5c015a3a5a02b'
                             target_field: 'mobile_phone'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'ef47faf31b4d4dd6b606d9fb07caa749'
+                        key: {
+                            name: 'sn_customerservice_task'
+                            element: 'x_1863667_csm_task_type'
                         }
                     },
                     {
@@ -2749,11 +3456,33 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_policy_action'
+                        id: 'f66ce7d1ea414d3ca7a9dfc2473cdae6'
+                        key: {
+                            ui_policy: {
+                                id: 'fb5f1bc4ed1042d786d2229634ca44d1'
+                                key: {
+                                    table: 'sn_customerservice_case'
+                                    short_description: 'Asset mandatory for hardware replacement requests'
+                                }
+                            }
+                            field: 'asset'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'fb05989c7dc5481991ac4cbdd9912470'
                         key: {
                             name: 'x_1863667_csm_stg_asset'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_policy'
+                        id: 'fb5f1bc4ed1042d786d2229634ca44d1'
+                        key: {
+                            table: 'sn_customerservice_case'
+                            short_description: 'Asset mandatory for hardware replacement requests'
                         }
                     },
                     {
@@ -2805,6 +3534,15 @@ declare global {
                         key: {
                             map: 'd248c3500d9d4981b7320299ccf18ea2'
                             target_field: 'quantity'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'feaa605f923d484485a031e11fa5358c'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'NULL'
+                            language: 'en'
                         }
                     },
                     {

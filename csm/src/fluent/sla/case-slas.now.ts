@@ -16,7 +16,7 @@ export const responseP1 = Sla({
     duration: Duration({ hours: 1 }),
     schedule: '08fcd0830a0a0b2600079f56b1adb9ae',
     conditions: {
-        start: 'priority=1^active=true',
+        start: 'priority=1^active=true^account.x_1863667_csm_customer_codeNOT INlva,geo',
         stop: 'assigned_toISNOTEMPTY^ORactive=false',
     },
     resetAction: 'cancel',
@@ -33,7 +33,7 @@ export const resolutionP1 = Sla({
     duration: Duration({ hours: 4 }),
     schedule: '08fcd0830a0a0b2600079f56b1adb9ae',
     conditions: {
-        start: 'priority=1^active=true',
+        start: 'priority=1^active=true^account.x_1863667_csm_customer_codeNOT INlva,geo',
         pause: 'state=18',
         resume: 'state!=18',
         stop: 'stateIN6,3,7',
@@ -53,7 +53,7 @@ export const responseP2 = Sla({
     duration: Duration({ hours: 2 }),
     schedule: '08fcd0830a0a0b2600079f56b1adb9ae',
     conditions: {
-        start: 'priority=2^active=true',
+        start: 'priority=2^active=true^account.x_1863667_csm_customer_codeNOT INlva,geo',
         stop: 'assigned_toISNOTEMPTY^ORactive=false',
     },
     resetAction: 'cancel',
@@ -70,7 +70,7 @@ export const resolutionP2 = Sla({
     duration: Duration({ hours: 8 }),
     schedule: '08fcd0830a0a0b2600079f56b1adb9ae',
     conditions: {
-        start: 'priority=2^active=true',
+        start: 'priority=2^active=true^account.x_1863667_csm_customer_codeNOT INlva,geo',
         pause: 'state=18',
         resume: 'state!=18',
         stop: 'stateIN6,3,7',
@@ -90,7 +90,7 @@ export const responseP3 = Sla({
     duration: Duration({ hours: 4 }),
     schedule: '08fcd0830a0a0b2600079f56b1adb9ae',
     conditions: {
-        start: 'priority=3^active=true',
+        start: 'priority=3^active=true^account.x_1863667_csm_customer_codeNOT INlva,geo',
         stop: 'assigned_toISNOTEMPTY^ORactive=false',
     },
     resetAction: 'cancel',
@@ -107,7 +107,7 @@ export const resolutionP3 = Sla({
     duration: Duration({ hours: 24 }),
     schedule: '08fcd0830a0a0b2600079f56b1adb9ae',
     conditions: {
-        start: 'priority=3^active=true',
+        start: 'priority=3^active=true^account.x_1863667_csm_customer_codeNOT INlva,geo',
         pause: 'state=18',
         resume: 'state!=18',
         stop: 'stateIN6,3,7',
@@ -127,7 +127,7 @@ export const responseP4 = Sla({
     duration: Duration({ hours: 8 }),
     schedule: '08fcd0830a0a0b2600079f56b1adb9ae',
     conditions: {
-        start: 'priority=4^active=true',
+        start: 'priority=4^active=true^account.x_1863667_csm_customer_codeNOT INlva,geo',
         stop: 'assigned_toISNOTEMPTY^ORactive=false',
     },
     resetAction: 'cancel',
@@ -144,7 +144,7 @@ export const resolutionP4 = Sla({
     duration: Duration({ hours: 48 }),
     schedule: '08fcd0830a0a0b2600079f56b1adb9ae',
     conditions: {
-        start: 'priority=4^active=true',
+        start: 'priority=4^active=true^account.x_1863667_csm_customer_codeNOT INlva,geo',
         pause: 'state=18',
         resume: 'state!=18',
         stop: 'stateIN6,3,7',
