@@ -1,4 +1,4 @@
-import { Table, ReferenceColumn, ChoiceColumn } from '@servicenow/sdk/core'
+import { Table, ReferenceColumn, ChoiceColumn, DateTimeColumn } from '@servicenow/sdk/core'
 
 // SP-34: groups are tied to an account so the Case form can filter Assignment Group by Account.
 export const sys_user_group = Table({
@@ -31,6 +31,18 @@ export const sn_customerservice_case = Table({
                 repair: 'Repair Tracking',
             },
         }),
+        // SP-65: standard On Hold reasons (shown when state = Awaiting Info).
+        x_1863667_csm_on_hold_reason: ChoiceColumn({
+            label: 'On hold reason',
+            choices: {
+                awaiting_customer: 'Awaiting Customer',
+                awaiting_supplier: 'Awaiting Supplier',
+                awaiting_spare_part: 'Awaiting Spare part',
+            },
+            default: 'awaiting_customer',
+        }),
+        // SP-60: stops the Workaround SLA clock.
+        x_1863667_csm_workaround_provided: DateTimeColumn({ label: 'Workaround provided' }),
         x_1863667_csm_hw_tasks_created: ChoiceColumn({
             label: 'Hardware tasks created',
             choices: { no: 'No', yes: 'Yes' },
@@ -60,6 +72,22 @@ export const sn_customerservice_task = Table({
                 supplier: 'Supplier',
             },
             default: 'general',
+        }),
+    },
+})
+
+// SP-61: location drives GEO SLA schedule selection (schedule + type), time zone comes from the location itself.
+export const cmn_location = Table({
+    augments: 'cmn_location',
+    schema: {
+        x_1863667_csm_sla_schedule: ReferenceColumn({
+            label: 'SLA schedule',
+            referenceTable: 'cmn_schedule',
+            hint: 'Business hours used by location-based SLAs (GEO)',
+        }),
+        x_1863667_csm_location_type: ChoiceColumn({
+            label: 'Location type',
+            choices: { headquarters: 'Headquarters', site: 'Site', depot: 'Depot / Stockroom' },
         }),
     },
 })

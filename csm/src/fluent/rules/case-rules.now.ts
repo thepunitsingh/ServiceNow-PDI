@@ -4,6 +4,7 @@ import {
     createHardwareTasks,
     resolveCaseWhenTasksClosed,
     enforceClosedBy,
+    defaultOnHoldReason,
 } from '../../server/case-rules'
 
 BusinessRule({
@@ -47,4 +48,15 @@ BusinessRule({
     order: 300,
     filterCondition: 'state=6',
     script: enforceClosedBy,
+})
+
+BusinessRule({
+    $id: Now.ID['br-case-on-hold-reason'],
+    name: 'CSM Case: default on hold reason',
+    table: 'sn_customerservice_case',
+    when: 'before',
+    action: ['insert', 'update'],
+    order: 150,
+    filterCondition: 'state=18',
+    script: defaultOnHoldReason,
 })

@@ -82,3 +82,13 @@ export function enforceClosedBy(current: any, previous: any) {
         current.setAbortAction(true)
     }
 }
+
+const STATE_AWAITING_INFO = '18'
+
+/** SP-65: before insert/update - an Awaiting Info case always carries an On Hold reason (default: Awaiting Customer). */
+export function defaultOnHoldReason(current: any) {
+    if (current.getValue('state') !== STATE_AWAITING_INFO) return
+    if (!current.getValue('x_1863667_csm_on_hold_reason')) {
+        current.setValue('x_1863667_csm_on_hold_reason', 'awaiting_customer')
+    }
+}

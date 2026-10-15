@@ -61,3 +61,16 @@ through `x_1863667_csm_customer_code` (set on the account); the Install Base sol
 the Product filter when they exist; the widget must still be placed on the csmgnd header; "global support users" for
 Case closed by are members of the group named in system property `x_1863667_csm.global_support_group`.
 Built successfully; not deployed or tested on an instance.
+
+## Sprint 3
+
+| Story | Artifact |
+|---|---|
+| SP-54 | `imports/13-stockroom` (staging table, CSV data source, transform map to `alm_stockroom`) |
+| SP-56 | `imports/14-bulk-templates` (LVA / GEO data sources for assets and install base) + `templates/*.csv` header templates |
+| SP-60 | `sla/account-slas`: Response, Workaround, Resolution, Escalation per priority for LVA and GEO; priority change completes the running Resolution SLA and the SLA for the new priority attaches with a retroactive start (elapsed time carries over). Generic Resolution SLAs got the same behaviour |
+| SP-61 | GEO SLAs pick their schedule from `location.x_1863667_csm_sla_schedule` and the location's time zone; locations without a schedule fall back to the GEO schedule (`tables/case-extensions` adds schedule + location type to `cmn_location`) |
+| SP-62 | Resolution/Workaround/Escalation clocks pause on Awaiting Info (state 18) and resume when it is left |
+| SP-65 | `x_1863667_csm_on_hold_reason` (Awaiting Customer default / Supplier / Spare part), UI policy (visible + mandatory on Awaiting Info) and a business rule that defaults the value |
+
+Cancelled in Jira and not built: SP-53, 55, 57, 58, 59, 63, 64, 66, 67. Reassignment now also counts resolution time from case creation (retroactive start).

@@ -21,6 +21,10 @@ declare global {
                         table: 'sys_script'
                         id: '292da31cf3ff4bafbecff524ee3ceb7f'
                     }
+                    'br-case-on-hold-reason': {
+                        table: 'sys_script'
+                        id: '7be7ec9cd7b74362ace708d9704ebe52'
+                    }
                     'br-task-resolve-case': {
                         table: 'sys_script'
                         id: 'c201660ce5814e98893244d95007386e'
@@ -45,6 +49,14 @@ declare global {
                         table: 'sys_data_source'
                         id: '61b7fdae1c6340ef8f8f62fcc3773893'
                     }
+                    'ds-geo-asset': {
+                        table: 'sys_data_source'
+                        id: '6458b394a01f431c9016f4513b888e4f'
+                    }
+                    'ds-geo-install-base': {
+                        table: 'sys_data_source'
+                        id: '258d9856f5934500a3df2ab1713d04c6'
+                    }
                     'ds-group': {
                         table: 'sys_data_source'
                         id: '8ecb8c2b960e4976afc0ef018c983573'
@@ -65,6 +77,14 @@ declare global {
                         table: 'sys_data_source'
                         id: '848ed127eaac4568834b20ba76eb7034'
                     }
+                    'ds-lva-asset': {
+                        table: 'sys_data_source'
+                        id: 'aef3835108b0402580ffc49d85c7e91b'
+                    }
+                    'ds-lva-install-base': {
+                        table: 'sys_data_source'
+                        id: '7bf78f93b00846498c6164bebd3e7330'
+                    }
                     'ds-product_model': {
                         table: 'sys_data_source'
                         id: 'ad7f070e9e98438caeda396b0e9a95d0'
@@ -72,6 +92,10 @@ declare global {
                     'ds-sold_product': {
                         table: 'sys_data_source'
                         id: '1215f1831e7c4471a2dac1c26090ee1f'
+                    }
+                    'ds-stockroom': {
+                        table: 'sys_data_source'
+                        id: 'aa493c83a6e648c48ab9b62464272fd1'
                     }
                     package_json: {
                         table: 'sys_module'
@@ -101,37 +125,189 @@ declare global {
                         table: 'sys_script_include'
                         id: '51a5b2c8213a46949928f964df64b2e9'
                     }
+                    'sla-geo-escalation-p1-def': {
+                        table: 'contract_sla'
+                        id: '0683b98639414ab591e9083b5e1a3f92'
+                    }
+                    'sla-geo-escalation-p1-loc': {
+                        table: 'contract_sla'
+                        id: 'cb0fcda775744f979a16d22f05c2f4e3'
+                    }
+                    'sla-geo-escalation-p2-def': {
+                        table: 'contract_sla'
+                        id: '578cafb39f494e398c9b123cfe2c3435'
+                    }
+                    'sla-geo-escalation-p2-loc': {
+                        table: 'contract_sla'
+                        id: '6c5101ed8dee4e6dbf0a00e1daa58b73'
+                    }
+                    'sla-geo-escalation-p3-def': {
+                        table: 'contract_sla'
+                        id: '60cad2507ed34a84aa2e1b5d73c2a6d2'
+                    }
+                    'sla-geo-escalation-p3-loc': {
+                        table: 'contract_sla'
+                        id: 'c8d2b33357434e4583c382afb39a0475'
+                    }
+                    'sla-geo-escalation-p4-def': {
+                        table: 'contract_sla'
+                        id: 'acdec1f32d7c45da93987197d8d40185'
+                    }
+                    'sla-geo-escalation-p4-loc': {
+                        table: 'contract_sla'
+                        id: 'b7fa854c10264c918d178e53cfb6fc2c'
+                    }
                     'sla-geo-resolution-p1': {
                         table: 'contract_sla'
                         id: '183394a09098425daee5c40d2edcc796'
+                        deleted: true
+                    }
+                    'sla-geo-resolution-p1-def': {
+                        table: 'contract_sla'
+                        id: '699a743256a1431d9d6e20bf8b2f1e25'
+                    }
+                    'sla-geo-resolution-p1-loc': {
+                        table: 'contract_sla'
+                        id: 'fce3d26275bc40c7a94d738e0f78eb9b'
                     }
                     'sla-geo-resolution-p2': {
                         table: 'contract_sla'
                         id: '88dea1b3ffb14209881c8ee0918e510a'
+                        deleted: true
+                    }
+                    'sla-geo-resolution-p2-def': {
+                        table: 'contract_sla'
+                        id: '0899aa3f4e174aba9d4a9b1399f65179'
+                    }
+                    'sla-geo-resolution-p2-loc': {
+                        table: 'contract_sla'
+                        id: '400cb1749b3a43fa905679d1f4a89f0a'
                     }
                     'sla-geo-resolution-p3': {
                         table: 'contract_sla'
                         id: 'f39dbaeb5e1a4e02bc61debf47c92407'
+                        deleted: true
+                    }
+                    'sla-geo-resolution-p3-def': {
+                        table: 'contract_sla'
+                        id: 'dfd9dd3f73b04dfa920bd7aeb8db2bae'
+                    }
+                    'sla-geo-resolution-p3-loc': {
+                        table: 'contract_sla'
+                        id: '5fb864902dca475793fac488adc31346'
                     }
                     'sla-geo-resolution-p4': {
                         table: 'contract_sla'
                         id: '717538b8c00a43a197e9b448f0d131bf'
+                        deleted: true
+                    }
+                    'sla-geo-resolution-p4-def': {
+                        table: 'contract_sla'
+                        id: 'e81e4a74f16d41708572735fe3b39f04'
+                    }
+                    'sla-geo-resolution-p4-loc': {
+                        table: 'contract_sla'
+                        id: 'd83d2e0e5806462088fccbd766be2925'
                     }
                     'sla-geo-response-p1': {
                         table: 'contract_sla'
                         id: 'd872725614e94f6589e31880ebca6da3'
+                        deleted: true
+                    }
+                    'sla-geo-response-p1-def': {
+                        table: 'contract_sla'
+                        id: 'fedd93e687c24e9cb494173a67e91a06'
+                    }
+                    'sla-geo-response-p1-loc': {
+                        table: 'contract_sla'
+                        id: '0e5e190dbfc14829bfc3b25749faef4f'
                     }
                     'sla-geo-response-p2': {
                         table: 'contract_sla'
                         id: 'c3a18dfb18054cce83847d6eee5c5d48'
+                        deleted: true
+                    }
+                    'sla-geo-response-p2-def': {
+                        table: 'contract_sla'
+                        id: '548d9e039e8c41f585a2d279ec69ef00'
+                    }
+                    'sla-geo-response-p2-loc': {
+                        table: 'contract_sla'
+                        id: '7ef1a235c119498093edca574a7115bf'
                     }
                     'sla-geo-response-p3': {
                         table: 'contract_sla'
                         id: 'f493325e406244d5a60223fed2222216'
+                        deleted: true
+                    }
+                    'sla-geo-response-p3-def': {
+                        table: 'contract_sla'
+                        id: '69c319c24c7548b393aba9a5257738c5'
+                    }
+                    'sla-geo-response-p3-loc': {
+                        table: 'contract_sla'
+                        id: '8915db98a399438abb86b94117036b8b'
                     }
                     'sla-geo-response-p4': {
                         table: 'contract_sla'
                         id: '192c15a609514ed18403e7e6ef21ba2a'
+                        deleted: true
+                    }
+                    'sla-geo-response-p4-def': {
+                        table: 'contract_sla'
+                        id: '213b95fb1e31441e9870f72e00ff745b'
+                    }
+                    'sla-geo-response-p4-loc': {
+                        table: 'contract_sla'
+                        id: '4826902b3e8e40a6b7a0b041a2c198c7'
+                    }
+                    'sla-geo-workaround-p1-def': {
+                        table: 'contract_sla'
+                        id: 'b701a7a0c9b048d681114528ab9dd96f'
+                    }
+                    'sla-geo-workaround-p1-loc': {
+                        table: 'contract_sla'
+                        id: '7b7812ef0b55429e9e0c2ec2c5c15483'
+                    }
+                    'sla-geo-workaround-p2-def': {
+                        table: 'contract_sla'
+                        id: 'af3596867cb74c31833ec3a9a4a92c74'
+                    }
+                    'sla-geo-workaround-p2-loc': {
+                        table: 'contract_sla'
+                        id: '05ed53afa6814f75801c1af9cc97e35e'
+                    }
+                    'sla-geo-workaround-p3-def': {
+                        table: 'contract_sla'
+                        id: '2b04a1ca8d2a47d3b53ee96ea595d9ff'
+                    }
+                    'sla-geo-workaround-p3-loc': {
+                        table: 'contract_sla'
+                        id: '1361e9703be0425fa0f22edb24137849'
+                    }
+                    'sla-geo-workaround-p4-def': {
+                        table: 'contract_sla'
+                        id: '54a69bf8ff564cc198122583b4fb95a4'
+                    }
+                    'sla-geo-workaround-p4-loc': {
+                        table: 'contract_sla'
+                        id: '0b946970fd57437e888b9a6c09ee9385'
+                    }
+                    'sla-lva-escalation-p1': {
+                        table: 'contract_sla'
+                        id: '99f8e00c567d40fbbcc20fdcde74ee0f'
+                    }
+                    'sla-lva-escalation-p2': {
+                        table: 'contract_sla'
+                        id: 'fc7a96943ba34eb5b752f59dd4ccbd86'
+                    }
+                    'sla-lva-escalation-p3': {
+                        table: 'contract_sla'
+                        id: '24ae54fb7c264f19bdf2f4262f04c229'
+                    }
+                    'sla-lva-escalation-p4': {
+                        table: 'contract_sla'
+                        id: 'd0d78093fc624e43a0b0a5e1bfba9f0f'
                     }
                     'sla-lva-resolution-p1': {
                         table: 'contract_sla'
@@ -164,6 +340,22 @@ declare global {
                     'sla-lva-response-p4': {
                         table: 'contract_sla'
                         id: '5af5ffa82818443bad4b3050cf8bbae7'
+                    }
+                    'sla-lva-workaround-p1': {
+                        table: 'contract_sla'
+                        id: '9ca3532d81ea4f718a9202316399e55d'
+                    }
+                    'sla-lva-workaround-p2': {
+                        table: 'contract_sla'
+                        id: '5aa0828fd433470996d56821bbeef195'
+                    }
+                    'sla-lva-workaround-p3': {
+                        table: 'contract_sla'
+                        id: 'eacdf0ea8f574e9db3401523ea8e64be'
+                    }
+                    'sla-lva-workaround-p4': {
+                        table: 'contract_sla'
+                        id: '293dcf872af34285ada55cf079f6479f'
                     }
                     'sla-resolution-p1': {
                         table: 'contract_sla'
@@ -321,12 +513,29 @@ declare global {
                         table: 'sys_transform_script'
                         id: 'bdb239d60d7e4278b4932f8b3380a113'
                     }
+                    'tm-stockroom': {
+                        table: 'sys_transform_map'
+                        id: '6279be55157a4741b983a8ece289646e'
+                    }
+                    'tm-stockroom-validate': {
+                        table: 'sys_transform_script'
+                        id: '3d1112d366c540e9b4586b8b62b069c7'
+                    }
                     'widget-account-branding': {
                         table: 'sp_widget'
                         id: '8608760728184f218b59398864df028f'
                     }
                 }
                 composite: [
+                    {
+                        table: 'sys_documentation'
+                        id: '000f43a1d4284d76bba75852da7d6e7b'
+                        key: {
+                            name: 'cmn_location'
+                            element: 'x_1863667_csm_sla_schedule'
+                            language: 'en'
+                        }
+                    },
                     {
                         table: 'sys_choice'
                         id: '00ed7a52054c424197aa9bd38b96de85'
@@ -503,6 +712,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '0bdce4967b5344a0b1df824e3a1b1936'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_on_hold_reason'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_ui_policy_action'
                         id: '0c57edc4a66c4d039c17f7cea009bfc8'
                         key: {
@@ -514,6 +732,13 @@ declare global {
                                 }
                             }
                             field: 'x_1863667_csm_closed_by'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: '0cd5399faefd4aeab4881351e937dfd9'
+                        key: {
+                            name: 'x_1863667_csm_stg_stockroom'
                         }
                     },
                     {
@@ -739,6 +964,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '1e58ca58bf82444fbcdfe2ce2d4aca2a'
+                        key: {
+                            name: 'cmn_location'
+                            element: 'x_1863667_csm_location_type'
+                            value: 'depot'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: '1e7604248498450c9e0a936c244ee0c8'
                         key: {
@@ -868,11 +1104,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '27f01b3f30c1404d878aa634851fd898'
+                        key: {
+                            name: 'x_1863667_csm_stg_stockroom'
+                            element: 'stockroom_type'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '28fc407e619640e8a03395f5cbdecc3f'
                         key: {
                             name: 'x_1863667_csm_stg_account'
                             element: 'zip'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '298b0a3a6eaa45a4b6ca48c03bf82e22'
+                        key: {
+                            name: 'cmn_location'
+                            element: 'x_1863667_csm_location_type'
                             language: 'en'
                         }
                     },
@@ -1344,6 +1597,14 @@ declare global {
                     },
                     {
                         table: 'sys_dictionary'
+                        id: '3d406af7e12346ce9869cc0a91c371f1'
+                        key: {
+                            name: 'x_1863667_csm_stg_stockroom'
+                            element: 'location_code'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
                         id: '3f2f7ad7057846b0a564dfa6d8f97ac2'
                         key: {
                             name: 'x_1863667_csm_stg_asset'
@@ -1490,6 +1751,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_transform_entry'
+                        id: '4838f9c52dc2490a8ac287a3ba49dc82'
+                        key: {
+                            map: '6279be55157a4741b983a8ece289646e'
+                            target_field: 'type'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '48a7c6c415f9414d95a5b9bca0c2f3c6'
                         key: {
@@ -1530,6 +1799,14 @@ declare global {
                         key: {
                             map: '05ce3e52d153431ba9d57b5b08479178'
                             target_field: 'country'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '4acde6d0d745440d85c581b2ab666fd5'
+                        key: {
+                            name: 'x_1863667_csm_stg_stockroom'
+                            element: 'name'
                         }
                     },
                     {
@@ -1641,6 +1918,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: '532088eb6d6a4994bda8da5db583f615'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_on_hold_reason'
+                            value: 'awaiting_supplier'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: '5398ae5c28b343ed81b1d6f22550f391'
                         key: {
@@ -1681,6 +1969,15 @@ declare global {
                         key: {
                             name: 'sn_customerservice_case'
                             element: 'x_1863667_csm_hw_request_type'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '57f9c6b3c94c4c24bb4f483511a635a1'
+                        key: {
+                            name: 'cmn_location'
+                            element: 'NULL'
+                            language: 'en'
                         }
                     },
                     {
@@ -1863,6 +2160,15 @@ declare global {
                     },
                     {
                         table: 'sys_documentation'
+                        id: '65288dc78a4149a8a3afcf00cc81507c'
+                        key: {
+                            name: 'x_1863667_csm_stg_stockroom'
+                            element: 'stockroom_type'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
                         id: '6531f12caeb64e1b966f66afc1ab1b8d'
                         key: {
                             name: 'x_1863667_csm_stg_asset'
@@ -1978,6 +2284,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '6fd1fa2c1791416093bfd4cab129715e'
+                        key: {
+                            name: 'x_1863667_csm_stg_stockroom'
+                            element: 'account_code'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '7087540760414274aef716f34cc42021'
                         key: {
@@ -2085,6 +2400,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: '7a0df25d45804a05a376e69a715e86a4'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_on_hold_reason'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '7a6cba873f85426fa8b850832bf54f51'
                         key: {
@@ -2136,6 +2459,14 @@ declare global {
                     },
                     {
                         table: 'sys_dictionary'
+                        id: '7f1427a8d76c44549d2744f88d5d5890'
+                        key: {
+                            name: 'cmn_location'
+                            element: 'x_1863667_csm_sla_schedule'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
                         id: '7f2935da1d134274b52f7330bf4dfb02'
                         key: {
                             name: 'x_1863667_csm_stg_group'
@@ -2156,6 +2487,14 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_contact'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_transform_entry'
+                        id: '82b3aa1412584b278caa4c1fb18a31c2'
+                        key: {
+                            map: '6279be55157a4741b983a8ece289646e'
+                            target_field: 'name'
                         }
                     },
                     {
@@ -2291,6 +2630,15 @@ declare global {
                     },
                     {
                         table: 'sys_documentation'
+                        id: '8f7828ca6eab49ffb84fab877864741c'
+                        key: {
+                            name: 'x_1863667_csm_stg_stockroom'
+                            element: 'location_code'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
                         id: '8fcb801d1d7f4870bddd884ab6517ef6'
                         key: {
                             name: 'x_1863667_csm_stg_location'
@@ -2374,6 +2722,14 @@ declare global {
                     },
                     {
                         table: 'sys_dictionary'
+                        id: '976715b677d54b14a49c4d434299d2b5'
+                        key: {
+                            name: 'cmn_location'
+                            element: 'x_1863667_csm_location_type'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
                         id: '981cbf07115842fcbe070c32aa7e8cb2'
                         key: {
                             name: 'x_1863667_csm_stg_sold_product'
@@ -2440,6 +2796,14 @@ declare global {
                     },
                     {
                         table: 'sys_dictionary'
+                        id: '9c113f26bc794151924658022418a5f3'
+                        key: {
+                            name: 'x_1863667_csm_stg_stockroom'
+                            element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
                         id: '9dd7a9ed6a034dd483ec4dcaf1ec5005'
                         key: {
                             name: 'x_1863667_csm_stg_account'
@@ -2484,6 +2848,14 @@ declare global {
                         id: 'a25b5bc34d0342d7adec826b031cdbdf'
                         key: {
                             name: 'sn_customerservice_task'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'a29b17b0fa4648dcad5e1786910f1df1'
+                        key: {
+                            name: 'x_1863667_csm_stg_stockroom'
+                            element: 'manager_user_name'
                         }
                     },
                     {
@@ -2608,6 +2980,24 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: 'ac4bce37dda0490486b8cd7b68548e17'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_on_hold_reason'
+                            value: 'awaiting_spare_part'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_db_object'
+                        id: 'ad68fcc25ad140eda6d50535151a4d1a'
+                        key: {
+                            name: 'cmn_location'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'ad733fc69a94441c85c67857dc0e4688'
                         key: {
@@ -2718,6 +3108,15 @@ declare global {
                     },
                     {
                         table: 'sys_documentation'
+                        id: 'b88c00c5b2544014ae75029b0fc23ca4'
+                        key: {
+                            name: 'x_1863667_csm_stg_stockroom'
+                            element: 'name'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
                         id: 'b8c139b17c3940f982fb4eec3959b015'
                         key: {
                             name: 'x_1863667_csm_stg_product_model'
@@ -2755,6 +3154,15 @@ declare global {
                         id: 'bcf71c468c6a4d768c8b4711b7956ea5'
                         key: {
                             name: 'x_1863667_csm_stg_installed_product'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'be267c5c978a46379d74fb87f39ef92b'
+                        key: {
+                            name: 'x_1863667_csm_stg_stockroom'
+                            element: 'NULL'
+                            language: 'en'
                         }
                     },
                     {
@@ -2849,6 +3257,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: 'c526038036c84f80bbac1cb9787eccd2'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_on_hold_reason'
+                            value: 'awaiting_customer'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'c57ac5578a1b420c85a8e2e018b5b5fa'
                         key: {
@@ -2870,6 +3289,14 @@ declare global {
                             name: 'x_1863667_csm_stg_contract'
                             element: 'short_description'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
+                        id: 'c5c2c5ad8dee4fc996e48c8b27532e04'
+                        key: {
+                            name: 'cmn_location'
+                            element: 'x_1863667_csm_location_type'
                         }
                     },
                     {
@@ -2938,6 +3365,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: 'cba6881008544f1193503ec887e27688'
+                        key: {
+                            name: 'cmn_location'
+                            element: 'x_1863667_csm_location_type'
+                            value: 'headquarters'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'cbee48369fa94924a624ced25a9e73e4'
                         key: {
@@ -2967,6 +3405,27 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_location'
                             element: 'country'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: 'cdcffd73c91347c5bc331a58f8499eef'
+                        key: {
+                            name: 'cmn_location'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_policy_action'
+                        id: 'ce18cf3b1c2b4317ab012d8a694b9ead'
+                        key: {
+                            ui_policy: {
+                                id: 'db9ddef842bf42d088e419cd3c3e8f15'
+                                key: {
+                                    table: 'sn_customerservice_case'
+                                    short_description: 'On hold reason mandatory when Awaiting Info'
+                                }
+                            }
+                            field: 'x_1863667_csm_on_hold_reason'
                         }
                     },
                     {
@@ -3133,6 +3592,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'ua_table_licensing_config'
+                        id: 'd90f14a00f16406ab1dd9f3bd11a7891'
+                        key: {
+                            name: 'x_1863667_csm_stg_stockroom'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary_override'
                         id: 'da8d1795716d430d9cd512452a776763'
                         key: {
@@ -3173,6 +3639,22 @@ declare global {
                             name: 'x_1863667_csm_stg_contract'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_policy'
+                        id: 'db9ddef842bf42d088e419cd3c3e8f15'
+                        key: {
+                            table: 'sn_customerservice_case'
+                            short_description: 'On hold reason mandatory when Awaiting Info'
+                        }
+                    },
+                    {
+                        table: 'sys_transform_entry'
+                        id: 'de3429d845d1443cb57381230f383821'
+                        key: {
+                            map: '6279be55157a4741b983a8ece289646e'
+                            target_field: 'manager'
                         }
                     },
                     {
@@ -3225,6 +3707,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: 'e451883cd16d4a92b9f628951a198f85'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_workaround_provided'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: 'e465e64b501b485397dbd3af749b17c8'
                         key: {
@@ -3243,10 +3734,26 @@ declare global {
                     },
                     {
                         table: 'sys_choice_set'
+                        id: 'e655897627ee4ed0960bb6cb263a41e4'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_on_hold_reason'
+                        }
+                    },
+                    {
+                        table: 'sys_choice_set'
                         id: 'e667e88bb4b64df19c61af80ea76a978'
                         key: {
                             name: 'sn_customerservice_case'
                             element: 'x_1863667_csm_hw_tasks_created'
+                        }
+                    },
+                    {
+                        table: 'sys_transform_entry'
+                        id: 'e77a8adc2c8f4965b562d51433cc2f66'
+                        key: {
+                            map: '6279be55157a4741b983a8ece289646e'
+                            target_field: 'location'
                         }
                     },
                     {
@@ -3285,6 +3792,14 @@ declare global {
                     },
                     {
                         table: 'sys_dictionary'
+                        id: 'ea0bc6129eae4712ac992bee08d5f28e'
+                        key: {
+                            name: 'x_1863667_csm_stg_stockroom'
+                            element: 'account_code'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
                         id: 'ea0e882453e34acba1b6a7afcf195a60'
                         key: {
                             name: 'x_1863667_csm_stg_entitlement'
@@ -3308,6 +3823,17 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_choice'
+                        id: 'eaed69b7d3aa46e3abb9f79c38dc6cfb'
+                        key: {
+                            name: 'cmn_location'
+                            element: 'x_1863667_csm_location_type'
+                            value: 'site'
+                            language: 'en'
+                            dependent_value: 'NULL'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'ed0a8b2c08cb41d795f32c122d87fdce'
                         key: {
@@ -3321,6 +3847,14 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_location'
                             element: 'city'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'ee302c0728aa47ecb8c29ff0e9c9ae0b'
+                        key: {
+                            name: 'sn_customerservice_case'
+                            element: 'x_1863667_csm_workaround_provided'
                         }
                     },
                     {
@@ -3444,6 +3978,15 @@ declare global {
                         key: {
                             name: 'customer_account'
                             element: 'x_1863667_csm_classification'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'f586aec2ed7048ccbd47b9ebb1707926'
+                        key: {
+                            name: 'x_1863667_csm_stg_stockroom'
+                            element: 'manager_user_name'
                             language: 'en'
                         }
                     },

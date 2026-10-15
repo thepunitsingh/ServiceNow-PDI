@@ -37,9 +37,10 @@ export const resolutionP1 = Sla({
         pause: 'state=18',
         resume: 'state!=18',
         stop: 'stateIN6,3,7',
-        reset: 'assignment_groupCHANGES^ORassigned_toCHANGES',
+        reset: 'assignment_groupCHANGES^ORassigned_toCHANGES^ORpriorityCHANGES',
     },
     resetAction: 'complete',
+    retroactive: { start: true, setStartTo: 'sys_created_on', pause: true },
     whenTo: { resume: 'on_condition', cancel: 'on_condition' },
 })
 
@@ -74,9 +75,10 @@ export const resolutionP2 = Sla({
         pause: 'state=18',
         resume: 'state!=18',
         stop: 'stateIN6,3,7',
-        reset: 'assignment_groupCHANGES^ORassigned_toCHANGES',
+        reset: 'assignment_groupCHANGES^ORassigned_toCHANGES^ORpriorityCHANGES',
     },
     resetAction: 'complete',
+    retroactive: { start: true, setStartTo: 'sys_created_on', pause: true },
     whenTo: { resume: 'on_condition', cancel: 'on_condition' },
 })
 
@@ -111,9 +113,10 @@ export const resolutionP3 = Sla({
         pause: 'state=18',
         resume: 'state!=18',
         stop: 'stateIN6,3,7',
-        reset: 'assignment_groupCHANGES^ORassigned_toCHANGES',
+        reset: 'assignment_groupCHANGES^ORassigned_toCHANGES^ORpriorityCHANGES',
     },
     resetAction: 'complete',
+    retroactive: { start: true, setStartTo: 'sys_created_on', pause: true },
     whenTo: { resume: 'on_condition', cancel: 'on_condition' },
 })
 
@@ -148,9 +151,10 @@ export const resolutionP4 = Sla({
         pause: 'state=18',
         resume: 'state!=18',
         stop: 'stateIN6,3,7',
-        reset: 'assignment_groupCHANGES^ORassigned_toCHANGES',
+        reset: 'assignment_groupCHANGES^ORassigned_toCHANGES^ORpriorityCHANGES',
     },
     resetAction: 'complete',
+    retroactive: { start: true, setStartTo: 'sys_created_on', pause: true },
     whenTo: { resume: 'on_condition', cancel: 'on_condition' },
 })
 

@@ -85,3 +85,31 @@ export const uipHwAssetAction = Record({
         cleared: false,
     },
 })
+
+// SP-65: On hold reason is visible and mandatory whenever the case is Awaiting Info.
+export const uipOnHold = Record({
+    $id: Now.ID['uip-case-on-hold'],
+    table: 'sys_ui_policy',
+    data: {
+        table: 'sn_customerservice_case',
+        short_description: 'On hold reason mandatory when Awaiting Info',
+        conditions: 'state=18',
+        on_load: true,
+        reverse_if_false: true,
+        global: true,
+        active: true,
+    },
+})
+
+export const uipOnHoldAction = Record({
+    $id: Now.ID['uipa-case-on-hold'],
+    table: 'sys_ui_policy_action',
+    data: {
+        ui_policy: uipOnHold,
+        field: 'x_1863667_csm_on_hold_reason',
+        visible: 'true',
+        mandatory: 'true',
+        disabled: 'ignore',
+        cleared: false,
+    },
+})
