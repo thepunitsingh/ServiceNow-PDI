@@ -60,6 +60,21 @@ CsmAccess.prototype = {
         return accounts.length ? field + 'IN' + accounts.join(',') : this.NONE;
     },
 
+    // product models: only those used by assets of the authorised accounts (SP-90)
+    modelQuery: function () {
+        var accounts = this.authorizedAccounts();
+        if (accounts === null) return '';
+        if (!accounts.length) return this.NONE;
+        var ids = {};
+        var a = new GlideRecord('alm_asset');
+        a.addQuery('account', 'IN', accounts.join(','));
+        a.addNotNullQuery('model');
+        a.query();
+        while (a.next()) ids[a.getValue('model')] = true;
+        var list = Object.keys(ids);
+        return list.length ? 'sys_idIN' + list.join(',') : this.NONE;
+    },
+
     canAccessRecordOf: function (table, sysId) {
         if (!this.isRestricted()) return true;
         var gr = new GlideRecord(table);
@@ -226,4 +241,36 @@ export const contractTotalCostRead = Acl({
     operation: 'read',
     decisionType: 'deny',
     roles: ['sn_customerservice_agent', 'sn_customerservice_manager', adminRole, l2Agent, l31Agent, l32Specialist],
+})
+
+// SP-90: assets and product models follow the same restriction for direct access.
+export const assetAccountRead = Acl({
+    $id: Now.ID['acl-asset-account-read'],
+    type: 'record',
+    table: 'alm_asset',
+    operation: 'read',
+    decisionType: 'deny',
+    adminOverrides: true,
+    description: 'SP-90: assets are only readable for authorised accounts',
+    script: `answer = new x_1863667_csm.CsmAccess().canAccessAccount(current.getValue('account'));`,
+})
+
+export const modelAccountRead = Acl({
+    $id: Now.ID['acl-model-account-read'],
+    type: 'record',
+    table: 'cmdb_model',
+    operation: 'read',
+    decisionType: 'deny',
+    adminOverrides: true,
+    description: 'SP-90: product models are only readable when used by an authorised account',
+    script: `var q = new x_1863667_csm.CsmAccess().modelQuery();
+answer = true;
+if (q) {
+    var gr = new GlideRecord('cmdb_model');
+    gr.addEncodedQuery(q);
+    gr.addQuery('sys_id', current.getUniqueValue());
+    gr.setLimit(1);
+    gr.query();
+    answer = gr.hasNext();
+}`,
 })

@@ -104,3 +104,29 @@ hours; 4. send test mails (new, reply, duplicate) and check the cases; 5. retire
 Assumptions: customer/partner scoping uses the marker role, so users without it are unrestricted; contract field ACL list
 (discount, payment amount, total cost) is a guess for the "financial fields" in the requirement register; the matrix maps
 Impact 3 x Urgency 3 to P4 because SLAs only exist for P1-P4.
+
+## Sprint 5
+
+| Story | Artifact |
+|---|---|
+| SP-80 | `portal/case-forms`: three record producers (basic, for product, for install base) with the mandatory fields from the story; contact / account / channel auto-filled |
+| SP-81 | `portal/case-lists`: "CSM Case Lists" widget (All Cases, Action Needed = Resolved / Awaiting Info, My Cases = opened by me) with highlighting |
+| SP-83 | `portal/case-lists`: Cases search source + the OOB Knowledge source on the csmgnd portal; results use the user's ACLs |
+| SP-87 | `ui/onboarding-action` + `server/onboarding`: "Onboard project" button on the account (L2 group, agent role, routing rule; non-standard items listed as manual follow-up) |
+| SP-88 | `data/portal-properties` (default logo / header colour / font colour) and the branding widget fallback chain account -> default |
+| SP-89 | `routeToL2Group`: LVA / GEO accounts map to their own L2 group (`x_1863667_csm.l2_group_lva/geo` or the seeded group names); only the group is set, so state and SLAs are untouched |
+| SP-90 | `security/access` + `rules/query-rules`: assets, product models and install base items restricted to the user's authorised accounts |
+| SP-91 | `enforceClosedBy` fills Case closed by with the resolving user (Propose Solution sets state Resolved); the field stays editable and its picker is limited to account + global support users (`CsmCaseFilters.closedByQualifier`) |
+| SP-92 | `x_1863667_csm_task_type` on Case Task (General default, Change Request, Service Request, Supplier) |
+| SP-93 | `logAssignmentGroupChange`: every group change writes a work-note entry (previous, new, user, time) |
+| SP-94 | `imports/15-agent` (staging, data source, transform to `sys_user`, onAfter adds group memberships) |
+
+Not built (Jira "Ignore"): SP-82, 84, 85, 86. `ui/form-layout` places the new fields on the Case form; Task type still has to
+be placed on the Case Task form (its section sys_id could not be looked up - the instance was unreachable).
+Install-base objects (SP-26/28/29/80/90) need the Install Base plugin, which is not active on dev181171.
+
+## Open items before go-live
+- Deploy (`npm run build && npm run deploy` in `csm/`) and run the ATF / manual checks from the acceptance criteria - nothing here was deployed.
+- Confirm placeholders: SLA durations, schedules, priority matrix, contract fields, role -> licence mapping.
+- Set system properties: `x_1863667_csm.support_mailbox`, `default_contact_password` (password2), `default_l2_group`, `l2_group_lva/geo`, `global_support_group`, portal default logo.
+- Tag LVA / GEO accounts via `x_1863667_csm_customer_code`; assign `x_1863667_csm.account_scoped` (through the L2/L3/viewer/customer roles) to restricted personas.

@@ -5,6 +5,10 @@ declare global {
         namespace Internal {
             interface Keys extends KeysRegistry {
                 explicit: {
+                    'acl-asset-account-read': {
+                        table: 'sys_security_acl'
+                        id: 'e328cef01c8c4df09424a1c2e1f0c76a'
+                    }
                     'acl-attachment-account-read': {
                         table: 'sys_security_acl'
                         id: '900c5a66226b4401b9a8a243e084a565'
@@ -40,6 +44,10 @@ declare global {
                     'acl-email-account-read': {
                         table: 'sys_security_acl'
                         id: 'ebcd7887a2c14db9b1363d0ed1009600'
+                    }
+                    'acl-model-account-read': {
+                        table: 'sys_security_acl'
+                        id: 'e35d0d8ed0754a39832eaf89be4f3dfc'
                     }
                     'acl-task-account-read': {
                         table: 'sys_security_acl'
@@ -77,6 +85,10 @@ declare global {
                         table: 'sys_script'
                         id: '07772caba5f8471a88ff802ae0a40406'
                     }
+                    'br-case-group-log': {
+                        table: 'sys_script'
+                        id: '5636e5e7f7be4c4fa733d3fe786894db'
+                    }
                     'br-case-hw-tasks': {
                         table: 'sys_script'
                         id: '0a36e0d528564e38a625368dc38cea39'
@@ -104,6 +116,10 @@ declare global {
                     'ds-account': {
                         table: 'sys_data_source'
                         id: '8f122e8d4e094f34b7c8095935512500'
+                    }
+                    'ds-agent': {
+                        table: 'sys_data_source'
+                        id: 'a8aad3cab56549c4bbe6d88a9b078693'
                     }
                     'ds-asset': {
                         table: 'sys_data_source'
@@ -285,13 +301,53 @@ declare global {
                         table: 'sp_portal'
                         id: 'a6ef65a1dd934e43ad39ebb50260e435'
                     }
+                    'prop-portal-default-banner': {
+                        table: 'sys_properties'
+                        id: '864756fca6c04cfc880183ff99718ef8'
+                    }
+                    'prop-portal-default-font': {
+                        table: 'sys_properties'
+                        id: 'e92be3863654491390d27b3529164718'
+                    }
+                    'prop-portal-default-logo': {
+                        table: 'sys_properties'
+                        id: '676c45c80f9148b392f6d832d756f8bd'
+                    }
+                    'prop-support-mailbox': {
+                        table: 'sys_properties'
+                        id: '6c660e2a96674a14b673891cec577bc7'
+                    }
+                    'qr-asset-account': {
+                        table: 'sys_script'
+                        id: '7e948ef0fa5a459db20f59c09c186c1f'
+                    }
                     'qr-case-account': {
                         table: 'sys_script'
                         id: 'aecf2da80e054b7bb74137fc67deb808'
                     }
+                    'qr-install-base-account': {
+                        table: 'sys_script'
+                        id: '5ec7bfa4c5bf44d184dc66ce97d4d211'
+                    }
+                    'qr-model-account': {
+                        table: 'sys_script'
+                        id: '4f2f57105720469999a4cbb3457ada87'
+                    }
                     'qr-task-account': {
                         table: 'sys_script'
                         id: 'e708725789bc4fa9b96934f6984d5cff'
+                    }
+                    'rp-case-basic': {
+                        table: 'sc_cat_item_producer'
+                        id: '6bce09dd26034b25be72ccd1e0471e00'
+                    }
+                    'rp-case-install-base': {
+                        table: 'sc_cat_item_producer'
+                        id: 'eaacc773dd164e2cb6ebea7ba85bb8b3'
+                    }
+                    'rp-case-product': {
+                        table: 'sc_cat_item_producer'
+                        id: 'f76a4148505b44ebbf8021c2af5e017e'
                     }
                     'sched-geo': {
                         table: 'cmn_schedule'
@@ -308,6 +364,10 @@ declare global {
                     'sched-lva-span': {
                         table: 'cmn_schedule_span'
                         id: 'b49bfdebdf42458cb0dd92f914e5aeff'
+                    }
+                    'search-source-case': {
+                        table: 'sp_search_source'
+                        id: '76b4b55c7abf4930b4a730e63c831a8b'
                     }
                     'si-case-filters': {
                         table: 'sys_script_include'
@@ -597,6 +657,10 @@ declare global {
                         table: 'sys_module'
                         id: 'b32b37c09fdd4c52b44d56b18befb501'
                     }
+                    src_server_onboarding_ts: {
+                        table: 'sys_module'
+                        id: '2ceea8dff25e44c1b7c786b0daeefb6b'
+                    }
                     'tm-account': {
                         table: 'sys_transform_map'
                         id: '05ce3e52d153431ba9d57b5b08479178'
@@ -608,6 +672,18 @@ declare global {
                     'tm-account-validate': {
                         table: 'sys_transform_script'
                         id: '033b6da9512047f58348724efdc92cac'
+                    }
+                    'tm-agent': {
+                        table: 'sys_transform_map'
+                        id: '07f37e5a498c4a5da9e16aeffab08687'
+                    }
+                    'tm-agent-groups': {
+                        table: 'sys_transform_script'
+                        id: '439848643ba749baab70e803ad12f214'
+                    }
+                    'tm-agent-validate': {
+                        table: 'sys_transform_script'
+                        id: 'da53bfbe7f5a402ba4e28cbc3e20a3fe'
                     }
                     'tm-asset': {
                         table: 'sys_transform_map'
@@ -717,9 +793,17 @@ declare global {
                         table: 'sys_transform_script'
                         id: '3d1112d366c540e9b4586b8b62b069c7'
                     }
+                    'ua-onboard-project': {
+                        table: 'sys_ui_action'
+                        id: '1113f74344c946e492df4cb021788ebe'
+                    }
                     'widget-account-branding': {
                         table: 'sp_widget'
                         id: '8608760728184f218b59398864df028f'
+                    }
+                    'widget-case-lists': {
+                        table: 'sp_widget'
+                        id: 'a89f0628986143809df08f3a154d0c8e'
                     }
                 }
                 composite: [
@@ -832,6 +916,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_transform_entry'
+                        id: '04130f8e25dc48da9cf436e490d4d7b6'
+                        key: {
+                            map: '07f37e5a498c4a5da9e16aeffab08687'
+                            target_field: 'active'
+                        }
+                    },
+                    {
                         table: 'sys_db_object'
                         id: '048a209eeeb5464b8932c451f118c087'
                         key: {
@@ -883,6 +975,13 @@ declare global {
                             name: 'x_1863667_csm_stg_sold_product'
                             element: 'sold_product_id'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'ua_table_licensing_config'
+                        id: '0897ae5a94cf4c9f8b3a259bd912956f'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
                         }
                     },
                     {
@@ -1065,11 +1164,28 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '0fb171df74914c85a074208b06344966'
+                        key: {
+                            sys_ui_section: '9484277dc312310015519f2974d3aecd'
+                            element: 'x_1863667_csm_channel'
+                            position: '100'
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: '0fd476083b894730988c7b6924fba4ac'
                         key: {
                             map: '574a68fc07a5486598c60f480d7f584d'
                             target_field: 'location'
+                        }
+                    },
+                    {
+                        table: 'sc_cat_item_catalog'
+                        id: '102dc4190eab4817beddd121897c7e78'
+                        key: {
+                            sc_cat_item: 'eaacc773dd164e2cb6ebea7ba85bb8b3'
+                            sc_catalog: 'e0d08b13c3330100c8b837659bba8fb4'
                         }
                     },
                     {
@@ -1164,6 +1280,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '1501eaee9ff94e0f86c08fa2036f7d58'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
+                            element: 'email'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '152972e5853a4ffd96e972619afd6cb5'
                         key: {
@@ -1218,6 +1343,14 @@ declare global {
                                     name: 'x_1863667_csm.l3_1_agent'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_transform_entry'
+                        id: '19799ce4cd694c0585d5a48c1be7f6ca'
+                        key: {
+                            map: '07f37e5a498c4a5da9e16aeffab08687'
+                            target_field: 'first_name'
                         }
                     },
                     {
@@ -1397,6 +1530,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '23dffc8f2be4499ba0778bb917be8f85'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
+                            element: 'NULL'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '246986dc05bb477eb657744c927c7af4'
                         key: {
@@ -1425,6 +1567,23 @@ declare global {
                             name: 'x_1863667_csm_stg_group'
                             element: 'email'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '25d318f46cfd4d39a538563725087098'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
+                            element: 'user_name'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_transform_entry'
+                        id: '25fc92c096a241e2b58d0f7dbbfc4919'
+                        key: {
+                            map: '07f37e5a498c4a5da9e16aeffab08687'
+                            target_field: 'phone'
                         }
                     },
                     {
@@ -2079,6 +2238,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: '39ed8424c98841ce85a326c1502ca172'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
+                            element: 'title'
+                            language: 'en'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '3a044e55b01d45f58bb7e1db83944425'
                         key: {
@@ -2212,6 +2380,14 @@ declare global {
                             name: 'customer_account'
                             element: 'x_1863667_csm_portal_logo'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sc_cat_item_catalog'
+                        id: '3d030da5efc9408db45606e4a73a2178'
+                        key: {
+                            sc_cat_item: 'f76a4148505b44ebbf8021c2af5e017e'
+                            sc_catalog: 'e0d08b13c3330100c8b837659bba8fb4'
                         }
                     },
                     {
@@ -2437,6 +2613,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '47c5506f49ea49e88495806d1f6acaac'
+                        key: {
+                            sys_ui_section: '9484277dc312310015519f2974d3aecd'
+                            element: 'x_1863667_csm_escalation_reason'
+                            position: '105'
+                        }
+                    },
+                    {
                         table: 'sys_user_role_contains'
                         id: '4809482748c1404087c75f6479e8e50e'
                         key: {
@@ -2480,6 +2665,13 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_db_object'
+                        id: '48f6f9004c034e52beb029b4abf47dd1'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: '499f821c9cb94388b83f02f5eab119fd'
                         key: {
@@ -2516,6 +2708,15 @@ declare global {
                         key: {
                             map: '05ce3e52d153431ba9d57b5b08479178'
                             target_field: 'country'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '4a1a8a80e43a410b9259bf3c21c79d7a'
+                        key: {
+                            sys_ui_section: '9484277dc312310015519f2974d3aecd'
+                            element: 'x_1863667_csm_on_hold_reason'
+                            position: '103'
                         }
                     },
                     {
@@ -2605,6 +2806,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'item_option_new'
+                        id: '4fd28b9af4f1462c84cb904d46229c7e'
+                        key: {
+                            cat_item: '6bce09dd26034b25be72ccd1e0471e00'
+                            variable_set: 'NULL'
+                            name: 'description'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '508c5cfc57e7439f9e6414f368905000'
                         key: {
@@ -2639,10 +2849,27 @@ declare global {
                     },
                     {
                         table: 'sys_dictionary'
+                        id: '521e81b7849442c6b0435c0779143e38'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
+                            element: 'active'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
                         id: '52e5c28e838149e8b7614aa42b270622'
                         key: {
                             name: 'x_1863667_csm_stg_asset'
                             element: 'install_date'
+                        }
+                    },
+                    {
+                        table: 'item_option_new'
+                        id: '531b3e88a4b24644951ea5d08aa74ce2'
+                        key: {
+                            cat_item: 'f76a4148505b44ebbf8021c2af5e017e'
+                            variable_set: 'NULL'
+                            name: 'location'
                         }
                     },
                     {
@@ -2654,6 +2881,14 @@ declare global {
                             value: 'awaiting_supplier'
                             language: 'en'
                             dependent_value: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_transform_entry'
+                        id: '535d6e91caec4449990706e655576222'
+                        key: {
+                            map: '07f37e5a498c4a5da9e16aeffab08687'
+                            target_field: 'last_name'
                         }
                     },
                     {
@@ -2888,6 +3123,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'item_option_new'
+                        id: '5eaa52767b8444d4b36f0e463f7f40c4'
+                        key: {
+                            cat_item: '6bce09dd26034b25be72ccd1e0471e00'
+                            variable_set: 'NULL'
+                            name: 'short_description'
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: '5f4f8d693fd14e6bbe722dd4a56269f3'
                         key: {
@@ -2943,6 +3187,24 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_install_base_item'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '62d2b5d288e742298f024f53d120eab2'
+                        key: {
+                            sys_ui_section: '9484277dc312310015519f2974d3aecd'
+                            element: 'x_1863667_csm_priority_override'
+                            position: '102'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: '633464663baa42cc9e836a3323f6a700'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
+                            element: 'last_name'
+                            language: 'en'
                         }
                     },
                     {
@@ -3036,6 +3298,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sc_cat_item_catalog'
+                        id: '67016517e4204653807839927aa17413'
+                        key: {
+                            sc_cat_item: '6bce09dd26034b25be72ccd1e0471e00'
+                            sc_catalog: 'e0d08b13c3330100c8b837659bba8fb4'
+                        }
+                    },
+                    {
                         table: 'sys_choice'
                         id: '676ad28e283341329fe9c33d8afb7f68'
                         key: {
@@ -3109,6 +3379,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '6a10d01aee6d4ac18543300107eb5df8'
+                        key: {
+                            sys_ui_section: '9484277dc312310015519f2974d3aecd'
+                            element: 'x_1863667_csm_supplier_reference'
+                            position: '106'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '6a119da686af40b1872e81659e69947a'
                         key: {
@@ -3173,6 +3452,14 @@ declare global {
                                     name: 'x_1863667_csm.account_scoped'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '6db0fee8430e4191bbf68d1ef3798864'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
+                            element: 'group_names'
                         }
                     },
                     {
@@ -3285,12 +3572,29 @@ declare global {
                         }
                     },
                     {
+                        table: 'item_option_new'
+                        id: '73df16ca52584d0fa98c09392a17b428'
+                        key: {
+                            cat_item: 'f76a4148505b44ebbf8021c2af5e017e'
+                            variable_set: 'NULL'
+                            name: 'product'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '74fc43223c7443dc8eca9a97067c2b2d'
                         key: {
                             name: 'x_1863667_csm_stg_account'
                             element: 'name'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '756bb2368b014b9e97c5cf8e98ebaee5'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
+                            element: 'NULL'
                         }
                     },
                     {
@@ -3307,6 +3611,15 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_contract'
                             element: 'description'
+                        }
+                    },
+                    {
+                        table: 'item_option_new'
+                        id: '7747b747ae974f91ac7f1da9e8961fdb'
+                        key: {
+                            cat_item: 'eaacc773dd164e2cb6ebea7ba85bb8b3'
+                            variable_set: 'NULL'
+                            name: 'description'
                         }
                     },
                     {
@@ -3342,6 +3655,14 @@ declare global {
                             name: 'sn_customerservice_task'
                             element: 'NULL'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_transform_entry'
+                        id: '798f3aae1f9a498484c651ae85d2a58a'
+                        key: {
+                            map: '07f37e5a498c4a5da9e16aeffab08687'
+                            target_field: 'email'
                         }
                     },
                     {
@@ -3405,6 +3726,14 @@ declare global {
                         id: '7d0823a6bd4e4bf18c7a6c01989e41d3'
                         key: {
                             name: 'x_1863667_csm_stg_sold_product'
+                        }
+                    },
+                    {
+                        table: 'm2m_sp_portal_search_source'
+                        id: '7e6b8eb1041c42d6992b476a4955d8f2'
+                        key: {
+                            sp_portal: 'a6ef65a1dd934e43ad39ebb50260e435'
+                            sp_search_source: 'c6170ae86721220023c82e08f585efe6'
                         }
                     },
                     {
@@ -3603,12 +3932,30 @@ declare global {
                         }
                     },
                     {
+                        table: 'item_option_new'
+                        id: '8e594ed298ab42be94511996dff9f0b2'
+                        key: {
+                            cat_item: '6bce09dd26034b25be72ccd1e0471e00'
+                            variable_set: 'NULL'
+                            name: 'location'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: '8e5ed6e4da4648a3a18be6727d3498d2'
                         key: {
                             name: 'x_1863667_csm_stg_location'
                             element: 'zip'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'item_option_new'
+                        id: '8e5f455f0bfe4e97a432dfa514fa4585'
+                        key: {
+                            cat_item: 'f76a4148505b44ebbf8021c2af5e017e'
+                            variable_set: 'NULL'
+                            name: 'short_description'
                         }
                     },
                     {
@@ -3652,6 +3999,15 @@ declare global {
                             name: 'x_1863667_csm_stg_account'
                             element: 'email'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: '90e802e9e85e4da1a44e812901b27b98'
+                        key: {
+                            sys_ui_section: '6b6a0163eb123100a618afcef106fea2'
+                            element: 'x_1863667_csm_cancel_reason'
+                            position: '21'
                         }
                     },
                     {
@@ -3810,6 +4166,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_element'
+                        id: '9ba36c80fc914749b92fa2b67e37dc29'
+                        key: {
+                            sys_ui_section: '9484277dc312310015519f2974d3aecd'
+                            element: 'x_1863667_csm_hw_request_type'
+                            position: '101'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: '9bac97260c41456986befebef1be7291'
                         key: {
@@ -3831,6 +4196,14 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_stockroom'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: '9c37e77f3bae4991a1c70c433730b40c'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
+                            element: 'title'
                         }
                     },
                     {
@@ -3875,10 +4248,27 @@ declare global {
                     },
                     {
                         table: 'sys_dictionary'
+                        id: 'a01190d62d554c549ba121a0594d66f3'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
+                            element: 'user_name'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
                         id: 'a14f3eb551e2407a90cb8e495eb7942a'
                         key: {
                             name: 'x_1863667_csm_stg_product_model'
                             element: 'NULL'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'a2119cf073624a0c8987379cd796f8f5'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
+                            element: 'first_name'
+                            language: 'en'
                         }
                     },
                     {
@@ -3902,6 +4292,15 @@ declare global {
                         key: {
                             name: 'x_1863667_csm_stg_account'
                             element: 'phone'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'a3513960094f4a55950bfa55b4d0ed7a'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
+                            element: 'active'
+                            language: 'en'
                         }
                     },
                     {
@@ -3973,6 +4372,15 @@ declare global {
                         key: {
                             name: 'sn_customerservice_task'
                             element: 'x_1863667_csm_hw_action'
+                        }
+                    },
+                    {
+                        table: 'item_option_new'
+                        id: 'aa4654662849403ba5a1c359ab7d499f'
+                        key: {
+                            cat_item: 'f76a4148505b44ebbf8021c2af5e017e'
+                            variable_set: 'NULL'
+                            name: 'asset'
                         }
                     },
                     {
@@ -4153,6 +4561,19 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_ui_action_role'
+                        id: 'aef9bf1edf23497d9fdb24b8d6b9a746'
+                        key: {
+                            sys_ui_action: '1113f74344c946e492df4cb021788ebe'
+                            sys_user_role: {
+                                id: '64a16f40852f495f83d3cb14c6565d19'
+                                key: {
+                                    name: 'x_1863667_csm.admin'
+                                }
+                            }
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: 'b201290b4cb44ba8a659d97102d0397b'
                         key: {
@@ -4222,6 +4643,15 @@ declare global {
                         id: 'b4a08b3bbe0c4b5cb31318c7824a969c'
                         key: {
                             name: 'x_1863667_csm_stg_product_model'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'b4bfaa34c2c04b22a19acc89f4c0068a'
+                        key: {
+                            sys_ui_section: '9484277dc312310015519f2974d3aecd'
+                            element: 'x_1863667_csm_workaround_provided'
+                            position: '104'
                         }
                     },
                     {
@@ -4368,6 +4798,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_dictionary'
+                        id: 'be2cdf68449542729279300b796b7e83'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
+                            element: 'last_name'
+                        }
+                    },
+                    {
                         table: 'sys_documentation'
                         id: 'be3015b2bede46f6a1f90a48ce0973c9'
                         key: {
@@ -4383,6 +4821,14 @@ declare global {
                             name: 'sn_customerservice_task'
                             element: 'x_1863667_csm_hw_action'
                             language: 'en'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'bf2a7ea6c5804116a6ae6412050d0450'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
+                            element: 'first_name'
                         }
                     },
                     {
@@ -4424,6 +4870,14 @@ declare global {
                         key: {
                             name: 'sys_user_group'
                             element: 'x_1863667_csm_account'
+                        }
+                    },
+                    {
+                        table: 'sys_transform_entry'
+                        id: 'c10fbee386e24b379d2df37b94df9dcd'
+                        key: {
+                            map: '07f37e5a498c4a5da9e16aeffab08687'
+                            target_field: 'title'
                         }
                     },
                     {
@@ -4585,6 +5039,15 @@ declare global {
                         }
                     },
                     {
+                        table: 'item_option_new'
+                        id: 'c9433f6942bd43919446f200c98a4385'
+                        key: {
+                            cat_item: 'eaacc773dd164e2cb6ebea7ba85bb8b3'
+                            variable_set: 'NULL'
+                            name: 'install_base_item'
+                        }
+                    },
+                    {
                         table: 'sys_security_acl_role'
                         id: 'ca98c18421e4451b93b66353b5ce805c'
                         key: {
@@ -4712,6 +5175,14 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_transform_entry'
+                        id: 'ce5a39da28b3489d9056d4957485faad'
+                        key: {
+                            map: '07f37e5a498c4a5da9e16aeffab08687'
+                            target_field: 'user_name'
+                        }
+                    },
+                    {
                         table: 'sys_dictionary'
                         id: 'cf43aba43efc4531a128af869549a351'
                         key: {
@@ -4750,6 +5221,14 @@ declare global {
                         id: 'd13e6faf1f444c8d8f071777ce137ebf'
                         key: {
                             name: 'x_1863667_csm_stg_contact'
+                            element: 'email'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
+                        id: 'd162307f262b460f96870c4ed5478a23'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
                             element: 'email'
                         }
                     },
@@ -5038,6 +5517,24 @@ declare global {
                         }
                     },
                     {
+                        table: 'sys_documentation'
+                        id: 'dc8639ff50cd4eaba8c1713def0c48e8'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
+                            element: 'phone'
+                            language: 'en'
+                        }
+                    },
+                    {
+                        table: 'item_option_new'
+                        id: 'dd1516f042e347959435575d6a530cbb'
+                        key: {
+                            cat_item: 'eaacc773dd164e2cb6ebea7ba85bb8b3'
+                            variable_set: 'NULL'
+                            name: 'short_description'
+                        }
+                    },
+                    {
                         table: 'sys_transform_entry'
                         id: 'de3429d845d1443cb57381230f383821'
                         key: {
@@ -5108,6 +5605,23 @@ declare global {
                                     name: 'x_1863667_csm.l2_agent'
                                 }
                             }
+                        }
+                    },
+                    {
+                        table: 'm2m_sp_portal_search_source'
+                        id: 'e0711db3b338430ab25a15f4a2eac2e2'
+                        key: {
+                            sp_portal: 'a6ef65a1dd934e43ad39ebb50260e435'
+                            sp_search_source: '76b4b55c7abf4930b4a730e63c831a8b'
+                        }
+                    },
+                    {
+                        table: 'item_option_new'
+                        id: 'e10358ace7ed45aeba3b60a50931829f'
+                        key: {
+                            cat_item: 'f76a4148505b44ebbf8021c2af5e017e'
+                            variable_set: 'NULL'
+                            name: 'description'
                         }
                     },
                     {
@@ -5255,6 +5769,23 @@ declare global {
                     },
                     {
                         table: 'sys_dictionary'
+                        id: 'e90bb0ace9d74a348704c0dc00a92e30'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
+                            element: 'phone'
+                        }
+                    },
+                    {
+                        table: 'sys_ui_element'
+                        id: 'e9cdc2cc07a448d6876d4eae80ae109c'
+                        key: {
+                            sys_ui_section: '6b6a0163eb123100a618afcef106fea2'
+                            element: 'x_1863667_csm_closed_by'
+                            position: '20'
+                        }
+                    },
+                    {
+                        table: 'sys_dictionary'
                         id: 'ea0bc6129eae4712ac992bee08d5f28e'
                         key: {
                             name: 'x_1863667_csm_stg_stockroom'
@@ -5341,6 +5872,15 @@ declare global {
                         id: 'f0aacb730c9a475291581c62ed4da602'
                         key: {
                             name: 'customer_account'
+                        }
+                    },
+                    {
+                        table: 'sys_documentation'
+                        id: 'f11d99dcd3e740fc8541fae52cd69caa'
+                        key: {
+                            name: 'x_1863667_csm_stg_agent'
+                            element: 'group_names'
+                            language: 'en'
                         }
                     },
                     {

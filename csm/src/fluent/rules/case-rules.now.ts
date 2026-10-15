@@ -10,6 +10,7 @@ import {
     handleCancellation,
     captureChannel,
     routeToL2Group,
+    logAssignmentGroupChange,
 } from '../../server/case-rules'
 
 BusinessRule({
@@ -116,4 +117,15 @@ BusinessRule({
     action: ['insert'],
     order: 95,
     script: routeToL2Group,
+})
+
+BusinessRule({
+    $id: Now.ID['br-case-group-log'],
+    name: 'CSM Case: log assignment group change',
+    table: 'sn_customerservice_case',
+    when: 'before',
+    action: ['update'],
+    order: 400,
+    filterCondition: 'assignment_groupCHANGES',
+    script: logAssignmentGroupChange,
 })

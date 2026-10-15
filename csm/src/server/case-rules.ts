@@ -226,6 +226,48 @@ export function routeToL2Group(current: any) {
             bestScore = score
         }
     }
+    if (!best) best = l2GroupForCustomerCode(current.getValue('account'))
     if (!best) best = gs.getProperty('x_1863667_csm.default_l2_group', '')
     if (best) current.setValue('assignment_group', best)
+}
+
+/** SP-89: LVA / GEO accounts map to their own L2 group (independent properties, falling back to the seeded group names). */
+function l2GroupForCustomerCode(accountId: string): string {
+    const account = new GlideRecord('customer_account')
+    if (!account.get(accountId)) return ''
+    const code = account.getValue('x_1863667_csm_customer_code')
+    if (code !== 'lva' && code !== 'geo') return ''
+    const configured = gs.getProperty('x_1863667_csm.l2_group_' + code, '')
+    if (configured) return configured
+    const group = new GlideRecord('sys_user_group')
+    group.addQuery('name', code === 'lva' ? 'Veridos L2 - LVA' : 'Veridos L2 - GEO')
+    group.setLimit(1)
+    group.query()
+    return group.next() ? group.getUniqueValue() : ''
+}
+
+// ---------------------------------------------------------------- Sprint 5
+
+/** SP-93: before update - every Assignment group change is journaled (previous, new, user, time). */
+export function logAssignmentGroupChange(current: any, previous: any) {
+    if (current.work_notes.changes()) return // escalation / cancellation already wrote an entry
+    const was = previous.assignment_group.getDisplayValue() || '(empty)'
+    const now = current.assignment_group.getDisplayValue() || '(empty)'
+    current.work_notes =
+        'Assignment group changed from ' + was + ' to ' + now + ' by ' + gs.getUserDisplayName() +
+        ' on ' + new GlideDateTime().getDisplayValue()
+}
+
+/** SP-90: before query on models / assets / install base - limit to the authorised accounts. */
+export function restrictAssetQueryToAccounts(current: any) {
+    const access = new x_1863667_csm.CsmAccess()
+    const q = access.accountQuery('account')
+    if (q) current.addEncodedQuery(q)
+}
+
+/** SP-90: before query on product models - only models of the authorised accounts' assets. */
+export function restrictModelQueryToAccounts(current: any) {
+    const access = new x_1863667_csm.CsmAccess()
+    const q = access.modelQuery()
+    if (q) current.addEncodedQuery(q)
 }
