@@ -2,6 +2,7 @@
 """Seed / clean a CMDB Data Foundations practice dataset on the PDI.
 
   scripts/cmdb-practice.py seed     create tagged practice records
+  scripts/cmdb-practice.py sources  reconciliation rules + conflicting data-source payloads (run after seed)
   scripts/cmdb-practice.py status   count tagged records
   scripts/cmdb-practice.py clean    delete everything tagged
 
@@ -97,6 +98,25 @@ def seed():
         create("cmdb_rel_ci", {"parent": ids[p], "child": ids[c], "type": rtypes[rt]})
         print("rel    ", p, "--", rt, "->", c)
 
+DEFS = [("CDF Linux: ServiceNow Discovery wins", "ServiceNow", 100),
+        ("CDF Linux: ImportSet loses to Discovery", "ImportSet", 200),
+        ("CDF Linux: Manual Entry lowest", "Manual Entry", 300)]
+
+def ire(src, ip, cpu):
+    pl = {"items": [{"className": "cmdb_ci_linux_server", "values": {"name": "CDF-web-01", "serial_number": "CDFSN0001", "ip_address": ip, "cpu_count": cpu}}]}
+    i = call("POST", "/api/now/identifyreconcile?sysparm_data_source=" + urllib.parse.quote(src), pl)["result"]["items"][0]
+    print(f"IRE {src:13} {i['operation']} masked={i.get('maskedAttributes')}")
+
+def sources():
+    """Reconciliation rules (lower priority number wins) + conflicting payloads from 3 data sources for CDF-web-01."""
+    for n, src, p in DEFS:
+        if not find("cmdb_reconciliation_definition", f"name={n}"):
+            call("POST", "/api/now/table/cmdb_reconciliation_definition", {"name": n, "discovery_source": src, "applies_to": "cmdb_ci_linux_server", "priority": p, "attributes": "ip_address,cpu_count,ram,os", "active": "true"})
+            print("created reconciliation definition", n)
+    ire("ServiceNow", "10.50.0.11", "4")      # highest priority, sets the values
+    ire("ImportSet", "10.99.0.1", "2")        # conflicts, should be masked
+    ire("Manual Entry", "10.77.0.1", "1")     # conflicts, should be masked
+
 def cis():
     return find("cmdb_ci", "nameSTARTSWITHCDF-", "sys_id,name,sys_class_name")
 
@@ -104,8 +124,11 @@ def status():
     c = cis(); print(len(c), "tagged CIs"); [print(" ", x["sys_class_name"], x["name"]) for x in c]
 
 def clean():
+    for n, _, _ in DEFS:
+        for d in find("cmdb_reconciliation_definition", f"name={n}"):
+            call("DELETE", f"/api/now/table/cmdb_reconciliation_definition/{d['sys_id']}"); print("deleted definition", n)
     for x in cis():
         call("DELETE", f"/api/now/table/cmdb_ci/{x['sys_id']}"); print("deleted", x["name"])
 
 if __name__ == "__main__":
-    {"seed": seed, "status": status, "clean": clean}.get(sys.argv[1] if len(sys.argv) > 1 else "", lambda: print(__doc__))()
+    {"seed": seed, "sources": sources, "status": status, "clean": clean}.get(sys.argv[1] if len(sys.argv) > 1 else "", lambda: print(__doc__))()

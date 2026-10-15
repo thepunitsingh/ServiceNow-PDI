@@ -13,6 +13,16 @@ Practice data is created by `scripts/cmdb-practice.py seed` (all records named `
 | CDF-orphan-01 | Orphan | Find it under the **Orphan** metric (no relationships). |
 | CDF-Online-Store > Payments > Payments-App > app-01/db-01; Orders-App > web-01 | Relationships, CSDM | Open the Dependency View for CDF-Online-Store. Which CSDM layer is each CI in? |
 
+## Data sources and reconciliation (`scripts/cmdb-practice.py sources`)
+Three **Reconciliation Definitions** on Linux Server (`cmdb_reconciliation_definition`, lower priority number wins), governing `ip_address, cpu_count, ram, os`:
+ServiceNow = 100, ImportSet = 200, Manual Entry = 300.
+The script then sends conflicting IRE payloads for CDF-web-01 (`/api/now/identifyreconcile`): ServiceNow sets ip 10.50.0.11/cpu 4; ImportSet (10.99.0.1/2) and Manual Entry (10.77.0.1/1) come back with `maskedAttributes: [cpu_count, ip_address]` and CI values do not change.
+Exercises:
+1. Open CDF-web-01 and compare values with the payloads. Why did the CI keep the ServiceNow values?
+2. Change ImportSet priority to 50 and re-run `sources`. What changes? (Note `discovery_source` also changes; it is not a reconciled attribute here.)
+3. Look at `sys_object_source` for the CI, and at the IRE `identificationAttempts` (run the payload in REST API Explorer). Which identifier entry matched?
+4. Add `serial_number` to a definition's attributes. Is it still reconcilable if it is also an identifier?
+
 ## Exam topics checklist (map to NOW Learn "CMDB Data Foundations" learning path)
 1. CMDB architecture: `cmdb_ci` hierarchy, `sys_class_name`, `cmdb_rel_ci`, `cmdb_rel_type`, dot-walking via `u_` fields.
 2. **CI Class Manager**: class hierarchy, attributes, dependent relationships, identification rules, reconciliation rules.
