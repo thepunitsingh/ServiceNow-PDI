@@ -110,7 +110,7 @@ def ire(src, ip, cpu):
 def sources():
     """Reconciliation rules (lower priority number wins) + conflicting payloads from 3 data sources for CDF-web-01."""
     for n, src, p in DEFS:
-        if not find("cmdb_reconciliation_definition", f"name={n}"):
+        if not find("cmdb_reconciliation_definition", f"discovery_source={src}^applies_to=cmdb_ci_linux_server"):
             call("POST", "/api/now/table/cmdb_reconciliation_definition", {"name": n, "discovery_source": src, "applies_to": "cmdb_ci_linux_server", "priority": p, "attributes": "ip_address,cpu_count,ram,os", "active": "true"})
             print("created reconciliation definition", n)
     ire("ServiceNow", "10.50.0.11", "4")      # highest priority, sets the values
@@ -124,8 +124,8 @@ def status():
     c = cis(); print(len(c), "tagged CIs"); [print(" ", x["sys_class_name"], x["name"]) for x in c]
 
 def clean():
-    for n, _, _ in DEFS:
-        for d in find("cmdb_reconciliation_definition", f"name={n}"):
+    for n, src, _ in DEFS:
+        for d in find("cmdb_reconciliation_definition", f"discovery_source={src}^applies_to=cmdb_ci_linux_server"):
             call("DELETE", f"/api/now/table/cmdb_reconciliation_definition/{d['sys_id']}"); print("deleted definition", n)
     for x in cis():
         call("DELETE", f"/api/now/table/cmdb_ci/{x['sys_id']}"); print("deleted", x["name"])

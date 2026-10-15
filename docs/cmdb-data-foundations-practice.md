@@ -14,7 +14,7 @@ Practice data is created by `scripts/cmdb-practice.py seed` (all records named `
 | CDF-Online-Store > Payments > Payments-App > app-01/db-01; Orders-App > web-01 | Relationships, CSDM | Open the Dependency View for CDF-Online-Store. Which CSDM layer is each CI in? |
 
 ## Data sources and reconciliation (`scripts/cmdb-practice.py sources`)
-Three **Reconciliation Definitions** on Linux Server (`cmdb_reconciliation_definition`, lower priority number wins), governing `ip_address, cpu_count, ram, os`:
+Three **Reconciliation Definitions** on Linux Server (auto-named "Linux Server rule by <source>") (`cmdb_reconciliation_definition`, lower priority number wins), governing `ip_address, cpu_count, ram, os`:
 ServiceNow = 100, ImportSet = 200, Manual Entry = 300.
 The script then sends conflicting IRE payloads for CDF-web-01 (`/api/now/identifyreconcile`): ServiceNow sets ip 10.50.0.11/cpu 4; ImportSet (10.99.0.1/2) and Manual Entry (10.77.0.1/1) come back with `maskedAttributes: [cpu_count, ip_address]` and CI values do not change.
 Exercises:
