@@ -1,9 +1,9 @@
 body,.body{margin:0!important;padding:0!important;background:var(--background)}
 html,body{overflow-x:hidden}
 body.mcd-inner{background:var(--background);font-family:Speedee,"Helvetica Neue",Arial,sans-serif}
-body.mcd-inner #sp-main-wrapper{margin-left:88px;margin-top:56px;padding-top:0;height:auto!important;min-height:calc(100vh - 56px);overflow:visible!important}
-body.mcd-inner section.sp-scroll{overflow:visible!important;flex:1 0 auto!important;height:auto!important}
-body.mcd-inner #sp-main-wrapper>footer{margin-top:auto;flex:none}
+body.mcd-inner #sp-main-wrapper{margin-left:88px;margin-top:56px;padding-top:0;height:auto!important;overflow:visible!important}
+body.mcd-inner section.sp-scroll{overflow:visible!important;flex:0 0 auto!important;height:auto!important}
+body.mcd-inner #sp-main-wrapper>footer{margin-top:40px;flex:none}
 html:has(body.mcd-inner),body.mcd-inner{overflow-y:auto!important;height:auto!important}
 body:not(.mcd-inner),body:not(.mcd-inner) html{overflow:hidden!important}
 body:not(.mcd-inner) .container-fluid,body:not(.mcd-inner) .container{padding:0!important;margin:0!important;width:100%!important;max-width:none!important}
