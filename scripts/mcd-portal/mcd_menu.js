@@ -10,7 +10,7 @@
   prefs:'<circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/>',
   imp:'<circle cx="9" cy="8" r="4"/><path d="M2 21c0-4 3-6 7-6M16 11l5 5-5 5"/>',
   out:'<path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/>'};
- var items=[['My Profile','profile','/esc?id=user_profile&table=sys_user&sys_id='+U.id],
+ var items=[['My Profile','profile','/esc?id=mcd_profile'],
   ['Preferences','prefs','/esc?id=preferences']];
  if(U.imp)items.push(['Impersonate','imp','/impersonate_dialog.do']);
  items.push(['Logout','out','/logout.do']);
