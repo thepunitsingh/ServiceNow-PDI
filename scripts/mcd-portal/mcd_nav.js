@@ -21,7 +21,7 @@
  }
  var fix=document.querySelectorAll('button');
  for(var i=0;i<fix.length;i++){(function(b){
-  if((b.innerText||'').trim()==='N')return;
+  if((b.innerText||'').trim()==='N'||b.getAttribute('aria-label')==='Notifications')return;
   var raw=label(b),l=raw.split('\n')[0].trim().toLowerCase();
   if(/^(previous slide|next slide|pause carousel|provide feedback|give feedback|english|tours|n)$/.test(l))return;
   var u;
