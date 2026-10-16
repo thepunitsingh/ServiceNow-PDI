@@ -44,4 +44,4 @@ Exercises:
 2. What decides which source wins when two data sources report the same attribute?
 3. Name the three Health categories and what each metric measures.
 4. What does IRE do if no identifier entry matches and the class allows create?
-5. Which CSDM domain holds Application Service? Which holds Business Application? (see docs/cmdb-data-foundations-quiz.md for a longer quiz)
+5. Which CSDM domain holds Application Service? Which holds Business Application?
