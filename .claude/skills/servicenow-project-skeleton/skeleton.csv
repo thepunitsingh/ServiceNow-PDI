@@ -1,0 +1,160 @@
+Seq,Phase,Workstream,Process,Task,Gate,LinkTail
+1,Get started,Value management and analytics,Discover Value,Review Business Case,,review-business-case
+2,Get started,Value management and analytics,Discover Value,Discover As-Is State,,discover-asis-state
+3,Get started,Value management and analytics,Discover Value,Define Value Blueprint,,define-value-blueprint
+4,Get started,Project and program management,Prepare for Implementation,Prepare for Project Planning,,prepare-for-project-planning
+5,Get started,Project and program management,Prepare for Implementation,Prepare for Project Governance,,prepare-for-project-governance
+6,Get started,Project and program management,Exit Get Started Phase Gate,Manage 'Exit Get Started Phase Gate' Meeting,Y,manage-exit-get-started-phase-gate-meeting
+7,Get started,Architecture and technical governance,Prepare for Technical Governance,Create Technical Governance Foundation,,create-technical-governance-foundation-3
+8,Get started,Architecture and technical governance,Prepare for Technical Governance,Preparing a Platform Operating Model,,preparing-a-platform-operating-model
+9,Get started,Architecture and technical governance,Prepare for Technical Governance,Understand Technical Governance,,understand-technical-governance-3
+10,Get started,Architecture and technical governance,Prepare for Technical Governance,Establish Technical Governance Team,,establish-technical-governance-team-1
+11,Get started,"Design, build and unit test",Current State Assessment,Conduct Current State Assessment,,conduct-current-state-assessment
+12,Get started,"Design, build and unit test",Prepare for User Experience,Understand User Experience,,understand-user-experience
+13,Get started,Testing,Understand Testing,Understand Testing,,understand-testing
+14,Get started,Organizational change management,Prepare for Organizational Change Management (OCM),OCM Preparation,,ocm-preperation
+15,Get started,Organizational change management,Understand Resources,Project Team Training Analysis,,project-team-training-analysis
+16,Initiate,Value management and analytics,Align Value,Update Business Case,,update-business-case-1
+17,Initiate,Project and program management,Project Planning,Establish Project Charter,,establish-project-charter
+18,Initiate,Project and program management,Project Planning,Establish Project/Program Structure,,establish-projectprogram-structure
+19,Initiate,Project and program management,Project Planning,Confirm Resource Readiness for Workshops,,confirm-resource-readiness-for-workshops-5
+20,Initiate,Project and program management,Kickoff Meetings,Executive Team Kickoff,,executive-team-kickoff-1
+21,Initiate,Project and program management,Kickoff Meetings,Project Team Kickoff,,project-team-kickoff
+22,Initiate,Project and program management,Exit Initiate Phase Gate,Manage 'Exit Initiate Phase Gate' Meeting,Y,manage-exit-initiate-phase-gate-meeting
+23,Initiate,Architecture and technical governance,Review Current Environment,Confirm ServiceNow Product Scope,,confirm-servicenow-product-scope
+24,Initiate,Architecture and technical governance,Review Current Environment,Understand Existing Architecture,,understand-existing-architecture-1
+25,Initiate,Architecture and technical governance,Plan for Technical Governance,Assess Current Technical Governance,,assess-current-technical-governance
+26,Initiate,"Design, build and unit test",Set Up Environment,Provision Instance and Activate Plugins,,provision-instance-and-activate-plugins-1
+27,Initiate,"Design, build and unit test",Define User Experience Goals,Conduct Baseline Usability Study,,conduct-baseline-usability-study
+28,Initiate,"Design, build and unit test",Define User Experience Goals,Conduct Current State Journey Map Workshop,,conduct-current-state-journey-map-workshop
+29,Initiate,"Design, build and unit test",Define User Experience Goals,Conduct Stakeholder Alignment Workshop,,conduct-stakeholder-alignment-workshop
+30,Initiate,"Design, build and unit test",Define User Experience Goals,Conduct User Persona Workshop,,conduct-user-persona-workshop
+31,Initiate,Organizational change management,Define Change Strategy,Conduct Change Enablement Kickoff,,conduct-change-enablement-kickoff-1
+32,Initiate,Organizational change management,Define Change Strategy,Prepare Change Enablement Project Plan,,prepare-change-enablement-project-plan-2
+33,Initiate,Organizational change management,Define Change Strategy,Conduct Impact Analysis,,conduct-impact-analysis-1
+34,Initiate,Organizational change management,Define Change Strategy,Conduct Pre-Implementation Readiness Assessment,,conduct-preimplementation-readiness-assessment
+35,Initiate,Organizational change management,Train Project Team,Project Team Training Needs,,project-team-training-needs
+36,Initiate,Organizational change management,Train Project Team,Plan & Execute Training Courses,,plan-execute-training-courses-1
+37,Plan,Value management and analytics,Plan Value,Define Key Measures and Linkages to Value,,define-key-measures-and-linkages-to-value-1
+38,Plan,Value management and analytics,Plan Value,Draft Value Management Plan,,draft-value-management-plan
+39,Plan,Value management and analytics,Plan Value,Design Value Measurement Tools,,design-value-measurement-tools
+40,Plan,Value management and analytics,Plan Value,Plan Value Health Checks,,plan-value-health-checks-1
+41,Plan,Project and program management,Project Monitoring & Controlling,Manage and Report on Program/Project,,manage-and-report-on-programproject
+42,Plan,Project and program management,Release & Sprint Planning,Backlog Review & Ranking,,backlog-review-ranking-1
+43,Plan,Project and program management,Release & Sprint Planning,Approve Backlog & Ranking,,approve-backlog-ranking-1
+44,Plan,Project and program management,Release & Sprint Planning,Release & Sprint Planning,,release-sprint-planning-1
+45,Plan,Project and program management,Go-Live Transition Planning,Go-Live  Approach Planning,,golive-approach-planning
+46,Plan,Project and program management,Exit Plan Phase Gate,Manage 'Exit Plan Phase Gate' Meeting,Y,manage-exit-plan-phase-gate-meeting-1
+47,Plan,Architecture and technical governance,Define Architecture,Create/Update Solution Architecture,,createupdate-solution-architecture-3
+48,Plan,Architecture and technical governance,Define Architecture,Verify Licensing Requirements,,verify-licensing-requirements
+49,Plan,Architecture and technical governance,Define Architecture,Define Data Migration Strategy,,define-data-migration-strategy-1
+50,Plan,Architecture and technical governance,Establish Technical Governance,Create/Update Technical Governance Policies,,createupdate-technical-governance-policies-2
+51,Plan,"Design, build and unit test",Conduct Platform Workshops,Prepare for Platform Core Workshop,,prepare-for-platform-core-workshop
+52,Plan,"Design, build and unit test",Conduct Platform Workshops,Conduct Platform Core Workshop,,conduct-platform-core-workshop
+53,Plan,"Design, build and unit test",Conduct Process Workshops,Prepare for Process Workshop(s),,prepare-for-process-workshops-1
+54,Plan,"Design, build and unit test",Conduct Process Workshops,Conduct Process Workshop(s),,conduct-process-workshops-2
+55,Plan,"Design, build and unit test",Conduct Integrations Workshops,Align to Data Migration Strategy,,align-to-data-migration-strategy-1
+56,Plan,"Design, build and unit test",Conduct Integrations Workshops,Prepare for Integrations Workshop,,prepare-for-integrations-workshop
+57,Plan,"Design, build and unit test",Conduct Integrations Workshops,Conduct Integrations Workshop,,conduct-integrations-workshop-1
+58,Plan,"Design, build and unit test",Design the User Experience,Conduct Future State Journey Map Workshop,,conduct-future-state-journey-map-workshop
+59,Plan,"Design, build and unit test",Design the User Experience,Conduct Card Sort Studies,,conduct-card-sort-studies
+60,Plan,"Design, build and unit test",Design the User Experience,Create Conceptual UX Prototypes,,create-conceptual-ux-prototypes
+61,Plan,"Design, build and unit test",Design the User Experience,Conduct Prototype Usability Study,,conduct-prototype-usability-study
+62,Plan,"Design, build and unit test",Design the User Experience,Identify design stories,,identify-design-stories
+63,Plan,"Design, build and unit test",Story Refinement and Estimation,Capture Draft Stories,,capture-draft-stories
+64,Plan,"Design, build and unit test",Story Refinement and Estimation,Document Process Design and Data Flows,,document-process-design-and-data-flows-1
+65,Plan,"Design, build and unit test",Story Refinement and Estimation,Obtain Approval on Final Design,,obtain-approval-on-final-design
+66,Plan,"Design, build and unit test",Story Refinement and Estimation,Refine Stories and Document Acceptance Criteria,,refine-stories-and-document-acceptance-criteria
+67,Plan,"Design, build and unit test",Story Refinement and Estimation,Prioritize Stories to Align with Business Outcomes,,prioritize-stories-to-align-with-business-outcomes-1
+68,Plan,"Design, build and unit test",Story Refinement and Estimation,Define Unit Test Cases,,define-unit-test-cases-1
+69,Plan,"Design, build and unit test",Story Refinement and Estimation,Approve Functional Stories & Test Cases,,approve-functional-stories-test-cases
+70,Plan,"Design, build and unit test",Story Refinement and Estimation,Estimate Functional Stories & Test Cases,,estimate-functional-stories-test-cases
+71,Plan,Testing,Test Strategy,Conduct Test Management Workshop,,conduct-testing-workshop-1
+72,Plan,Testing,Test Strategy,Document Test Strategy & Data Plan,,document-test-strategy-data-plan
+73,Plan,Organizational change management,Assess and Plan for Change,Create Executive Sponsorship Plan,,create-executive-sponsorship-plan
+74,Plan,Organizational change management,Assess and Plan for Change,Create Communication Plan,,create-communication-plan-1
+75,Plan,Organizational change management,Assess and Plan for Change,Create User Training Delivery Plan,,create-user-training-delivery-plan
+76,Plan,Organizational change management,Assess and Plan for Change,Build Change Champion Network,,build-change-champion-network-1
+77,Plan,Organizational change management,Assess and Plan for Change,Create Adoption Measurement Plan,,create-adoption-measurement-plan
+78,Plan,Organizational change management,Assess and Plan for Change,Workforce Transition Plan (Training and Enablement),,workforce-transition-plan-training-and-enablement
+79,Plan,Organizational change management,Assess and Plan for Change,Create Change Plan Summary,,create-change-plan-summary
+80,Plan,Support,Operations Planning,Define Deployment Process,,define-deployment-process
+81,Execute,Value management and analytics,Create Value,Build Value Measurement Reports and Dashboards,,build-value-measurement-reports-and-dashboards
+82,Execute,Value management and analytics,Create Value,Establish Value Governance,,establish-value-governance-1
+83,Execute,Value management and analytics,Create Value,Coordinate Organizational Change Management (OCM) and Value Management Plan activities,,coordinate-organizational-change-management-ocm-and-value-management-plan-activities
+84,Execute,Project and program management,Project Monitoring & Controlling,Manage and Report on a Program/Project,,manage-and-report-on-a-programproject
+85,Execute,Project and program management,Sprint Planning/Retrospective,Maintain Product Backlog,,maintain-product-backlog-1
+86,Execute,Project and program management,Sprint Planning/Retrospective,Conduct Sprint Planning Meeting,,conduct-sprint-planning-meeting
+87,Execute,Project and program management,Sprint Planning/Retrospective,Create/Update Burndown Chart,,createupdate-burndown-chart-1
+88,Execute,Project and program management,Sprint Planning/Retrospective,Conduct Sprint Retrospective Meeting,,conduct-sprint-retrospective-meeting
+89,Execute,Project and program management,Sprint Planning/Retrospective,Create New Stories as Needed,,create-new-stories-as-needed-2
+90,Execute,Project and program management,Go-Live Transition Planning,Create Go-Live Transition Plan,,create-golive-transition-plan-2
+91,Execute,Project and program management,Exit Execute Phase Gate,Manage 'Exit Execute Phase Gate' Meeting,Y,manage-exit-execute-phase-gate-meeting
+92,Execute,Architecture and technical governance,Update Architecture,Update Architecture,,update-architecture-2
+93,Execute,"Design, build and unit test",Execute Sprints,Conduct Daily Standup Meetings,,conduct-daily-standup-meetings-3
+94,Execute,"Design, build and unit test",Execute Sprints,Configure Stories,,configure-stories-3
+95,Execute,"Design, build and unit test",Execute Sprints,Execute Unit Test of Stories,,execute-unit-test-of-stories-5
+96,Execute,"Design, build and unit test",Execute Sprints,Sprint Review,,sprint-review-1
+97,Execute,"Design, build and unit test",Execute Integration Sprints,Conduct Daily Standup Meetings,,conduct-daily-standup-meetings-2
+98,Execute,"Design, build and unit test",Execute Integration Sprints,Establish Integrations Connections,,establish-integrations-connections-1
+99,Execute,"Design, build and unit test",Execute Integration Sprints,Configure Stories,,configure-stories-1
+100,Execute,"Design, build and unit test",Execute Integration Sprints,Execute Unit Test of Stories,,execute-unit-test-of-stories-4
+101,Execute,"Design, build and unit test",Execute Integration Sprints,Sprint Review,,sprint-review
+102,Execute,"Design, build and unit test",Refine the User Experience,Conduct Usability Studies,,conduct-usability-studies
+103,Execute,"Design, build and unit test",Refine the User Experience,Conduct Tree Test,,conduct-tree-test
+104,Execute,"Design, build and unit test",Refine the User Experience,Update design prototypes,,update-design-prototypes
+105,Execute,Testing,Plan System Testing,Create System Test Scenarios & Scripts,,create-system-test-scenarios-scripts-2
+106,Execute,Testing,Plan System Testing,Build System Test Plan,,build-system-test-plan-2
+107,Execute,Testing,Plan User Acceptance Testing,Create User Acceptance Test Scenarios & Scripts,,create-user-acceptance-test-scenarios-scripts-1
+108,Execute,Testing,Plan User Acceptance Testing,Build User Acceptance Test Plan,,build-user-acceptance-test-plan
+109,Execute,Testing,Plan User Acceptance Testing,UAT Logistics and Preparation,,uat-logistics-and-preparation-session-1
+110,Execute,Testing,Plan User Acceptance Testing,Draft and Issue UAT Training Materials,,draft-and-issue-uat-training-materials-2
+111,Execute,Testing,Plan Load Testing,Plan Load Testing,,plan-load-testing
+112,Execute,Organizational change management,Execute Communications,Conduct Pre-Implementation Benchmark Survey,,conduct-preimplementation-benchmark-survey-1
+113,Execute,Organizational change management,Execute Communications,Execute Communications According to Plan,,execute-communications-according-to-plan-3
+114,Execute,Organizational change management,Execute Communications,Conduct Awareness Roadshows,,conduct-awareness-roadshows
+115,Execute,Organizational change management,Execute Communications,Develop Training Materials,,develop-training-materials
+116,Execute,Support,Design Support Model,Define Support Processes and Hypercare Approach,,define-support-processes-and-hypercare-approach-1
+117,Execute,Support,Design Support Model,Define Support RACI,,define-support-raci-1
+118,Execute,Support,Design Support Model,Create Operations Documentation,,create-operations-documentation-1
+119,Execute,Support,Design Support Model,Define Knowledge Transfer Approach,,define-knowledge-transfer-approach
+120,Deliver,Value management and analytics,Enable Value,Operationalize Value Governance,,operationalize-value-governance-1
+121,Deliver,Project and program management,Project Monitoring & Controlling,Manage and Report on a Program/Project,,manage-and-report-on-a-programproject-1
+122,Deliver,Project and program management,Go-Live Transition Planning,Go-Live Transition Plan Review,,golive-transition-plan-review
+123,Deliver,Project and program management,Go-Live Transition Planning,Go-Live Go/No-Go Gate Meeting,Y,golive-gonogo-gate-meeting
+124,Deliver,Project and program management,Exit Deliver Phase Gate,Manage 'Exit Deliver Phase Gate' Meeting,Y,manage-exit-deliver-phase-gate-meeting
+125,Deliver,Architecture and technical governance,Monitor/Maintain Technical Governance,Monitor/Maintain Technical Governance,,monitormaintain-technical-governance
+126,Deliver,"Design, build and unit test",Deploy Code to Test Environments,Deploy Code to System Test Environment,,deploy-code-to-system-test-environment
+127,Deliver,"Design, build and unit test",Deploy Code to Test Environments,Deploy Code to UAT Environment,,deploy-code-to-uat-environment-1
+128,Deliver,"Design, build and unit test",Evaluate the User Experience,Conduct New Baseline Usability Study,,conduct-new-baseline-usability-study
+129,Deliver,"Design, build and unit test",Evaluate the User Experience,Identify UX improvements,,identify-ux-improvements-1
+130,Deliver,"Design, build and unit test",Go-Live Transition,Execute Cut-over Dry Run(s),,execute-cutover-dry-runs-1
+131,Deliver,"Design, build and unit test",Go-Live Transition,Deploy Code to Production Environment,,deploy-code-to-production-environment
+132,Deliver,"Design, build and unit test",Go-Live Transition,Execute Data Cut-over in Production,,execute-data-cutover-in-production-1
+133,Deliver,"Design, build and unit test",Go-Live Transition,Execute Manual Data Entry in Production,,execute-manual-data-entry-in-production-1
+134,Deliver,"Design, build and unit test",Go-Live Transition,Execute Operational Cut-Over (Go-Live),,execute-operational-cutover-golive-1
+135,Deliver,Testing,Conduct System Testing,Execute System Testing,,execute-system-testing
+136,Deliver,Testing,Conduct System Testing,System Test Defect Management,,system-test-defect-management-1
+137,Deliver,Testing,Conduct System Testing,User Access and Data Set-up for System Test,,data-setup-for-system-test
+138,Deliver,Testing,Conduct User Acceptance Testing,UAT Training for Testers,,uat-training-for-testers-1
+139,Deliver,Testing,Conduct User Acceptance Testing,Execute UAT,,execute-uat
+140,Deliver,Testing,Conduct User Acceptance Testing,UAT Defect Management,,uat-defect-management
+141,Deliver,Testing,Conduct User Acceptance Testing,UAT Enhancement Management,,uat-enhancement-management
+142,Deliver,Testing,Conduct User Acceptance Testing,User Access and Data Set-up for UAT,,data-setup-for-uat
+143,Deliver,Testing,Conduct Load Testing,Conduct Load Testing,,execute-load-testing-1
+144,Deliver,Organizational change management,Enable Training,Execute User Training Plan,,execute-user-training-plan-1
+145,Deliver,Organizational change management,Enable Training,Execute Go-Live FAQ Communication,,execute-golive-faq-communication-1
+146,Deliver,Support,Confirm Operational Readiness,Confirm Operational Readiness,,confirm-operational-readiness-1
+147,Deliver,Support,Confirm Operational Readiness,Confirm Hypercare Support Approach,,confirm-hypercare-support-approach
+148,Close,Value management and analytics,Transition Value,"Handover to the Now Value ""Validate Phase""",,handover-to-the-now-value-validate-phase
+149,Close,Project and program management,Project Monitoring & Controlling,Close Program/Project,,close-programproject
+150,Close,Project and program management,Project Closedown,Conduct Lessons Learned Meeting,,conduct-lessons-learned-meeting-1
+151,Close,Project and program management,Project Closedown,Conduct Project Close Meeting,,conduct-project-close-meeting
+152,Close,Project and program management,Exit Close Phase Gate,Manage 'Exit Close Phase Gate' Meeting,Y,manage-exit-close-phase-gate-meeting-2
+153,Close,Organizational change management,Conduct Surveys,Conduct Post-Implementation Benchmark Survey,,conduct-postimplementation-benchmark-survey
+154,Close,Organizational change management,Conduct Surveys,Conduct Training Evaluation,,conduct-training-evaluation-1
+155,Close,Support,Transition to Support Organization,Handover Operations,,handover-operations-2
+156,Close,Support,Hypercare,Hypercare Support,,hypercare-support-4
+157,Close,Support,Hypercare,Identify and Prioritize Production Defects,,identify-and-prioritize-production-defects
+158,Close,Support,Hypercare,Fix and Test Production Defects,,fix-and-test-production-defects-1
+159,Close,Support,Confirm Operational Support,Confirm Operational Stabilization,,confirm-operational-stabilization-1
