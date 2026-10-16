@@ -96,3 +96,18 @@ body[data-mcd-page=ticket] .panel-footer{background:#faf3d6!important;border-top
 body[data-mcd-page=ticket] .panel-heading.bg-primary{min-height:0!important;height:auto!important;padding:18px 24px 0!important}
 body[data-mcd-page=ticket] .panel-heading.bg-primary *{margin-bottom:0!important}
 body[data-mcd-page=ticket] dl.ticket-fields{padding-top:12px!important}
+/* ---- requests as a table (columns) instead of cards ---- */
+body.mcd-inner .requests-container{display:flex!important;flex-direction:column;gap:0!important;margin:0!important;background:#fff;border:1px solid var(--border,#e4e2dc);border-top:0;border-radius:0 0 14px 14px;overflow:hidden}
+body.mcd-inner .mcd-th{display:grid;grid-template-columns:120px minmax(160px,1.2fr) minmax(0,2fr) 130px;column-gap:20px;align-items:center;padding:12px 20px;margin-top:8px;background:#1a1a1a;color:rgba(255,199,44,.9);font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;border-radius:14px 14px 0 0}
+body.mcd-inner .request-card-widget{width:100%!important}
+body.mcd-inner a.request-card{display:grid!important;grid-template-columns:120px minmax(160px,1.2fr) minmax(0,2fr) 130px;column-gap:20px;align-items:center;height:auto!important;padding:14px 20px!important;border:0!important;border-top:1px solid var(--border,#e4e2dc)!important;border-radius:0!important;box-shadow:none!important;transform:none!important;background:#fff}
+body.mcd-inner .request-card-widget:first-child a.request-card{border-top:0!important}
+body.mcd-inner a.request-card:hover{background:rgba(255,199,44,.12)!important;transform:none!important}
+body.mcd-inner .request-card-header{display:contents!important}
+body.mcd-inner .request-card-header>*:first-child{grid-column:1;grid-row:1;justify-self:start}
+body.mcd-inner .request-card-header>*:nth-child(2){grid-column:4;grid-row:1;font-size:13px;color:#6b6b6b}
+body.mcd-inner .request-card-title{grid-column:2;grid-row:1;font-size:15px!important}
+body.mcd-inner .request-card-secondary{grid-column:3;grid-row:1;flex-direction:row!important;flex-wrap:wrap;gap:4px 12px!important}
+/* my tasks */
+body.mcd-inner .nav-tabs>li>a,body.mcd-inner .nav-tabs>li>a:hover{border-color:transparent!important}
+body.mcd-inner .fa-check-circle,body.mcd-inner .fa-check-circle-o{color:#FFC72C!important}
