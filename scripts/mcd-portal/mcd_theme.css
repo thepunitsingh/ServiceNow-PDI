@@ -1,0 +1,44 @@
+body,.body{margin:0!important;padding:0!important;background:var(--background)}
+html,body{overflow-x:hidden}
+body.mcd-inner{background:var(--background);font-family:Speedee,"Helvetica Neue",Arial,sans-serif}
+body.mcd-inner #sp-main-wrapper{margin-left:88px;margin-top:56px;padding-top:0;height:calc(100vh - 56px)!important}
+body:not(.mcd-inner),body:not(.mcd-inner) html{overflow:hidden!important}
+body:not(.mcd-inner) .container-fluid,body:not(.mcd-inner) .container{padding:0!important;margin:0!important;width:100%!important;max-width:none!important}
+body:not(.mcd-inner) .row{margin:0!important}
+body:not(.mcd-inner) [class*=col-]{padding:0!important}
+/* ---- McDonald's brand palette over Employee Center variables ---- */
+:root{
+--lbf-bg-primary:#faf9f6;--lbf-primary:#FFC72C;--lbf-primary-hover:#E6B000;--lbf-primary-content:#1a1a1a;--lbf-primary-dark:#E6B000;--lbf-primary-darker:#B88A00;--lbf-primary-light:#FFD966;--lbf-primary-lighter:#FFE699;--lbf-primary-shade:#FFC72C;
+--lbf-accent:#DA291C;--lbf-accent-content:#ffffff;--lbf-link:#DA291C;--lbf-link-hover:#A81D13;--lbf-accent-soft-bg:#FFF3CD;--lbf-accent-soft-text:#8A6400;--lbf-gradient-brand-start:#FFC72C;--lbf-gradient-brand-end:#E6B000;
+--now-button--primary--background-color:255,199,44;--now-button--primary--border-color:255,199,44;--now-button--primary--color:26,26,26;
+--now-button--primary--background-color--hover:230,176,0;--now-button--primary--border-color--hover:230,176,0;--now-button--primary--background-color--active:230,176,0;--now-button--primary--border-color--active:230,176,0;
+--now-button--primary-negative--background-color:255,199,44;--now-button--primary-negative--border-color:255,199,44;--now-button--primary-negative--background-color--hover:230,176,0;--now-button--primary-negative--border-color--hover:230,176,0;--now-button--primary-negative--background-color--active:230,176,0;--now-button--primary-negative--border-color--active:230,176,0;
+--now-button--bare_primary--color:218,41,28;--now-button--bare_primary--color--hover:168,29,19;--now-button--bare_primary--color--active:218,41,28;
+--now-text-link--primary--color:218,41,28;--now-text-link--primary--color--hover:168,29,19;--now-text-link--primary--color--active:218,41,28;
+--now-color--primary-0:255,243,205;
+--now-assist-selfservice_color_primary_0:255,243,205;--now-assist-selfservice_color_primary_2:138,100,0;--now-assist-selfservice_color_primary_3:26,26,26;
+--now-assist-selfservice_link_color:218,41,28;--now-assist-selfservice_button_primary_bg_color:255,199,44;--now-assist-selfservice_button_primary_bg_active_color:255,199,44;--now-assist-selfservice_button_primary_bg_hover_color:230,176,0;--now-assist-selfservice_primary_button_action_text_color:26,26,26;
+--sp-agent-chat-bg:255,199,44;--sp-agent-hover-color:230,176,0;
+}
+body.mcd-inner{font-family:Speedee,"Helvetica Neue",Arial,sans-serif;color:#1a1a1a}
+body.mcd-inner h1,body.mcd-inner h2,body.mcd-inner h3,body.mcd-inner h4,body.mcd-inner .h1,body.mcd-inner .h2,body.mcd-inner .h3{font-weight:700;letter-spacing:-.01em;color:#1a1a1a}
+body.mcd-inner a:not(.btn):not([role=button]){color:#DA291C}
+body.mcd-inner a:not(.btn):not([role=button]):hover{color:#A81D13}
+body.mcd-inner .breadcrumbs a{color:#6b6b6b}
+body.mcd-inner .nav-tabs>li>a,body.mcd-inner .nav-tabs>li>a:hover{color:#1a1a1a;border-color:transparent}
+body.mcd-inner .nav-tabs>li.active>a,body.mcd-inner .nav-tabs>li.active>a:hover,body.mcd-inner .nav-tabs>li.active>a:focus{color:#1a1a1a;font-weight:700;border-bottom:3px solid #FFC72C}
+body.mcd-inner .btn-primary,body.mcd-inner .btn-primary:hover{background-color:#FFC72C;border-color:#FFC72C;color:#1a1a1a;font-weight:700}
+body.mcd-inner .btn-primary:hover{background-color:#E6B000;border-color:#E6B000}
+body.mcd-inner .panel,body.mcd-inner .well,body.mcd-inner .card{border-radius:16px;border-color:#e4e2dc}
+body.mcd-inner .form-control:focus{border-color:#FFC72C;box-shadow:0 0 0 3px rgba(255,199,44,.35)}
+body.mcd-inner .badge,body.mcd-inner .label-primary{background-color:#FFC72C;color:#1a1a1a}
+body.mcd-inner ::selection{background:#FFC72C;color:#1a1a1a}
+body.mcd-inner .nav-tab.active a,body.mcd-inner .nav-tab.active>a.ng-binding{color:#1a1a1a!important;font-weight:700;border-bottom-color:#FFC72C!important}
+body.mcd-inner .nav-tabs>li.active,body.mcd-inner .nav-tab.active{border-bottom-color:#FFC72C!important}
+body.mcd-inner .nav-tab a:hover,body.mcd-inner .nav-tab:hover a{color:#1a1a1a!important}
+body.mcd-inner .btn-link,body.mcd-inner .btn-link:hover{color:#DA291C!important}
+body.mcd-inner .form-control:focus,body.mcd-inner select:focus,body.mcd-inner input:focus{border-color:#FFC72C!important;outline-color:#FFC72C}
+body.mcd-inner .nav-tab:not(.active) a{color:#6b6b6b!important}
+body.mcd-inner .btn-link[disabled],body.mcd-inner .btn-link.disabled{color:#b8b8b8!important}
+body.mcd-inner .btn-default,body.mcd-inner .btn-default:focus{color:#1a1a1a!important;border-color:#1a1a1a;background:#fff}
+body.mcd-inner .btn-default:hover{background:#FFC72C;border-color:#FFC72C;color:#1a1a1a!important}
