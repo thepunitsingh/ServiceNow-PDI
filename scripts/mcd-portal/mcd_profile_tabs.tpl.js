@@ -51,4 +51,17 @@ function mcdProfileTabs(d,u){
   var nav=b.closest('nav');if(nav&&nav.classList.contains('sticky')&&t&&!PBARS[t]){scrollTo(t);return;}
  },true);
  d.addEventListener('keydown',function(e){if(e.key==='Escape')closeM();});
+ /* floating (sticky) tab bar + side menu: the iframe is full height, so emulate sticky against the parent scroll */
+ var win=d.defaultView.parent,fe=d.defaultView.frameElement;
+ function upd(){
+  if(!fe)return;var fr=fe.getBoundingClientRect();
+  var bar=d.querySelector('div.sticky.bg-nav'),side=d.querySelector('nav.sticky');
+  [bar,side].forEach(function(e){if(e){e.style.transform='none';e.style.position='relative';}});
+  var barH=0;
+  if(bar){var r=bar.getBoundingClientRect();var ty=Math.max(0,60-(fr.top+r.top));var maxTy=d.documentElement.scrollHeight-(r.top+r.height)-16;ty=Math.min(ty,Math.max(0,maxTy));bar.style.transform='translateY('+ty+'px)';bar.style.zIndex=30;barH=r.height;}
+  if(side){var rs=side.getBoundingClientRect(),pr=side.parentElement.getBoundingClientRect();var ty2=Math.max(0,(60+barH+8)-(fr.top+rs.top));var maxTy2=pr.bottom-(rs.top+rs.height);ty2=Math.min(ty2,Math.max(0,maxTy2));side.style.transform='translateY('+ty2+'px)';side.style.zIndex=20;}
+ }
+ win.addEventListener('scroll',upd,true);win.addEventListener('resize',upd);
+ var _show=show;show=function(l){_show(l);upd();};
+ upd();setTimeout(upd,400);
 }
