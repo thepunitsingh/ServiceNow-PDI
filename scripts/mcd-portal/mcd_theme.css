@@ -111,3 +111,5 @@ body.mcd-inner .request-card-secondary{grid-column:3;grid-row:1;flex-direction:r
 /* my tasks */
 body.mcd-inner .nav-tabs>li>a,body.mcd-inner .nav-tabs>li>a:hover{border-color:transparent!important}
 body.mcd-inner .fa-check-circle,body.mcd-inner .fa-check-circle-o{color:#FFC72C!important}
+body.mcd-inner .nav-tabs>li.active>a.ng-binding,body.mcd-inner li.tab.active a{color:#1a1a1a!important;font-weight:700}
+body.mcd-inner li.tab:not(.active) a{color:#6b6b6b!important}
