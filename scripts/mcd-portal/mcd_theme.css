@@ -1,9 +1,9 @@
 body,.body{margin:0!important;padding:0!important;background:var(--background)}
 html,body{overflow-x:hidden}
 body.mcd-inner{background:var(--background);font-family:Speedee,"Helvetica Neue",Arial,sans-serif}
-body.mcd-inner #sp-main-wrapper{margin-left:88px;margin-top:56px;padding-top:0;height:auto!important;overflow:visible!important}
-body.mcd-inner section.sp-scroll{overflow:visible!important;flex:0 0 auto!important;height:auto!important}
-body.mcd-inner #sp-main-wrapper>footer{margin-top:40px;flex:none}
+body.mcd-inner #sp-main-wrapper{margin-left:88px;margin-top:56px;padding-top:0;height:auto!important;min-height:calc(100vh - 56px);overflow:visible!important}
+body.mcd-inner section.sp-scroll{overflow:visible!important;flex:1 0 auto!important;height:auto!important}
+body.mcd-inner #sp-main-wrapper>footer{margin-top:auto;flex:none}
 html:has(body.mcd-inner),body.mcd-inner{overflow-y:auto!important;height:auto!important}
 body:not(.mcd-inner),body:not(.mcd-inner) html{overflow:hidden!important}
 body:not(.mcd-inner) .container-fluid,body:not(.mcd-inner) .container{padding:0!important;margin:0!important;width:100%!important;max-width:none!important}
@@ -79,3 +79,20 @@ body.mcd-inner .panel-title,body.mcd-inner h2.h4.panel-title{font-size:16px!impo
 body.mcd-inner dl.ticket-fields dt{font-size:12px!important;font-weight:600!important;letter-spacing:.04em;text-transform:uppercase;color:#6b6b6b}
 body.mcd-inner dl.ticket-fields dd{font-size:14px!important;color:#1a1a1a}
 body.mcd-inner .set-map-key-title a{font-size:14px;font-weight:600}
+/* ---- ticket page: details across the top, in columns ---- */
+.sp-row-content.row.mcd-ticket-row{display:grid!important;grid-template-columns:minmax(0,2.4fr) minmax(0,1fr);gap:16px;margin:0!important}
+.sp-row-content.row.mcd-ticket-row::before,.sp-row-content.row.mcd-ticket-row::after{display:none!important}
+.sp-row-content.row.mcd-ticket-row>div:nth-child(1){width:auto!important;float:none!important;padding:0!important;grid-column:1;grid-row:2/span 2}
+.sp-row-content.row.mcd-ticket-row>div:nth-child(2){display:contents}
+.sp-row-content.row.mcd-ticket-row>div:nth-child(2)>span:nth-of-type(1){display:none}
+.sp-row-content.row.mcd-ticket-row>div:nth-child(2)>span:nth-of-type(2){grid-column:1/-1;grid-row:1}
+.sp-row-content.row.mcd-ticket-row>div:nth-child(2)>span:nth-of-type(3){grid-column:2;grid-row:2}
+.sp-row-content.row.mcd-ticket-row>div:nth-child(2)>span:nth-of-type(4){grid-column:2;grid-row:3}
+body[data-mcd-page=ticket] .panel-heading.bg-primary{padding:18px 24px}
+body[data-mcd-page=ticket] .panel-body:has(dl.ticket-fields){padding:0}
+body[data-mcd-page=ticket] dl.ticket-fields{display:grid!important;grid-template-rows:auto auto;grid-auto-flow:column;grid-auto-columns:minmax(130px,1fr);column-gap:28px;row-gap:4px;margin:0!important;padding:20px 24px;overflow-x:auto}
+body[data-mcd-page=ticket] dl.ticket-fields dt,body[data-mcd-page=ticket] dl.ticket-fields dd{width:auto!important;float:none!important;padding:0!important;margin:0!important;text-align:left!important;min-width:0;word-break:break-word}
+body[data-mcd-page=ticket] .panel-footer{background:#faf3d6!important;border-top:1px solid var(--border,#e4e2dc)}
+body[data-mcd-page=ticket] .panel-heading.bg-primary{min-height:0!important;height:auto!important;padding:18px 24px 0!important}
+body[data-mcd-page=ticket] .panel-heading.bg-primary *{margin-bottom:0!important}
+body[data-mcd-page=ticket] dl.ticket-fields{padding-top:12px!important}

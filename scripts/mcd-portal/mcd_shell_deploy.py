@@ -29,6 +29,8 @@ hdr_client='''function($scope,$location,$timeout,$window){
  var SHELL_CSS=%s;
  var c=this; var id=($location.search().id||'');
  c.isHome=(id===''||id==='mcd_home');
+ document.body.setAttribute('data-mcd-page',id||'mcd_home');
+ [600,1500,3000,5500].forEach(function(t){$timeout(function(){[].forEach.call(document.querySelectorAll('.sp-row-content.row'),function(r){if(r.querySelector('dl.ticket-fields'))r.classList.add('mcd-ticket-row');});},t);});
  if(!c.isHome){document.body.classList.add('mcd-inner');[300,1200,2500].forEach(function(t){$timeout(function(){var sc=document.querySelector('section.sp-scroll');if(sc&&!sc.__mcdTouched&&sc.scrollTop<200)sc.scrollTop=0;},t);});}
  if(!document.getElementById('mcd-shell-css')){var st=document.createElement('style');st.id='mcd-shell-css';st.textContent=SHELL_CSS;document.head.appendChild(st);}
  if(c.isHome)return;
