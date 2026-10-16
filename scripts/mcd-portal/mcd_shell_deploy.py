@@ -30,6 +30,7 @@ hdr_client='''function($scope,$location,$timeout,$window){
  $timeout(function(){
   var root=document.querySelector('.mcd-shell');if(!root)return;
   var home=root.querySelector('aside button');
+  if(home){home.classList.remove('bg-brand-gold/15');var bar=home.querySelector('span.absolute');if(bar)bar.remove();[].forEach.call(home.querySelectorAll('span'),function(s){s.classList.remove('text-brand-gold');s.classList.remove('text-white');s.classList.add('text-white/70');});}
   %s
  },0);
 }'''%(json.dumps(shell_css),"(function(){"+pre+menu+"\n"+notif+"\n"+nav+"})();")
