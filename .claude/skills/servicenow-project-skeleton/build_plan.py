@@ -5,7 +5,7 @@
                 [--additions extra.csv] [--format csv|jira|spm] [--out plan.csv]
 
 additions.csv columns: Phase,Workstream,Process,Task,Notes  (inserted after the last task of the same Process, else at end of Phase)
-spm format creates a pm_project + phase tasks + tasks on the instance (needs scripts/sn-login.sh credentials).
+spm format creates a pm_project + phase tasks + tasks on the instance (needs SN_INSTANCE, SN_USER, SN_PASS env vars).
 """
 import argparse,csv,os,re,sys
 H=os.path.dirname(os.path.abspath(__file__))
@@ -45,8 +45,21 @@ elif a.format=="jira":
         d=f"Workstream: {p['Workstream']}\nProcess: {p['Process']}\n"+(f"Guidance: {p['Link']}\n" if p["Link"] else "")+(f"Note: {p['Notes']}\n" if p["Notes"] else "")+f"Source: {p['Source']}"
         w.writerow([n,"Story",p["Task"],pid[p["Phase"]],d,slug+(",gate" if p["Gate"] else "")])
 else:
-    sys.path.insert(0,os.path.join(H,"..","..","..","scripts","mcd-portal"))
-    from mcd import call,find
+    import base64,json,time,urllib.parse,urllib.request
+    inst=os.environ.get("SN_INSTANCE","").rstrip("/"); usr=os.environ.get("SN_USER",""); pw=os.environ.get("SN_PASS","")
+    if not (inst and usr and pw): sys.exit("spm format needs SN_INSTANCE, SN_USER and SN_PASS environment variables")
+    auth="Basic "+base64.b64encode(f"{usr}:{pw}".encode()).decode()
+    def call(m,path,body=None):
+        for i in range(6):
+            try:
+                rq=urllib.request.Request(inst+path,method=m,data=json.dumps(body).encode() if body is not None else None,headers={"Authorization":auth,"Content-Type":"application/json","Accept":"application/json"})
+                return json.load(urllib.request.urlopen(rq,timeout=120))
+            except urllib.error.HTTPError as e: sys.exit(f"HTTP {e.code} on {m} {path}")
+            except Exception: time.sleep(4)
+        sys.exit("instance unreachable")
+    def find(t,q):
+        r=call("GET",f"/api/now/table/{t}?sysparm_limit=1&sysparm_fields=sys_id&sysparm_query="+urllib.parse.quote(q))
+        return (r.get("result") or [{}])[0].get("sys_id")
     pj=find("pm_project","short_description="+title)
     if not pj:
         b={"short_description":title,"description":f"Generated from the ServiceNow best-practice skeleton for {a.product}."}
