@@ -11,11 +11,16 @@ shell_css=re.sub(r'\.mcd-shell \.hidden\b','.mcd-shell .mcd-hidden',shell_css)
 # avatar markup: show initial from data
 hdr=re.sub(r'(<button[^>]*aria-label="My Profile"[^>]*>.*?)>N<',r'\1>{{c.data.initial}}<',hdr,count=1,flags=re.S)
 assert '{{c.data.initial}}' in hdr
+PFXDEF="var PFX='/'+((window.top.location.pathname.match(/^\\/(mcd(?:-[a-z]+)?)/)||[0,'mcd'])[1]);"
+def pfx(js):
+    js=re.sub(r"'/mcd\?id=","PFX+'?id=",js)
+    js=js.replace("'/mcd'","PFX")
+    return PFXDEF+js
 def adapt(js):
     js=js.replace("/esc?id=","/mcd?id=")
     js=js.replace("(b.innerText||'').trim()==='N'","b.getAttribute('aria-label')==='My Profile'")
     js=js.replace("if((bs[i].innerText||'').trim()==='N'){btn=bs[i];}","if(bs[i].getAttribute('aria-label')==='My Profile'){btn=bs[i];}")
-    return js
+    return pfx(js)
 nav=adapt(open('mcd_nav.js').read()); menu=adapt(open('mcd_menu.js').read()); notif=adapt(open('mcd_notif.js').read())
 menu=menu.replace("'__NAME__'","JSON.stringify(c.data.name)".replace('JSON.stringify(c.data.name)',"c.data.name") ) if False else menu
 pre="var U0=c.data;"
@@ -23,6 +28,7 @@ menu=(menu.replace("name:'__NAME__'","name:U0.name").replace("email:'__EMAIL__'"
 hdr_client='''function($scope,$location,$timeout,$window){
  var SHELL_CSS=%s;
  var c=this; var id=($location.search().id||'');
+ var tm=($window.location.pathname.match(/^\/mcd-(\w+)/)||[])[1];if(tm){document.body.classList.add('theme-'+tm);document.documentElement.classList.add('theme-'+tm);}
  c.isHome=(id===''||id==='mcd_home');
  if(!c.isHome){document.body.classList.add('mcd-inner');[300,1200,2500].forEach(function(t){$timeout(function(){var sc=document.querySelector('section.sp-scroll');if(sc&&!sc.__mcdTouched&&sc.scrollTop<200)sc.scrollTop=0;},t);});}
  if(!document.getElementById('mcd-shell-css')){var st=document.createElement('style');st.id='mcd-shell-css';st.textContent=SHELL_CSS;document.head.appendChild(st);}
@@ -51,5 +57,5 @@ H=upsert("sp_header_footer","name=McD Header",{"name":"McD Header","template":hd
 F=upsert("sp_header_footer","name=McD Footer",{"name":"McD Footer","template":ftr,"css":"","script":"(function(){})();","client_script":ftr_client})
 call("PATCH",f"/api/now/table/sp_theme/{th}",{"header":H,"footer":F})
 css_id="6f56085cc3c897107d295312b40131e8"
-call("PATCH",f"/api/now/table/sp_css/{css_id}",{"css":root+open('mcd_theme.css').read()})
+call("PATCH",f"/api/now/table/sp_css/{css_id}",{"css":root+open('theme_vars.css').read()+open('mcd_theme.css').read()})
 print(H,F)
