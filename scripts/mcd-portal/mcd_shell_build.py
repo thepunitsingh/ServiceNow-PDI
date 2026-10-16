@@ -51,10 +51,8 @@ def walk(s):
                 kept.append('.mcd-shell{'+decl); continue
             mt=re.match(r'^\.theme-(\w+)$',sel.strip())
             if mt:
-                themevars.append('html.theme-%s,body.theme-%s{%s'%(mt.group(1),mt.group(1),decl)); continue
-            if '.theme-' in sel:
-                if sel_ok(sel) or re.search(r'\b(header|aside|footer)\b',sel): kept.append(prefix(sel)+'{'+decl)
                 continue
+            if '.theme-' in sel: continue
             if sel_ok(sel): kept.append(prefix(sel)+'{'+decl)
     return ''.join(kept)
 out=walk(css)
@@ -73,7 +71,6 @@ def _px(m):
 out=_re.sub(r'(-?[\d.]*\d)rem',_px,out)
 reset+='.mcd-shell header nav,.mcd-shell aside button{flex:none}.mcd-shell aside button{width:100%}\n'
 open('shell.css','w').write(reset+out)
-open('theme_vars.css','w').write('\n'.join(themevars))
 open('shell_header.html','w').write('<div class="mcd-shell" ng-if="!c.isHome">'+hdr+aside+'</div>')
 open('shell_footer.html','w').write('<div class="mcd-shell" ng-if="!c.isHome">'+foot.replace('<footer class="bg-nav mt-10"','<footer class="bg-nav mt-10"')+'</div>')
 print(len(out),len(hdr),len(aside),len(foot))

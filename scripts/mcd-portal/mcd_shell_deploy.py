@@ -28,7 +28,6 @@ menu=(menu.replace("name:'__NAME__'","name:U0.name").replace("email:'__EMAIL__'"
 hdr_client='''function($scope,$location,$timeout,$window){
  var SHELL_CSS=%s;
  var c=this; var id=($location.search().id||'');
- var tm=($window.location.pathname.match(/^\/mcd-(\w+)/)||[])[1];if(tm){document.body.classList.add('theme-'+tm);document.documentElement.classList.add('theme-'+tm);}
  c.isHome=(id===''||id==='mcd_home');
  if(!c.isHome){document.body.classList.add('mcd-inner');[300,1200,2500].forEach(function(t){$timeout(function(){var sc=document.querySelector('section.sp-scroll');if(sc&&!sc.__mcdTouched&&sc.scrollTop<200)sc.scrollTop=0;},t);});}
  if(!document.getElementById('mcd-shell-css')){var st=document.createElement('style');st.id='mcd-shell-css';st.textContent=SHELL_CSS;document.head.appendChild(st);}
@@ -57,5 +56,5 @@ H=upsert("sp_header_footer","name=McD Header",{"name":"McD Header","template":hd
 F=upsert("sp_header_footer","name=McD Footer",{"name":"McD Footer","template":ftr,"css":"","script":"(function(){})();","client_script":ftr_client})
 call("PATCH",f"/api/now/table/sp_theme/{th}",{"header":H,"footer":F})
 css_id="6f56085cc3c897107d295312b40131e8"
-call("PATCH",f"/api/now/table/sp_css/{css_id}",{"css":root+open('theme_vars.css').read()+open('mcd_theme.css').read()})
+call("PATCH",f"/api/now/table/sp_css/{css_id}",{"css":root+open('mcd_theme.css').read()})
 print(H,F)

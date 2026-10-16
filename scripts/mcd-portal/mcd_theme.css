@@ -44,4 +44,3 @@ body.mcd-inner .btn-default,body.mcd-inner .btn-default:focus{color:#1a1a1a!impo
 body.mcd-inner .btn-default:hover{background:#FFC72C;border-color:#FFC72C;color:#1a1a1a!important}
 body.mcd-inner .fa-heart,body.mcd-inner .fa-heart-o,body.mcd-inner [class*=favorite] .fa{color:#DA291C!important}
 body.mcd-inner .fa-star,body.mcd-inner .fa-star-o,body.mcd-inner .fa-star-half-o{color:#E6B000!important}
-.theme-sunlit .mcd-shell footer,.theme-daylight .mcd-shell footer{--color-white:oklch(24% .015 70);border-top:1px solid var(--border)}
