@@ -47,3 +47,35 @@ body.mcd-inner .btn-default,body.mcd-inner .btn-default:focus{color:#1a1a1a!impo
 body.mcd-inner .btn-default:hover{background:#FFC72C;border-color:#FFC72C;color:#1a1a1a!important}
 body.mcd-inner .fa-heart,body.mcd-inner .fa-heart-o,body.mcd-inner [class*=favorite] .fa{color:#DA291C!important}
 body.mcd-inner .fa-star,body.mcd-inner .fa-star-o,body.mcd-inner .fa-star-half-o{color:#E6B000!important}
+/* ---- request listing cards ---- */
+body.mcd-inner .requests-container{display:grid!important;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin:8px 0 0}
+body.mcd-inner .request-card-widget{width:100%!important;max-width:none!important;margin:0!important;padding:0!important;float:none!important}
+body.mcd-inner a.request-card{display:flex;flex-direction:column;gap:8px;height:100%;min-height:0!important;padding:16px 18px!important;background:#fff;border:1px solid var(--border,#e4e2dc)!important;border-radius:16px!important;box-shadow:0 1px 2px rgba(0,0,0,.04);color:#1a1a1a!important;text-decoration:none!important;transition:border-color .15s,box-shadow .15s,transform .15s}
+body.mcd-inner a.request-card:hover{border-color:#FFC72C!important;box-shadow:0 6px 18px rgba(0,0,0,.08);transform:translateY(-1px)}
+body.mcd-inner .request-card-header{display:flex;align-items:center;justify-content:space-between;gap:8px;font-size:12px;color:#6b6b6b;height:auto!important}
+body.mcd-inner .request-card-header>*:first-child{display:inline-flex;align-items:center;padding:3px 10px!important;border-radius:999px!important;background:#FFC72C!important;color:#1a1a1a!important;font-size:11px!important;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+body.mcd-inner .request-card-title{font-size:17px!important;font-weight:700!important;letter-spacing:-.01em;line-height:1.3!important;color:#1a1a1a!important;height:auto!important}
+body.mcd-inner .request-card-secondary{font-size:13px;color:#6b6b6b;display:flex;flex-direction:column;gap:2px;height:auto!important}
+body.mcd-inner .request-card-secondary-field-item{display:block;color:#6b6b6b}
+body.mcd-inner .tab-request-content{padding-top:8px}
+/* ---- request details (order status) ---- */
+body.mcd-inner .v86eb2c8e9f4332002528d4b4232e708a table{width:100%;border-collapse:separate!important;border-spacing:0;border:1px solid var(--border,#e4e2dc)!important;border-radius:14px;overflow:hidden;background:#fff;margin:16px 0}
+body.mcd-inner .v86eb2c8e9f4332002528d4b4232e708a table thead th{background:#1a1a1a!important;color:rgba(255,199,44,.9)!important;font-size:12px!important;font-weight:600!important;text-transform:uppercase;letter-spacing:.06em;padding:12px 20px!important;border:0!important;vertical-align:middle}
+body.mcd-inner .v86eb2c8e9f4332002528d4b4232e708a table tbody tr,body.mcd-inner .v86eb2c8e9f4332002528d4b4232e708a table tbody tr:nth-child(odd),body.mcd-inner .v86eb2c8e9f4332002528d4b4232e708a table tbody tr:nth-child(even){background:#fff!important}
+body.mcd-inner .v86eb2c8e9f4332002528d4b4232e708a table tbody tr:hover{background:rgba(255,199,44,.12)!important}
+body.mcd-inner .v86eb2c8e9f4332002528d4b4232e708a table td{padding:14px 20px!important;font-size:14px!important;line-height:1.4;border:0!important;border-top:1px solid var(--border,#e4e2dc)!important;vertical-align:middle;color:#1a1a1a}
+body.mcd-inner .v86eb2c8e9f4332002528d4b4232e708a table td a{font-size:14px!important;font-weight:600;color:#DA291C}
+body.mcd-inner .v86eb2c8e9f4332002528d4b4232e708a table .requested-items-flex-container{display:flex;align-items:center}
+body.mcd-inner .v86eb2c8e9f4332002528d4b4232e708a table .requested-items-flex-container button{display:none!important}
+body.mcd-inner .v86eb2c8e9f4332002528d4b4232e708a table .requested-items-flex-container p{display:inline-block;margin:0!important;padding:3px 12px!important;border-radius:999px;background:#faf3d6;border:1px solid #f0dd9a;font-size:12px!important;font-weight:600;color:#6b4e00}
+/* ---- ticket / request item details ---- */
+body.mcd-inner .timeline-badge.success{background:#FFC72C!important;color:#1a1a1a!important;font-weight:700;box-shadow:0 0 0 4px rgba(255,199,44,.25)}
+body.mcd-inner .timeline .timeline-panel{border-radius:12px;border:1px solid var(--border,#e4e2dc)!important;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+body.mcd-inner textarea.form-control.no-resize{border:1px solid var(--border,#d6d3ca)!important;border-radius:12px 0 0 12px!important;padding:10px 14px;font-size:14px;min-height:44px}
+body.mcd-inner input.btn.btn-primary[type=submit],body.mcd-inner input.btn.btn-primary[type=button]{border-radius:0 12px 12px 0!important;min-height:44px;padding:0 22px;font-size:14px;font-weight:700}
+body.mcd-inner .panel.b,body.mcd-inner .panel.panel-default{border-radius:16px!important;border:1px solid var(--border,#e4e2dc)!important;overflow:hidden;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+body.mcd-inner .panel-heading.bg-primary{background:#fff!important;color:#1a1a1a!important;font-size:15px;font-weight:700}
+body.mcd-inner .panel-title,body.mcd-inner h2.h4.panel-title{font-size:16px!important;font-weight:700!important;letter-spacing:-.01em}
+body.mcd-inner dl.ticket-fields dt{font-size:12px!important;font-weight:600!important;letter-spacing:.04em;text-transform:uppercase;color:#6b6b6b}
+body.mcd-inner dl.ticket-fields dd{font-size:14px!important;color:#1a1a1a}
+body.mcd-inner .set-map-key-title a{font-size:14px;font-weight:600}
