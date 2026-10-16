@@ -1,4 +1,5 @@
 function mcdProfileTabs(d,u){
+ var ft=d.querySelector('footer');if(ft)ft.remove();
  var PTABS=/*PTABS*/null,PBARS=/*PBARS*/null,UPLOAD=/*UPLOAD*/null;
  var D='—';
  function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
