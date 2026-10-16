@@ -38,7 +38,7 @@ hdr_client='''function($scope,$location,$timeout,$window){
   if(home){home.classList.remove('bg-brand-gold/15');var bar=home.querySelector('span.absolute');if(bar)bar.remove();[].forEach.call(home.querySelectorAll('span'),function(s){s.classList.remove('text-brand-gold');s.classList.remove('text-white');s.classList.add('text-white/70');});}
   %s
  },0);
-}'''%(json.dumps(shell_css),"(function(){"+pre+menu+"\n"+notif+"\n"+nav+"})();")
+}'''%(json.dumps(shell_css),"(function(){"+pre+menu+"\n"+notif+"\n"+nav+"\nwindow.PFX=PFX;window.MCD_WRAP='mcd-shell';\n"+open('mcd_overlays.js').read()+"})();")
 ftr_client='''function($scope,$location){var c=this;var id=($location.search().id||'');c.isHome=(id===''||id==='mcd_home');}'''
 srv='''(function(){
  data.name=gs.getUserDisplayName();

@@ -8,6 +8,7 @@ body_i=d.index('<body')
 head,body=d[:body_i],d[body_i:]
 body=re.sub(r'<script>.*?</script>','',body,flags=re.S)
 scripts=''.join('<script>'+adapt(open(f).read())+'</script>' for f in ['mcd_menu.js','mcd_notif.js','mcd_nav.js'])
+scripts+='<script>'+PFXDEF+'window.PFX=PFX;'+open('mcd_overlays.js').read()+'</script><script>'+PFXDEF+'window.PFX=PFX;'+open('mcd_home_tabs.js').read()+'</script>'
 body=body.replace('</body>',scripts+'</body>')
 # logo/home anchors follow variant
 body=body.replace('<body>','<body>')

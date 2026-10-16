@@ -23,6 +23,8 @@
  for(var i=0;i<fix.length;i++){(function(b){
   if((b.innerText||'').trim()==='N'||b.getAttribute('aria-label')==='Notifications')return;
   var raw=label(b),l=raw.split('\n')[0].trim().toLowerCase();
+  if(b.closest('aside')&&l!=='home')return;
+  if(!b.closest('header')&&/^(my approvals|my requests|my tasks|catalog items|knowledge articles)$/.test(l))return;
   if(/^(previous slide|next slide|pause carousel|provide feedback|give feedback|english|tours|n)$/.test(l))return;
   var u;
   if(/^\d+$/.test(l)){u=BADGE[badgeIdx++];}

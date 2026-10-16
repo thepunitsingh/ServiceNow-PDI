@@ -5,8 +5,14 @@ body=doc[doc.index('<body'):]
 hdr=re.search(r'<header\b.*?</header>',body,re.S).group(0)
 aside=re.search(r'<aside\b.*?</aside>',body,re.S).group(0)
 foot=re.search(r'<footer\b.*?</footer>',body,re.S).group(0)
+import json as _json
+_cap=_json.load(open('cap/cap.json'))
+extra=' '.join(x if isinstance(x,str) else ' '.join(x) for k,x in _cap.items() if k.startswith(('fly_','feedback','lang')))
+fbtab=re.search(r'<div class="fixed top-1/2 right-0 z-50 -translate-y-1/2">.*?</div>',body,re.S).group(0)
+chat=re.search(r'<button type="button" aria-label="Give feedback".*?</button>',body,re.S).group(0)
+open('shell_float.html','w').write(fbtab+chat)
 used=set()
-for part in (hdr,aside,foot):
+for part in (hdr,aside,foot,extra,fbtab,chat):
     for m in re.finditer(r'class="([^"]*)"',part): used.update(m.group(1).split())
 def esc(c): return re.sub(r'([^a-zA-Z0-9_-])',r'\\\1',c)
 usedesc={esc(c) for c in used}
@@ -69,9 +75,9 @@ def _px(m):
     v=float(m.group(1))*16
     return ('%g'%v)+'px'
 out=_re.sub(r'(-?[\d.]*\d)rem',_px,out)
-reset+='.mcd-shell header nav,.mcd-shell aside button{flex:none}.mcd-shell aside button{width:100%}\n'
+reset+='.mcd-shell .flex{flex:0 1 auto}\n.mcd-shell header nav,.mcd-shell aside button{flex:none}.mcd-shell aside button{width:100%}\n'
 open('shell.css','w').write(reset+out)
-open('shell_header.html','w').write('<div class="mcd-shell" ng-if="!c.isHome">'+hdr+aside+'</div>')
+open('shell_header.html','w').write('<div class="mcd-shell" ng-if="!c.isHome">'+hdr+aside+fbtab+chat+'</div>')
 open('shell_footer.html','w').write('<div class="mcd-shell" ng-if="!c.isHome">'+foot.replace('<footer class="bg-nav mt-10"','<footer class="bg-nav mt-10"')+'</div>')
 print(len(out),len(hdr),len(aside),len(foot))
 print(re.findall(r'--color-[a-z-]+:[^;]+',out)[:12])
