@@ -2,7 +2,7 @@
  var P='/esc?id=';
  function s(q){return P+'esc_search&spa=1&q='+encodeURIComponent(q);}
  var MAP={
-  'home':'/mcd','switch to old portal':'/esc','my favorites':P+'ec_requests','recent history':null,
+  'home':'/mcd','switch to old portal':'/esc','my favorites':P+'favorites_list','recent history':null,
   'it':s('IT'),'hr':s('HR'),'payroll':s('payroll'),'facilities':s('facilities'),'learning':s('learning'),
   'software & app registry':s('software'),'service catalog':P+'esc_sc_category','knowledge base':P+'esc_knowledge_home',
   'asset management':s('asset'),'hr connect':s('HR'),'my documents':s('documents'),
