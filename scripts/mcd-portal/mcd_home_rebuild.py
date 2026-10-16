@@ -19,8 +19,5 @@ for o in call("GET",f"/api/now/attachment?sysparm_query=table_sys_id={wid}^file_
 sid=json.loads(curl(["-X","POST","-H","Content-Type: text/html","-H","Accept: application/json",f"{B}/api/now/attachment/file?table_name=sp_widget&table_sys_id={wid}&file_name=mcd_portal.html","--data-binary","@mcd_doc.html"]))["result"]["sys_id"]
 cs=call("GET",f"/api/now/table/sp_widget/{wid}?sysparm_fields=client_script")["result"]["client_script"]
 cs=re.sub(r'sys_id=[0-9a-f]{32}',f'sys_id={sid}',cs,count=1)
-if 'theme-' not in cs:
-    cs=cs.replace("  f.srcdoc=t.split('__ORIGIN__')","  var th=($window.location.pathname.match(/^\\/mcd-(\\w+)/)||[])[1];\n  if(th){t=t.replace('<html>','<html class=\"theme-'+th+'\">').replace('<body>','<body class=\"theme-'+th+'\">');}\n  f.srcdoc=t.split('__ORIGIN__')")
-    cs=cs.replace("f.srcdoc=t.split","f.srcdoc=t.split",1)
 call("PATCH",f"/api/now/table/sp_widget/{wid}",{"client_script":cs})
 print('ok','theme-' in cs, d2.count('<script>'))
