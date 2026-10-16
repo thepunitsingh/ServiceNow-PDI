@@ -14,7 +14,7 @@ if not pid:
     pid=r["result"]["sys_id"]
 print("project",pid)
 def task(parent,name,desc=""):
-    q=f"parent={parent}^short_description={name}"
+    q=f"parent={parent}^short_description={name}"+(f"^descriptionLIKE{desc.splitlines()[1]}" if "Process:" in desc else "")
     s=find("pm_project_task",q)
     if s: return s
     r=call("POST","/api/now/table/pm_project_task",{"parent":parent,"short_description":name,"description":desc})
