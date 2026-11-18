@@ -14,8 +14,8 @@ CREDS="${SN_CREDS_FILE:-${XDG_CONFIG_HOME:-$HOME/.config}/servicenow-pdi/creds.e
 _ENV_PASS="${SN_PASS:-}"; _ENV_USER="${SN_USER:-}"; _ENV_INST="${SN_INSTANCE:-}"
 # shellcheck disable=SC1090
 [ -f "$CREDS" ] && source "$CREDS"
-SN_PASS="${_ENV_PASS:-${SN_PASS:-}}"; SN_USER="${_ENV_USER:-${SN_USER:-claudecode}}"
-SN_INSTANCE="${_ENV_INST:-${SN_INSTANCE:-https://dev181171.service-now.com}}"
+SN_PASS="${_ENV_PASS:-${SN_PASS:-}}"; SN_USER="${_ENV_USER:-${SN_USER:-admin}}"
+SN_INSTANCE="${_ENV_INST:-${SN_INSTANCE:-https://dev469616.service-now.com}}"
 [ -n "$SN_PASS" ] || { echo "No password: set SN_PASS in the environment, or run: $0 set-pass" >&2; exit 2; }
 
 if [ "${1:-}" = "set-pass" ]; then

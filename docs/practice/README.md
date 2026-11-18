@@ -1,6 +1,6 @@
 # ServiceNow ITSM Development Practice Path
 
-12 hands-on activities on your PDI (`dev181171`), ordered **easy → advanced**. Every activity is its own file, so you can open one at a time.
+12 hands-on activities on your PDI (`dev469616`), ordered **easy → advanced**. Every activity is its own file, so you can open one at a time.
 
 ## How to use this path
 

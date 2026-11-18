@@ -35,7 +35,7 @@ Studio → *Create Application* → *Let's get started* → name `PRAC ITSM Prac
 
 ## Support
 - Concepts: *Table extension*, *Dictionary*, *Application scope*, *Data Lookup*.
-- Useful URL pattern: `https://dev181171.service-now.com/incident_list.do`, `/sys_db_object_list.do`.
+- Useful URL pattern: `https://dev469616.service-now.com/incident_list.do`, `/sys_db_object_list.do`.
 
 ## Acceptance checklist
 - [ ] 3 incidents exist with different priorities
