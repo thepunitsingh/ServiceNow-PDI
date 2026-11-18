@@ -15,6 +15,8 @@ Agents often forget to ask about the affected service. You want live guidance on
 4. **UI Action** (form button) `PRAC Escalate`: sets Urgency = 1, Impact = 1, adds a work note "Escalated by <user>", saves, and stays on the form. Visible only when State is not Closed/Resolved.
 5. **UI Action** (list context menu) `PRAC Assign to me`: assigns the selected incidents to the logged-in user.
 
+6. **onChange Client Script** on `impact` (Activity 02 follow-up): when Impact becomes `1`, default your **Affected users** field to 1 if it is empty.
+
 ## Hints
 <details><summary>Hint 1</summary>
 
